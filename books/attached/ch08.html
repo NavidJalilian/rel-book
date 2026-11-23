@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>دلبسته، فصل ۸</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="../../assets/player.css">
+<style>
+.scene.on .a.lin{animation-timing-function:linear}
+@keyframes rock{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+@keyframes walk8{0%{transform:translate(332px,0)}25%{transform:translate(262px,-73px)}50%{transform:translate(165px,-95px)}75%{transform:translate(69px,-73px)}100%{transform:none}}
+@keyframes hop8{0%{transform:translate(235px,0)}50%{transform:translate(117px,-66px)}100%{transform:none}}
+@keyframes tilt8{from{transform:none}to{transform:rotate(12deg)}}
+@keyframes rise8a{from{transform:translate(100px,235px)}to{transform:none}}
+@keyframes rise8b{from{transform:translate(-100px,235px)}to{transform:none}}
+@keyframes fall8a{0%{transform:translate(220px,-179px)}60%{transform:translate(30px,-179px)}100%{transform:none}}
+@keyframes fall8b{0%{transform:translate(230px,-179px)}60%{transform:translate(40px,-179px)}100%{transform:none}}
+@keyframes sink8{0%{transform:translate(390px,-240px)}20%{transform:translate(330px,-240px)}28%{transform:translate(310px,-160px)}45%{transform:translate(220px,-160px)}53%{transform:translate(190px,-80px)}70%{transform:translate(100px,-80px)}78%{transform:translate(70px,0)}100%{transform:none}}
+@keyframes inward8{from{transform:translate(95px,0)}to{transform:none}}
+@keyframes w8a{0.0%{transform:translate(600px,19px)}3.3%{transform:translate(578px,22px)}6.7%{transform:translate(556px,18px)}10.0%{transform:translate(536px,9px)}13.3%{transform:translate(517px,-2px)}16.7%{transform:translate(498px,-15px)}20.0%{transform:translate(480px,-28px)}23.3%{transform:translate(461px,-39px)}26.7%{transform:translate(440px,-47px)}30.0%{transform:translate(418px,-50px)}33.3%{transform:translate(396px,-46px)}36.7%{transform:translate(376px,-37px)}40.0%{transform:translate(357px,-25px)}43.3%{transform:translate(338px,-13px)}46.7%{transform:translate(320px,0px)}50.0%{transform:translate(301px,11px)}53.3%{transform:translate(280px,19px)}56.7%{transform:translate(258px,22px)}60.0%{transform:translate(236px,18px)}63.3%{transform:translate(216px,9px)}66.7%{transform:translate(197px,-2px)}70.0%{transform:translate(178px,-15px)}73.3%{transform:translate(160px,-28px)}76.7%{transform:translate(141px,-39px)}80.0%{transform:translate(120px,-47px)}83.3%{transform:translate(98px,-50px)}86.7%{transform:translate(76px,-46px)}90.0%{transform:translate(56px,-37px)}93.3%{transform:translate(37px,-25px)}96.7%{transform:translate(18px,-13px)}100.0%{transform:translate(0px,0px)}}
+@keyframes w8b{0.0%{transform:translate(600px,-28px)}3.3%{transform:translate(581px,-39px)}6.7%{transform:translate(560px,-47px)}10.0%{transform:translate(538px,-50px)}13.3%{transform:translate(517px,-46px)}16.7%{transform:translate(496px,-37px)}20.0%{transform:translate(477px,-26px)}23.3%{transform:translate(459px,-13px)}26.7%{transform:translate(441px,-1px)}30.0%{transform:translate(422px,11px)}33.3%{transform:translate(401px,19px)}36.7%{transform:translate(379px,22px)}40.0%{transform:translate(358px,19px)}43.3%{transform:translate(337px,10px)}46.7%{transform:translate(318px,-1px)}50.0%{transform:translate(300px,-14px)}53.3%{transform:translate(282px,-26px)}56.7%{transform:translate(263px,-38px)}60.0%{transform:translate(242px,-46px)}63.3%{transform:translate(221px,-50px)}66.7%{transform:translate(199px,-47px)}70.0%{transform:translate(178px,-38px)}73.3%{transform:translate(159px,-27px)}76.7%{transform:translate(141px,-14px)}80.0%{transform:translate(123px,-2px)}83.3%{transform:translate(104px,10px)}86.7%{transform:translate(83px,18px)}90.0%{transform:translate(62px,22px)}93.3%{transform:translate(40px,19px)}96.7%{transform:translate(19px,11px)}100.0%{transform:translate(0px,0px)}}
+@keyframes rc8{0.0%{transform:translate(496px,60px)}2.8%{transform:translate(479px,32px)}5.6%{transform:translate(461px,3px)}8.3%{transform:translate(443px,-25px)}11.1%{transform:translate(428px,-54px)}13.9%{transform:translate(411px,-83px)}16.7%{transform:translate(388px,-78px)}19.4%{transform:translate(376px,-47px)}22.2%{transform:translate(367px,-15px)}25.0%{transform:translate(358px,17px)}27.8%{transform:translate(348px,48px)}30.6%{transform:translate(338px,80px)}33.3%{transform:translate(324px,109px)}36.1%{transform:translate(297px,93px)}38.9%{transform:translate(279px,65px)}41.7%{transform:translate(265px,35px)}44.4%{transform:translate(255px,3px)}47.2%{transform:translate(246px,-29px)}50.0%{transform:translate(236px,-61px)}52.8%{transform:translate(224px,-91px)}55.6%{transform:translate(204px,-79px)}58.3%{transform:translate(196px,-47px)}61.1%{transform:translate(189px,-15px)}63.9%{transform:translate(182px,18px)}66.7%{transform:translate(174px,50px)}69.4%{transform:translate(163px,81px)}72.2%{transform:translate(150px,112px)}75.0%{transform:translate(123px,111px)}77.8%{transform:translate(104px,84px)}80.6%{transform:translate(88px,54px)}83.3%{transform:translate(75px,24px)}86.1%{transform:translate(65px,-8px)}88.9%{transform:translate(55px,-39px)}91.7%{transform:translate(42px,-70px)}94.4%{transform:translate(21px,-63px)}97.2%{transform:translate(10px,-32px)}100.0%{transform:translate(0px,0px)}}
+</style>
+</head>
+<body>
+<script type="application/json" id="meta">
+{"book":"دلبسته","author":"امیر لوین و ریچل هلر","chapter":"فصل ۸","home":"../../index.html#attached","prev":"ch07.html","next":"ch09.html",
+ "sections":[["آغاز فصل","Chapter opening"],["رخت‌های چرک","The Dirty Laundry"],["اقامتگاهی رمانتیک در ورمانت","A Romantic Bed-and-Breakfast in Vermont"],["وقتی فیس‌بوک و «ترس از رهاشدن» به هم می‌رسند","When Facebook and “Abandonment” Issues Meet"],["سازوکارِ تله‌ی اضطرابی–اجتنابی","The Nuts and Bolts of the Anxious-Avoidant Trap"],["نشانه‌های آشکارِ تله","Telltale Signs of the Anxious-Avoidant Trap"],["چرا تفاوت در صمیمیت به این سختی حل می‌شود؟","Why Are Intimacy Differences So Difficult to Reconcile?"],["جمع‌بندی","Recap"]]}
+</script>
+<div class="stage" id="stage">
+
+<!-- 0 · Title -->
+<section class="scene s-title" data-t="10" data-sec="0" data-title="عنوان فصل">
+  <svg class="bgmtn" viewBox="0 0 1280 320" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <path class="a" style="--k:fade;--d:.1" d="M0 230 L8 224 L16 219 L24 214 L32 209 L40 205 L48 201 L56 198 L64 196 L72 194 L80 194 L88 194 L96 196 L104 198 L112 201 L120 205 L128 209 L136 214 L144 219 L152 224 L160 230 L168 236 L176 241 L184 246 L192 251 L200 255 L208 259 L216 262 L224 264 L232 266 L240 266 L248 266 L256 264 L264 262 L272 259 L280 255 L288 251 L296 246 L304 241 L312 236 L320 230 L328 224 L336 219 L344 214 L352 209 L360 205 L368 201 L376 198 L384 196 L392 194 L400 194 L408 194 L416 196 L424 198 L432 201 L440 205 L448 209 L456 214 L464 219 L472 224 L480 230 L488 236 L496 241 L504 246 L512 251 L520 255 L528 259 L536 262 L544 264 L552 266 L560 266 L568 266 L576 264 L584 262 L592 259 L600 255 L608 251 L616 246 L624 241 L632 236 L640 230 L648 224 L656 219 L664 214 L672 209 L680 205 L688 201 L696 198 L704 196 L712 194 L720 194 L728 194 L736 196 L744 198 L752 201 L760 205 L768 209 L776 214 L784 219 L792 224 L800 230 L808 236 L816 241 L824 246 L832 251 L840 255 L848 259 L856 262 L864 264 L872 266 L880 266 L888 266 L896 264 L904 262 L912 259 L920 255 L928 251 L936 246 L944 241 L952 236 L960 230 L968 224 L976 219 L984 214 L992 209 L1000 205 L1008 201 L1016 198 L1024 196 L1032 194 L1040 194 L1048 194 L1056 196 L1064 198 L1072 201 L1080 205 L1088 209 L1096 214 L1104 219 L1112 224 L1120 230 L1128 236 L1136 241 L1144 246 L1152 251 L1160 255 L1168 259 L1176 262 L1184 264 L1192 266 L1200 266 L1208 266 L1216 264 L1224 262 L1232 259 L1240 255 L1248 251 L1256 246 L1264 241 L1272 236 L1280 230 L1280 320 L0 320Z" fill="var(--panel)"/>
+    <path class="a dr" style="--k:draw;--du:2.4s;--d:.1" pathLength="1" d="M0 230 L8 224 L16 219 L24 214 L32 209 L40 205 L48 201 L56 198 L64 196 L72 194 L80 194 L88 194 L96 196 L104 198 L112 201 L120 205 L128 209 L136 214 L144 219 L152 224 L160 230 L168 236 L176 241 L184 246 L192 251 L200 255 L208 259 L216 262 L224 264 L232 266 L240 266 L248 266 L256 264 L264 262 L272 259 L280 255 L288 251 L296 246 L304 241 L312 236 L320 230 L328 224 L336 219 L344 214 L352 209 L360 205 L368 201 L376 198 L384 196 L392 194 L400 194 L408 194 L416 196 L424 198 L432 201 L440 205 L448 209 L456 214 L464 219 L472 224 L480 230 L488 236 L496 241 L504 246 L512 251 L520 255 L528 259 L536 262 L544 264 L552 266 L560 266 L568 266 L576 264 L584 262 L592 259 L600 255 L608 251 L616 246 L624 241 L632 236 L640 230 L648 224 L656 219 L664 214 L672 209 L680 205 L688 201 L696 198 L704 196 L712 194 L720 194 L728 194 L736 196 L744 198 L752 201 L760 205 L768 209 L776 214 L784 219 L792 224 L800 230 L808 236 L816 241 L824 246 L832 251 L840 255 L848 259 L856 262 L864 264 L872 266 L880 266 L888 266 L896 264 L904 262 L912 259 L920 255 L928 251 L936 246 L944 241 L952 236 L960 230 L968 224 L976 219 L984 214 L992 209 L1000 205 L1008 201 L1016 198 L1024 196 L1032 194 L1040 194 L1048 194 L1056 196 L1064 198 L1072 201 L1080 205 L1088 209 L1096 214 L1104 219 L1112 224 L1120 230 L1128 236 L1136 241 L1144 246 L1152 251 L1160 255 L1168 259 L1176 262 L1184 264 L1192 266 L1200 266 L1208 266 L1216 264 L1224 262 L1232 259 L1240 255 L1248 251 L1256 246 L1264 241 L1272 236 L1280 230" fill="none" stroke="var(--muted)" stroke-width="2"/>
+    <g class="a climb lin" style="--k:w8a;--du:7s;--d:1"><circle cx="300" cy="234" r="10" fill="var(--e3)"/></g>
+    <g class="a climb lin" style="--k:w8b;--du:7s;--d:1"><circle cx="500" cy="234" r="10" fill="var(--e2)"/></g>
+  </svg>
+  <div class="ttl">
+    <div class="chapno a" style="--d:.3">فصل ۸</div>
+    <h1 class="a" style="--d:.6">تله‌ی اضطرابی–اجتنابی</h1>
+    <p class="lede a" style="--d:1.3">چرا هرچه یکی نزدیک‌تر می‌شود، دیگری دورتر می‌رود؟</p>
+    <div class="by a en" style="--d:1.8">The Anxious-Avoidant Trap · Attached</div>
+    <div class="by a" style="--d:2.2">بخش سوم: وقتی سبک‌های دلبستگی با هم برخورد می‌کنند</div>
+  </div>
+</section>
+
+<!-- 1 · Opening -->
+<section class="scene" data-t="22" data-sec="0" data-title="دو نیازِ متضاد">
+  <header><div class="eyebrow a">آغاز فصل <span class="en">Chapter opening</span></div><h2 class="a" style="--d:.2">وقتی نیازِ نزدیکی با هم نمی‌خواند</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">وقتی دو نفر نیازهای متضادی به صمیمیت دارند، رابطه به جای «پناهگاهی امن» به سفری دریایی و طوفانی شبیه می‌شود.</p>
+      <p class="a" style="--d:6">رنگ‌ها در این فصل ثابت‌اند: <b style="color:var(--e2)">اضطرابی</b> <span class="en">(anxious)</span> نزدیکیِ بیشتر می‌خواهد، <b style="color:var(--e3)">اجتنابی</b> <span class="en">(avoidant)</span> فاصله می‌خواهد و <b style="color:var(--good)">ایمن</b> <span class="en">(secure)</span> با هر دو راحت است.</p>
+      <p class="key a" style="--d:13"><mark>سه ماجرای واقعی نشان می‌دهند این برخورد چطور پشتِ دعواهای معمولی پنهان می‌شود.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <defs><g id="ps8a"><circle cx="0" cy="-30" r="16" fill="currentColor"/><path d="M-25 24 Q-25 -10 0 -10 Q25 -10 25 24Z" fill="currentColor"/></g></defs>
+        <text class="a" style="--k:fade;--d:1" x="280" y="30" text-anchor="middle" font-size="16" fill="var(--muted)">دو نیازِ متضاد به نزدیکی</text>
+        <circle class="a" style="--k:pulse;--du:2s;--it:infinite;--d:3" cx="400" cy="140" r="44" fill="none" stroke="var(--e2)" stroke-width="2"/>
+        <g class="a" style="--k:pop;--d:1.4"><use href="#ps8a" x="400" y="150" style="color:var(--e2)"/><text x="400" y="212" text-anchor="middle" font-size="19" font-weight="700" fill="var(--e2)">اضطرابی</text><text x="400" y="238" text-anchor="middle" font-size="15" fill="var(--muted)">نزدیک‌تر می‌شود</text></g>
+        <g class="a" style="--k:pop;--d:2"><use href="#ps8a" x="160" y="150" style="color:var(--e3)"/><text x="160" y="212" text-anchor="middle" font-size="19" font-weight="700" fill="var(--e3)">اجتنابی</text><text x="160" y="238" text-anchor="middle" font-size="15" fill="var(--muted)">دورتر می‌رود</text></g>
+        <path class="a dr" style="--k:draw;--du:1s;--d:2.8" pathLength="1" d="M360 130 H250" stroke="var(--e2)" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <path class="a" style="--k:fade;--d:3.6" d="M260 120 L246 130 L260 140" fill="none" stroke="var(--e2)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="a dr" style="--k:draw;--du:1s;--d:3.6" pathLength="1" d="M120 130 H46" stroke="var(--e3)" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <path class="a" style="--k:fade;--d:4.4" d="M56 120 L42 130 L56 140" fill="none" stroke="var(--e3)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="a dr" style="--k:draw;--du:2s;--d:6.5" pathLength="1" d="M20 335 Q72 300 124 335 T228 335 T332 335 T436 335 T540 335" fill="none" stroke="var(--muted)" stroke-width="3"/>
+        <g class="a" style="--k:fade;--d:7.5"><g class="a" style="--k:rock;--du:2.6s;--it:infinite;--d:7.5">
+          <path d="M248 312 H312 L300 330 H260Z" fill="var(--e1)"/><line x1="280" y1="312" x2="280" y2="278" stroke="var(--ink)" stroke-width="2.5"/><path d="M283 280 L306 306 H283Z" fill="var(--ink)"/>
+        </g></g>
+        <text class="a" style="--k:up;--d:9" x="280" y="392" text-anchor="middle" font-size="18" font-weight="700" fill="var(--e1)">به جای پناهگاهی امن، سفری طوفانی</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · Laundry story -->
+<section class="scene" data-t="25" data-sec="1" data-title="دعوا سرِ ماشین لباس‌شویی">
+  <header><div class="eyebrow a">رخت‌های چرک <span class="en">The Dirty Laundry</span></div><h2 class="a" style="--d:.2">دو سال دعوا سرِ یک ماشین لباس‌شویی</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">جنت (۳۷ ساله) و مارک (۴۰ ساله) نزدیک هشت سال است با هم زندگی می‌کنند و دو سال است سرِ خریدِ ماشین لباس‌شویی بحث دارند.</p>
+      <p class="a" style="--d:6">مارک می‌گوید وقت و زحمت را کم می‌کند؛ جنت می‌گوید آپارتمانِ کوچکشان جا ندارد و رخت‌شستن هم کارِ خودِ اوست. بحث با سکوتِ جنت یا انفجارِ مارک تمام می‌شود.</p>
+      <p class="a" style="--d:13">نکته‌ی پنهان: جنت آخر هفته‌ها رخت‌ها را به خانه‌ی خواهرش در همان محله می‌برد و کلِ روز آنجا می‌ماند.</p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <text class="a" style="--k:fade;--d:1" x="280" y="28" text-anchor="middle" font-size="16" fill="var(--muted)">موضوعِ دعوا</text>
+        <g class="a" style="--k:pop;--d:1.6">
+          <rect x="245" y="46" width="70" height="86" rx="8" fill="var(--panel)" stroke="var(--muted)" stroke-width="2.5"/>
+          <rect x="253" y="53" width="24" height="8" rx="3" fill="var(--muted)"/>
+          <circle cx="280" cy="98" r="22" fill="rgba(219,166,94,.2)" stroke="var(--e1)" stroke-width="3"/>
+        </g>
+        <text class="a" style="--k:pop;--d:2.6" x="200" y="100" text-anchor="middle" font-size="34" fill="var(--e1)">؟</text>
+        <text class="a" style="--k:pop;--d:2.9" x="360" y="100" text-anchor="middle" font-size="34" fill="var(--e1)">؟</text>
+        <g class="a" style="--k:up;--d:3.4">
+          <path d="M380 262 L440 222 L500 262" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round"/>
+          <rect x="392" y="262" width="96" height="68" fill="var(--panel)" stroke="var(--line)" stroke-width="2"/>
+          <text x="440" y="360" text-anchor="middle" font-size="15">آپارتمانِ جنت و مارک</text>
+        </g>
+        <g class="a" style="--k:up;--d:4">
+          <path d="M70 262 L130 222 L190 262" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round"/>
+          <rect x="82" y="262" width="96" height="68" fill="var(--panel)" stroke="var(--line)" stroke-width="2"/>
+          <text x="130" y="360" text-anchor="middle" font-size="15">خانه‌ی خواهرِ جنت</text>
+        </g>
+        <circle class="a" style="--k:pop;--d:4.6" cx="420" cy="305" r="11" fill="var(--e2)"/>
+        <path class="a" style="--k:fade;--d:13.4" d="M462 300 C 400 180, 190 180, 130 300" fill="none" stroke="var(--e3)" stroke-width="2" stroke-dasharray="6 6"/>
+        <g class="a" style="--k:pop;--d:4.8"><g class="a climb" style="--k:walk8;--du:2.6s;--d:13.8"><circle cx="130" cy="305" r="11" fill="var(--e3)"/></g></g>
+        <text class="a" style="--k:up;--d:16.4" x="130" y="400" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e3)">جنت: کلِ روز آنجا</text>
+        <text class="a" style="--k:up;--d:17" x="440" y="400" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e2)">مارک: تنها در خانه</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · Laundry iceberg -->
+<section class="scene" data-t="22" data-sec="1" data-title="ماشین فقط نشانه است">
+  <header><div class="eyebrow a">رخت‌های چرک <span class="en">The Dirty Laundry</span></div><h2 class="a" style="--d:.2">ماشین لباس‌شویی فقط نشانه است</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">جنت سبکِ دلبستگیِ <b style="color:var(--e3)">اجتنابی</b> دارد و همیشه دنبالِ فرصتی است که کاری را بدونِ مارک انجام دهد.</p>
+      <p class="a" style="--d:6">برای مارکِ <b style="color:var(--e2)">اضطرابی</b>، خواستنِ ماشین در واقع خواستنِ چیز دیگری است: نزدیک بودن به جنت.</p>
+      <p class="key a" style="--d:11"><mark>مسئله‌ی واقعی: نیازِ بسیار متفاوتِ این دو به نزدیکی و با هم بودن.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <text class="a" style="--k:fade;--d:1" x="280" y="30" text-anchor="middle" font-size="15" fill="var(--muted)">روی آب: موضوعِ دعوا</text>
+        <rect class="a" style="--k:fade;--d:1.4" x="10" y="150" width="540" height="250" rx="14" fill="rgba(169,157,178,.10)"/>
+        <g class="a" style="--k:up;--d:1.8"><path d="M228 150 L266 78 L292 98 L332 150Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"/></g>
+        <text class="a" style="--k:fade;--d:2.4" x="450" y="112" text-anchor="middle" font-size="17" font-weight="700">ماشین لباس‌شویی</text>
+        <path class="a dr" style="--k:draw;--du:1.4s;--d:1.4" pathLength="1" d="M10 150 Q40 140 70 150 T130 150 T190 150 T250 150 T310 150 T370 150 T430 150 T490 150 T550 150" fill="none" stroke="var(--muted)" stroke-width="2.5"/>
+        <g class="a" style="--k:fade;--du:1.6s;--d:7"><path d="M228 150 L174 214 L140 300 L190 372 L290 392 L392 356 L426 262 L380 186 L332 150Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"/></g>
+        <text class="a" style="--k:up;--d:8" x="282" y="230" text-anchor="middle" font-size="27" style="font-family:var(--display)">نیازِ متفاوت</text>
+        <text class="a" style="--k:up;--d:8.4" x="282" y="280" text-anchor="middle" font-size="27" style="font-family:var(--display)">به نزدیکی</text>
+        <circle class="a" style="--k:pop;--d:9.4" cx="320" cy="320" r="10" fill="var(--e2)"/>
+        <path class="a dr" style="--k:draw;--du:.8s;--d:9.8" pathLength="1" d="M304 320 H266" stroke="var(--e2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <circle class="a" style="--k:pop;--d:9.4" cx="244" cy="320" r="10" fill="var(--e3)"/>
+        <path class="a dr" style="--k:draw;--du:.8s;--d:10.2" pathLength="1" d="M228 320 H196" stroke="var(--e3)" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <text class="a" style="--k:fade;--d:10.6" x="280" y="430" text-anchor="middle" font-size="15" fill="var(--muted)">زیر آب: مسئله‌ی واقعی</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · Vermont rooms -->
+<section class="scene" data-t="25" data-sec="2" data-title="دو تخت یا یک تخت؟">
+  <header><div class="eyebrow a">اقامتگاهی رمانتیک در ورمانت <span class="en">A Romantic Bed-and-Breakfast in Vermont</span></div><h2 class="a" style="--d:.2">منظره‌ی عالی یا تختِ بزرگ؟</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">سوزان (۲۴) و پل (۲۸) بی‌برنامه برای آخر هفته به ورمانت می‌روند و دو اقامتگاهِ دنج پیدا می‌کنند: اتاقی با دو تختِ یک‌نفره و منظره‌ای عالی، و اتاقی با یک تختِ بزرگ.</p>
+      <p class="a" style="--d:8">پل اتاقِ منظره‌دار را می‌خواهد و می‌گوید هر شب که کنارِ هم می‌خوابیم، چه فرقی می‌کند؟ سوزان از این نیازِ شدیدش خجالت می‌کشد، اما کوتاه نمی‌آید.</p>
+      <p class="a" style="--d:15">هیچ‌کدام کوتاه نمی‌آیند و دعوا آخر هفته را خراب می‌کند.</p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <g class="a" style="--k:up;--d:1.6">
+          <path d="M300 80 H530 V280 H300Z" fill="var(--panel)" stroke="var(--line)" stroke-width="2"/>
+          <rect x="360" y="98" width="110" height="58" rx="4" fill="rgba(111,192,214,.15)" stroke="var(--muted)"/>
+          <path d="M362 154 L395 118 L415 136 L435 110 L468 154Z" fill="var(--stone)"/>
+          <rect x="325" y="190" width="74" height="74" rx="6" fill="var(--ground2)" stroke="var(--muted)"/><rect x="335" y="197" width="54" height="14" rx="5" fill="var(--muted)"/>
+          <rect x="431" y="190" width="74" height="74" rx="6" fill="var(--ground2)" stroke="var(--muted)"/><rect x="441" y="197" width="54" height="14" rx="5" fill="var(--muted)"/>
+          <text x="415" y="62" text-anchor="middle" font-size="15" fill="var(--muted)">منظره‌ی عالی، دو تختِ جدا</text>
+        </g>
+        <g class="a" style="--k:up;--d:3">
+          <path d="M30 80 H260 V280 H30Z" fill="var(--panel)" stroke="var(--line)" stroke-width="2"/>
+          <rect x="65" y="160" width="160" height="104" rx="8" fill="var(--ground2)" stroke="var(--muted)"/>
+          <rect x="76" y="168" width="66" height="18" rx="6" fill="var(--muted)"/><rect x="148" y="168" width="66" height="18" rx="6" fill="var(--muted)"/>
+          <text x="145" y="62" text-anchor="middle" font-size="15" fill="var(--muted)">یک تختِ بزرگ</text>
+        </g>
+        <path class="a dr" style="--k:draw;--du:1.4s;--d:8.6" pathLength="1" d="M300 80 H530 V280 H300Z" fill="none" stroke="var(--e3)" stroke-width="4"/>
+        <text class="a" style="--k:up;--d:9.4" x="415" y="314" text-anchor="middle" font-size="18" font-weight="700" fill="var(--e3)">انتخابِ پل</text>
+        <path class="a dr" style="--k:draw;--du:1.4s;--d:11" pathLength="1" d="M30 80 H260 V280 H30Z" fill="none" stroke="var(--e2)" stroke-width="4"/>
+        <g class="a" style="--k:pop;--d:11.8"><g transform="translate(145 126) scale(1.3)"><path d="M0 14 C -22 0, -20 -18, -9 -18 C -3 -18, 0 -13, 0 -10 C 0 -13, 3 -18, 9 -18 C 20 -18, 22 0, 0 14Z" fill="var(--e2)"/></g></g>
+        <text class="a" style="--k:up;--d:12" x="145" y="314" text-anchor="middle" font-size="18" font-weight="700" fill="var(--e2)">انتخابِ سوزان</text>
+        <text class="a" style="--k:up;--d:16" x="280" y="376" text-anchor="middle" font-size="20" font-weight="700" fill="var(--e1)">فقط اختلافِ سلیقه؟</text>
+        <text class="a" style="--k:up;--d:17" x="280" y="408" text-anchor="middle" font-size="16" fill="var(--muted)">یا چیزی عمیق‌تر؟</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · Vermont hidden context -->
+<section class="scene" data-t="22" data-sec="2" data-title="پشتِ صحنه‌ی ماجرا">
+  <header><div class="eyebrow a">اقامتگاهی رمانتیک در ورمانت <span class="en">A Romantic Bed-and-Breakfast in Vermont</span></div><h2 class="a" style="--d:.2">اگر پشتِ صحنه را بدانید</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">پل دوست ندارد پیش از خواب سوزان را در آغوش بگیرد، و سوزان از این رفتار احساسِ طردشدن می‌کند.</p>
+      <p class="a" style="--d:5.5">سوزان مطمئن است که با دو تختِ جدا، پل درست بعد از رابطه‌ی جنسی به تختِ خودش می‌رود.</p>
+      <p class="key a" style="--d:11"><mark>پافشاریِ سوزان افراطی نیست؛ نیازی بنیادی به نزدیکی است که برآورده نمی‌شود.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <text class="a" style="--k:fade;--d:1" x="280" y="60" text-anchor="middle" font-size="16" fill="var(--muted)">ترسِ سوزان از اتاقِ دو تخته</text>
+        <g class="a" style="--k:up;--d:1.4">
+          <rect x="320" y="170" width="130" height="110" rx="8" fill="var(--panel)" stroke="var(--muted)"/><rect x="336" y="180" width="98" height="18" rx="6" fill="var(--muted)"/>
+          <rect x="110" y="170" width="130" height="110" rx="8" fill="var(--panel)" stroke="var(--muted)"/><rect x="126" y="180" width="98" height="18" rx="6" fill="var(--muted)"/>
+          <text x="385" y="150" text-anchor="middle" font-size="15" fill="var(--muted)">تختِ سوزان</text>
+          <text x="175" y="150" text-anchor="middle" font-size="15" fill="var(--muted)">تختِ پل</text>
+        </g>
+        <circle class="a" style="--k:pop;--d:2" cx="362" cy="232" r="14" fill="var(--e2)"/>
+        <g class="a" style="--k:pop;--d:2.2"><g class="a climb" style="--k:hop8;--du:1.4s;--d:6.6"><circle cx="175" cy="232" r="14" fill="var(--e3)"/></g></g>
+        <path class="a dr" style="--k:draw;--du:1s;--d:8.4" pathLength="1" d="M252 300 H308" stroke="var(--e1)" stroke-width="3" fill="none"/>
+        <path class="a" style="--k:fade;--d:9" d="M260 292 L250 300 L260 308 M300 292 L310 300 L300 308" fill="none" stroke="var(--e1)" stroke-width="3" stroke-linecap="round"/>
+        <text class="a" style="--k:up;--d:8.6" x="385" y="318" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e2)">احساسِ طردشدن</text>
+        <text class="a" style="--k:up;--d:9" x="175" y="318" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e3)">آسوده</text>
+        <text class="a" style="--k:up;--d:12" x="280" y="390" text-anchor="middle" font-size="19" font-weight="700" fill="var(--e1)">نیازی که برآورده نمی‌شود</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Facebook complaints -->
+<section class="scene" data-t="27" data-sec="3" data-title="نائومی و کوین">
+  <header><div class="eyebrow a">وقتی فیس‌بوک و «ترس از رهاشدن» به هم می‌رسند <span class="en">When Facebook and “Abandonment” Issues Meet</span></div><h2 class="a" style="--d:.2">نائومی و کوین: دو گلایه‌ی حل‌نشدنی</h2></header>
+  <div class="duo">
+    <article class="card a" style="--d:1;--c:var(--e2)">
+      <div class="tag">گلایه‌ی نائومی (اضطرابی)</div>
+      <h3>سابق‌ها در فیس‌بوک</h3>
+      <svg viewBox="0 0 300 100" aria-hidden="true">
+        <circle cx="262" cy="20" r="9" fill="var(--muted)"/><line x1="244" y1="20" x2="130" y2="20" stroke="var(--line)" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="262" cy="50" r="9" fill="var(--muted)"/><line x1="244" y1="50" x2="130" y2="50" stroke="var(--line)" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="262" cy="80" r="9" fill="var(--muted)"/><line x1="244" y1="80" x2="130" y2="80" stroke="var(--line)" stroke-width="6" stroke-linecap="round"/>
+        <rect class="a" style="--k:fade;--d:2.4" x="112" y="36" width="168" height="58" rx="10" fill="none" stroke="var(--e2)" stroke-width="2.5"/>
+        <text class="a" style="--k:pop;--d:3" x="80" y="74" text-anchor="middle" font-size="34" font-weight="700" fill="var(--e2)">!</text>
+      </svg>
+      <p>شش ماه است فقط با هم‌اند. کوین چند دوست‌دخترِ سابقش را از فهرستِ دوستانش حذف نکرده و نائومی مطمئن است او با زن‌های دیگر گرم می‌گیرد.</p>
+    </article>
+    <article class="card a" style="--d:8;--c:var(--e3)">
+      <div class="tag">گلایه‌ی کوین (اجتنابی)</div>
+      <h3>تماس‌ها در شبِ دوستانه</h3>
+      <svg viewBox="0 0 300 100" aria-hidden="true">
+        <rect x="186" y="18" width="34" height="64" rx="7" fill="var(--panel)" stroke="var(--muted)" stroke-width="2.5"/>
+        <path class="a" style="--k:pulse;--du:1.4s;--it:infinite;--d:9" d="M234 30 Q248 50 234 70" fill="none" stroke="var(--e2)" stroke-width="3"/>
+        <path class="a" style="--k:pulse;--du:1.4s;--it:infinite;--d:9.3" d="M246 22 Q266 50 246 78" fill="none" stroke="var(--e2)" stroke-width="3"/>
+        <g class="a" style="--k:pop;--d:10"><path d="M100 34 L132 66 M132 34 L100 66" stroke="var(--e3)" stroke-width="6" stroke-linecap="round"/></g>
+      </svg>
+      <p>هر بار کوین با دوستانش بیرون است، نائومی زنگ می‌زند و کوین جواب نمی‌دهد. او مدام به نائومی می‌گوید مشکلِ «ترس از رهاشدن» دارد و زیادی حسود است.</p>
+    </article>
+  </div>
+  <p class="cap a" style="--d:16">نائومی می‌کوشد تردیدها و نگرانی‌هایش را مهار کند، اما آن‌ها دست از سرش برنمی‌دارند.</p>
+</section>
+
+<!-- 7 · Facebook real issue -->
+<section class="scene" data-t="25" data-sec="3" data-title="دیوارِ میان آن دو">
+  <header><div class="eyebrow a">وقتی فیس‌بوک و «ترس از رهاشدن» به هم می‌رسند <span class="en">When Facebook and “Abandonment” Issues Meet</span></div><h2 class="a" style="--d:.2">دعوا بر سرِ میزانِ نزدیکی است</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">قاعده‌ی ثابتی درباره‌ی نگه‌داشتنِ سابق‌ها یا زنگ‌زدن به دوست‌پسر نیست؛ پس بحث درباره‌ی خودِ این موضوع‌ها به جایی نمی‌رسد.</p>
+      <p class="a" style="--d:6.5">کوین با پنهان‌کاری درباره‌ی رفت‌وآمدش و حفظِ تماس با سابق‌ها فاصله می‌سازد؛ نائومی می‌کوشد این مانع‌ها را بردارد.</p>
+      <p class="key a" style="--d:13"><mark>بی‌فایده است: صمیمیت را فقط دو نفرِ مایل با هم می‌سازند.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <defs><g id="ps8b"><circle cx="0" cy="-30" r="16" fill="currentColor"/><path d="M-25 24 Q-25 -10 0 -10 Q25 -10 25 24Z" fill="currentColor"/></g></defs>
+        <g class="a" style="--k:pop;--d:1"><use href="#ps8b" x="90" y="186" style="color:var(--e3)"/><text x="90" y="244" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e3)">کوین (اجتنابی)</text></g>
+        <g class="a" style="--k:pop;--d:1.4"><use href="#ps8b" x="470" y="186" style="color:var(--e2)"/><text x="470" y="244" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e2)">نائومی (اضطرابی)</text></g>
+        <g fill="var(--stone)" stroke="var(--ground2)" stroke-width="2">
+          <rect class="a" style="--k:pop;--d:6.8" x="242" y="92" width="38" height="26" rx="3"/><rect class="a" style="--k:pop;--d:6.9" x="281" y="92" width="38" height="26" rx="3"/>
+          <rect class="a" style="--k:pop;--d:7" x="242" y="120" width="38" height="26" rx="3"/><rect class="a" style="--k:pop;--d:7.1" x="281" y="120" width="38" height="26" rx="3"/>
+          <rect class="a" style="--k:pop;--d:7.2" x="242" y="148" width="38" height="26" rx="3"/><rect class="a x" style="--k:pop;--d:7.3;--x:10;--xk:fly;--tx:120px;--ty:-30px;--r:30deg" x="281" y="148" width="38" height="26" rx="3"/>
+          <rect class="a" style="--k:pop;--d:7.4" x="242" y="176" width="38" height="26" rx="3"/><rect class="a x" style="--k:pop;--d:7.5;--x:10.6;--xk:fly;--tx:130px;--ty:20px;--r:-25deg" x="281" y="176" width="38" height="26" rx="3"/>
+          <rect class="a" style="--k:pop;--d:7.6" x="242" y="204" width="38" height="26" rx="3"/><rect class="a" style="--k:pop;--d:7.7" x="281" y="204" width="38" height="26" rx="3"/>
+          <rect class="a" style="--k:pop;--d:7.8" x="242" y="232" width="38" height="26" rx="3"/><rect class="a" style="--k:pop;--d:7.9" x="281" y="232" width="38" height="26" rx="3"/>
+          <rect class="a" style="--k:pop;--d:8" x="242" y="260" width="38" height="26" rx="3"/><rect class="a" style="--k:pop;--d:8.1" x="281" y="260" width="38" height="26" rx="3"/>
+        </g>
+        <rect class="a" style="--k:pop;--d:12" x="281" y="148" width="38" height="26" rx="3" fill="var(--stone)" stroke="var(--e3)" stroke-width="2.5"/>
+        <rect class="a" style="--k:pop;--d:12.4" x="281" y="176" width="38" height="26" rx="3" fill="var(--stone)" stroke="var(--e3)" stroke-width="2.5"/>
+        <text class="a" style="--k:up;--d:8.4" x="90" y="290" text-anchor="middle" font-size="15" fill="var(--e3)">پنهان‌کاری</text>
+        <text class="a" style="--k:up;--d:8.8" x="90" y="316" text-anchor="middle" font-size="15" fill="var(--e3)">ماندنِ سابق‌ها</text>
+        <path class="a dr" style="--k:draw;--du:.8s;--d:9.2" pathLength="1" d="M432 160 H340" stroke="var(--e2)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <text class="a" style="--k:up;--d:9.6" x="470" y="290" text-anchor="middle" font-size="15" fill="var(--e2)">برداشتنِ مانع‌ها</text>
+        <text class="a" style="--k:up;--d:14" x="280" y="390" text-anchor="middle" font-size="19" font-weight="700" fill="var(--e1)">صمیمیت = دو نفرِ مایل</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · The trap -->
+<section class="scene" data-t="27" data-sec="3" data-title="اسمش تله است">
+  <header><div class="eyebrow a">وجه مشترکِ سه ماجرا <span class="en">The anxious-avoidant trap</span></div><h2 class="a" style="--d:.2">اسمش «تله» است</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">در هر سه ماجرا یکی واقعاً صمیمیت می‌خواهد و دیگری از نزدیکیِ زیاد معذب است. این برخورد با اجتنابی همیشه پیش می‌آید، اما در زوجِ اضطرابی–اجتنابی از همه شدیدتر است.</p>
+      <p class="a" style="--d:8">پژوهش‌ها: نیازِ برآورده و متقابل به صمیمیت رضایت را بالا می‌برد؛ ناهمخوانیِ نیازها آن را به‌شدت پایین می‌آورد.</p>
+      <p class="key a" style="--d:14"><mark>تله‌ی اضطرابی–اجتنابی <span class="en">(anxious-avoidant trap)</span>: بی‌خبر در آن می‌افتی و بیرون آمدن سخت است.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <text class="a" style="--k:fade;--d:8.2" x="280" y="24" text-anchor="middle" font-size="15" fill="var(--muted)">رضایت از رابطه</text>
+        <text class="a" style="--k:fade;--d:8.4" x="480" y="64" text-anchor="middle" font-size="15">نیازِ هماهنگ</text>
+        <rect class="a gxr" style="--k:growX;--du:1.2s;--d:8.8" x="60" y="48" width="350" height="22" rx="6" fill="var(--good)"/>
+        <text class="a" style="--k:fade;--d:9.6" x="480" y="104" text-anchor="middle" font-size="15">نیازِ ناهمخوان</text>
+        <rect class="a gxr" style="--k:growX;--du:1.2s;--d:10" x="290" y="88" width="120" height="22" rx="6" fill="var(--e2)"/>
+        <text class="a" style="--k:fade;--d:10.6" x="160" y="104" text-anchor="middle" font-size="14" fill="var(--muted)">نمودار مفهومی است</text>
+        <path d="M20 200 H180 L200 380 H360 L380 200 H540" fill="none" stroke="var(--muted)" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M180 200 L200 380 H360 L380 200Z" fill="rgba(227,104,140,.10)"/>
+        <path class="a x" style="--k:fade;--d:.8;--x:5.6;--xk:gone" d="M180 200 H380" stroke="var(--e1)" stroke-width="5" stroke-dasharray="12 8" fill="none"/>
+        <text class="a" style="--k:fade;--d:2" x="460" y="170" text-anchor="middle" font-size="16" fill="var(--muted)">بی‌خبر وارد می‌شوی</text>
+        <g class="a climb" style="--k:fall8a;--du:4s;--d:2.4"><circle cx="300" cy="368" r="11" fill="var(--e2)"/></g>
+        <g class="a climb" style="--k:fall8b;--du:4s;--d:2.4"><circle cx="260" cy="368" r="11" fill="var(--e3)"/></g>
+        <text class="a" style="--k:up;--d:15" x="280" y="420" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e2)">بیرون آمدن دشوار است</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · Vicious cycle -->
+<section class="scene" data-t="27" data-sec="3" data-title="چرخه‌ی معیوب">
+  <header><div class="eyebrow a">چرخه‌ی معیوب <span class="en">Activating vs. deactivating</span></div><h2 class="a" style="--d:.2">هرچه او نزدیک‌تر، آن یکی دورتر</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">اضطرابی در برابرِ تهدید، سیستم دلبستگی‌اش را فعال می‌کند و می‌کوشد به شریکش نزدیک‌تر شود: <b>راهبردهای فعال‌ساز</b> <span class="en">(activating strategies)</span>.</p>
+      <p class="a" style="--d:7.5">اجتنابی برعکس، سیستمش را «خاموش» می‌کند و فاصله می‌گیرد: <b>راهبردهای غیرفعال‌ساز</b> <span class="en">(deactivating)</span>. فعال‌شدنِ یکی غیرفعال‌شدنِ دیگری را تشدید می‌کند.</p>
+      <p class="key a" style="--d:15"><mark>چرخه‌ای معیوب که هر دو را در «منطقه‌ی خطر» نگه می‌دارد.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <g class="a x" style="--k:fade;--d:1;--x:3;--xk:dim"><ellipse cx="280" cy="70" rx="130" ry="46" fill="rgba(134,211,160,.15)" stroke="var(--good)" stroke-width="2"/><text x="280" y="77" text-anchor="middle" font-size="18" font-weight="700" fill="var(--good)">منطقه‌ی امن</text></g>
+        <rect class="a" style="--k:fade;--d:1.6" x="10" y="146" width="540" height="290" rx="20" fill="rgba(227,104,140,.08)" stroke="var(--e2)" stroke-width="2" stroke-dasharray="8 6"/>
+        <text class="a" style="--k:fade;--d:1.8" x="280" y="176" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e2)">منطقه‌ی خطر</text>
+        <circle class="a" style="--k:pulse;--du:1.6s;--it:infinite;--d:3" cx="430" cy="300" r="58" fill="none" stroke="var(--e2)" stroke-width="2"/>
+        <g class="a" style="--k:pop;--d:2.4"><circle cx="430" cy="300" r="58" fill="var(--panel)" stroke="var(--e2)" stroke-width="3"/><text x="430" y="298" text-anchor="middle" font-size="21" font-weight="700" fill="var(--e2)">اضطرابی</text><text x="430" y="324" text-anchor="middle" font-size="15" fill="var(--muted)">فعال‌سازی</text></g>
+        <g class="a" style="--k:pop;--d:7.8"><circle cx="130" cy="300" r="58" fill="var(--panel)" stroke="var(--e3)" stroke-width="3"/><text x="130" y="298" text-anchor="middle" font-size="21" font-weight="700" fill="var(--e3)">اجتنابی</text><text x="130" y="324" text-anchor="middle" font-size="15" fill="var(--muted)">غیرفعال‌سازی</text></g>
+        <path class="a dr" style="--k:draw;--du:1.2s;--d:4" pathLength="1" d="M380 262 C 330 206, 230 206, 182 258" fill="none" stroke="var(--e2)" stroke-width="3.5"/>
+        <path class="a" style="--k:fade;--d:5" d="M194 252 L180 260 L184 244" fill="none" stroke="var(--e2)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="a" style="--k:up;--d:5.2" x="280" y="252" text-anchor="middle" font-size="15" fill="var(--e2)">نزدیک‌تر می‌شود</text>
+        <path class="a dr" style="--k:draw;--du:1.2s;--d:9" pathLength="1" d="M182 342 C 230 396, 330 396, 378 342" fill="none" stroke="var(--e3)" stroke-width="3.5"/>
+        <path class="a" style="--k:fade;--d:10" d="M366 348 L380 340 L376 356" fill="none" stroke="var(--e3)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="a" style="--k:up;--d:10.2" x="280" y="358" text-anchor="middle" font-size="15" fill="var(--e3)">فاصله می‌گیرد</text>
+        <text class="a" style="--k:up;--d:12.5" x="280" y="422" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e1)">هر کدام دیگری را تشدید می‌کند</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · Way out -->
+<section class="scene" data-t="24" data-sec="3" data-title="راه خروج">
+  <header><div class="eyebrow a">چرخه‌ی معیوب <span class="en">Toward the safe zone</span></div><h2 class="a" style="--d:.2">راهِ خروج: احساسِ تهدیدِ کمتر</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">این زوج‌ها سخت‌تر از بقیه به سوی امنیت حرکت می‌کنند، چون ناامنیِ یکدیگر را مدام بیشتر می‌کنند.</p>
+      <p class="a" style="--d:6">برای رسیدن به «منطقه‌ی امن»، هر دو باید کمتر احساسِ تهدید کنند: اضطرابی کمتر فعال شود و اجتنابی کمتر خاموش.</p>
+      <p class="key a" style="--d:13"><mark>بیرون آمدن از تله کارِ هر دو نفر است.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <g class="a" style="--k:pop;--d:6.4"><ellipse cx="280" cy="95" rx="190" ry="68" fill="rgba(134,211,160,.15)" stroke="var(--good)" stroke-width="2.5"/></g>
+        <text class="a" style="--k:fade;--d:6.6" x="280" y="20" text-anchor="middle" font-size="18" font-weight="700" fill="var(--good)">منطقه‌ی امن</text>
+        <rect x="10" y="232" width="540" height="200" rx="20" fill="rgba(227,104,140,.08)" stroke="var(--e2)" stroke-width="2" stroke-dasharray="8 6"/>
+        <text x="280" y="420" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e2)">منطقه‌ی خطر</text>
+        <path class="a" style="--k:fade;--d:7.4" d="M430 286 C 420 220, 360 170, 334 140" fill="none" stroke="var(--e2)" stroke-width="2.5" stroke-dasharray="6 6"/>
+        <path class="a" style="--k:fade;--d:7.6" d="M130 286 C 140 220, 200 170, 226 140" fill="none" stroke="var(--e3)" stroke-width="2.5" stroke-dasharray="6 6"/>
+        <text class="a" style="--k:up;--d:8.4" x="470" y="200" text-anchor="middle" font-size="15" fill="var(--e2)">فعال‌سازیِ کمتر</text>
+        <text class="a" style="--k:up;--d:8.8" x="90" y="200" text-anchor="middle" font-size="15" fill="var(--e3)">فاصله‌گیریِ کمتر</text>
+        <g class="a" style="--k:pop;--d:1.2"><g class="a climb" style="--k:rise8a;--du:2.6s;--d:9.6"><circle cx="330" cy="95" r="42" fill="var(--panel)" stroke="var(--e2)" stroke-width="3"/><text x="330" y="101" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e2)">اضطرابی</text></g></g>
+        <g class="a" style="--k:pop;--d:1.4"><g class="a climb" style="--k:rise8b;--du:2.6s;--d:9.6"><circle cx="230" cy="95" r="42" fill="var(--panel)" stroke="var(--e3)" stroke-width="3"/><text x="230" y="101" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e3)">اجتنابی</text></g></g>
+        <text class="a" style="--k:up;--d:12.6" x="280" y="186" text-anchor="middle" font-size="16" font-weight="700" fill="var(--good)">رو به امنیت</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · Six signs overview -->
+<section class="scene" data-t="24" data-sec="4" data-title="شش نشانه">
+  <header><div class="eyebrow a">سازوکارِ تله <span class="en">The Nuts and Bolts of the Anxious-Avoidant Trap</span></div><h2 class="a" style="--d:.2">تله از درون چطور کار می‌کند؟</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">در بسیاری از رابطه‌های اضطرابی–اجتنابی، الگویی مشخص بارها تکرار می‌شود.</p>
+      <p class="a" style="--d:4">نویسندگان شش نشانه‌ی آشکار را برمی‌شمارند که می‌گوید شما در این تله افتاده‌اید.</p>
+      <p class="key a" style="--d:11"><mark>اگر چند نشانه برایتان آشناست، مسئله احتمالاً سبکِ دلبستگی است، نه موضوعِ دعوا.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <g font-size="19" font-weight="700" text-anchor="middle">
+          <g class="a" style="--k:pop;--d:5"><rect x="295" y="24" width="250" height="100" rx="14" fill="var(--panel)" stroke="var(--e1)" stroke-width="2"/><text x="420" y="66">۱. ترن هوایی</text><text x="420" y="96" font-size="15" font-weight="400" fill="var(--muted)">اوج‌ها و سقوط‌ها</text></g>
+          <g class="a" style="--k:pop;--d:5.6"><rect x="295" y="166" width="250" height="100" rx="14" fill="var(--panel)" stroke="var(--e1)" stroke-width="2"/><text x="420" y="208">۲. الاکلنگِ عاطفی</text><text x="420" y="238" font-size="15" font-weight="400" fill="var(--muted)">قدرتِ یکی، «کمتری»ِ دیگری</text></g>
+          <g class="a" style="--k:pop;--d:6.2"><rect x="295" y="308" width="250" height="100" rx="14" fill="var(--panel)" stroke="var(--e1)" stroke-width="2"/><text x="420" y="350">۳. ثباتِ بی‌ثبات</text><text x="420" y="380" font-size="15" font-weight="400" fill="var(--muted)">می‌ماند، اما ناراضی</text></g>
+          <g class="a" style="--k:pop;--d:6.8"><rect x="15" y="24" width="250" height="100" rx="14" fill="var(--panel)" stroke="var(--e1)" stroke-width="2"/><text x="140" y="66">۴. واقعاً سرِ این دعواست؟</text><text x="140" y="96" font-size="15" font-weight="400" fill="var(--muted)">دعوا سرِ چیزهای کوچک</text></g>
+          <g class="a" style="--k:pop;--d:7.4"><rect x="15" y="166" width="250" height="100" rx="14" fill="var(--panel)" stroke="var(--e2)" stroke-width="2"/><text x="140" y="208">۵. حلقه‌ی درونی، دشمن</text><text x="140" y="238" font-size="15" font-weight="400" fill="var(--muted)">نزدیک‌تر، بدرفتاریِ بیشتر</text></g>
+          <g class="a" style="--k:pop;--d:8"><rect x="15" y="308" width="250" height="100" rx="14" fill="var(--panel)" stroke="var(--e1)" stroke-width="2"/><text x="140" y="350">۶. حسِ گیرافتادن</text><text x="140" y="380" font-size="15" font-weight="400" fill="var(--muted)">نه ماندن، نه رفتن</text></g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · Roller coaster -->
+<section class="scene" data-t="27" data-sec="5" data-title="۱. ترن هوایی">
+  <header><div class="eyebrow a">نشانه‌های آشکارِ تله <span class="en">Telltale Signs of the Anxious-Avoidant Trap</span></div><h2 class="a" style="--d:.2">۱. اثرِ ترن هوایی</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">رابطه هیچ‌وقت آرام پیش نمی‌رود. گاهی اجتنابی خودش را در دسترس می‌گذارد؛ سیستم دلبستگیِ اضطرابی موقتاً آرام می‌شود و نزدیکیِ شدیدی مثل یک «اوج» تجربه می‌شود.</p>
+      <p class="a" style="--d:10">اما اجتنابی همین نزدیکی را تهدید می‌بیند و زود عقب می‌کشد؛ و نارضایتیِ اضطرابی دوباره برمی‌گردد.</p>
+      <p class="key a" style="--d:16"><mark>اوج‌ها هیجان‌انگیزند، اما نشانه‌ی رابطه‌ی خوب نیستند.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <line x1="20" y1="360" x2="545" y2="360" stroke="var(--line)" stroke-width="2"/>
+        <text x="505" y="40" text-anchor="middle" font-size="15" fill="var(--muted)">میزانِ نزدیکی</text>
+        <text x="380" y="390" text-anchor="middle" font-size="15" fill="var(--muted)">زمان</text>
+        <path d="M340 385 H250 M262 377 L250 385 L262 393" fill="none" stroke="var(--muted)" stroke-width="2" stroke-linecap="round"/>
+        <path class="a dr" style="--k:draw;--du:3s;--d:1.4" pathLength="1" d="M530 250 L528 246 L525 241 L521 235 L517 229 L513 222 L508 214 L503 207 L499 199 L494 191 L489 184 L484 177 L480 170 L476 163 L472 155 L467 147 L463 139 L459 130 L455 122 L450 114 L446 108 L442 103 L438 100 L434 99 L430 100 L426 104 L422 111 L418 120 L414 131 L410 143 L406 156 L402 170 L399 184 L395 197 L392 209 L388 221 L385 230 L382 238 L379 247 L377 255 L375 263 L372 270 L370 277 L368 283 L366 289 L364 293 L361 297 L358 299 L355 300 L352 300 L348 299 L344 296 L340 293 L336 289 L332 284 L327 278 L323 271 L318 264 L314 257 L309 248 L305 240 L301 230 L296 217 L291 202 L287 186 L282 169 L277 152 L272 136 L268 122 L263 110 L259 100 L254 94 L250 92 L246 95 L242 102 L238 112 L234 126 L230 141 L226 158 L223 176 L219 193 L215 210 L212 226 L208 239 L205 250 L202 259 L199 267 L196 275 L193 282 L190 289 L188 294 L185 299 L182 303 L180 306 L177 309 L173 310 L170 310 L166 309 L163 307 L159 303 L154 298 L150 293 L146 287 L142 280 L137 272 L133 265 L129 257 L124 248 L120 240 L116 231 L112 220 L107 207 L103 194 L98 180 L94 167 L90 154 L86 142 L82 131 L78 122 L74 116 L70 112 L66 112 L63 114 L59 119 L56 126 L52 134 L49 143 L46 153 L43 162 L40 171 L38 179 L36 186 L34 190" fill="none" stroke="var(--e2)" stroke-width="4" stroke-linejoin="round"/>
+        <text class="a" style="--k:up;--d:4" x="430" y="74" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e1)">اوجِ نزدیکی</text>
+        <text class="a" style="--k:up;--d:11" x="355" y="334" text-anchor="middle" font-size="15" fill="var(--e3)">عقب‌نشینی</text>
+        <text class="a" style="--k:up;--d:12" x="250" y="66" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e1)">اوج</text>
+        <text class="a" style="--k:up;--d:12.6" x="170" y="344" text-anchor="middle" font-size="15" fill="var(--e3)">عقب‌نشینی</text>
+        <g class="a climb lin" style="--k:rc8;--du:9s;--d:4.4"><circle cx="34" cy="179" r="9" fill="var(--ink)"/></g>
+        <text x="280" y="430" text-anchor="middle" font-size="14" fill="var(--muted)">نمودار مفهومی است، نه داده‌ی واقعی</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · Seesaw -->
+<section class="scene" data-t="27" data-sec="5" data-title="۲. الاکلنگ عاطفی">
+  <header><div class="eyebrow a">نشانه‌های آشکارِ تله <span class="en">The emotional counterbalancing act</span></div><h2 class="a" style="--d:.2">۲. الاکلنگِ عاطفی</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">اجتنابی اغلب عزتِ نفس و استقلالش را در مقایسه با دیگری بزرگ می‌کند. اضطرابی وقتی سیستم دلبستگی‌اش فعال است، خود را «کمتر» حس می‌کند.</p>
+      <p class="a" style="--d:9">اجتنابی فقط به اندازه‌ای احساسِ قدرت و استقلال می‌کند که شریکش نیازمند و ناتوان به نظر برسد.</p>
+      <p class="key a" style="--d:15"><mark>برای همین دو اجتنابی تقریباً هیچ‌وقت با هم وارد رابطه نمی‌شوند.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <defs><g id="ps8c"><circle cx="0" cy="-30" r="16" fill="currentColor"/><path d="M-25 24 Q-25 -10 0 -10 Q25 -10 25 24Z" fill="currentColor"/></g></defs>
+        <line x1="190" y1="372" x2="370" y2="372" stroke="var(--line)" stroke-width="3"/>
+        <path d="M250 372 L280 304 L310 372Z" fill="var(--stone)"/>
+        <g class="a" style="--k:tilt8;--du:2.4s;--d:3;transform-box:view-box;transform-origin:280px 298px">
+          <rect x="40" y="292" width="480" height="12" rx="6" fill="var(--e1)"/>
+          <use href="#ps8c" x="100" y="268" style="color:var(--e3)"/>
+          <use href="#ps8c" x="460" y="268" style="color:var(--e2)"/>
+        </g>
+        <text class="a" style="--k:up;--d:5" x="110" y="128" text-anchor="middle" font-size="16" fill="var(--e3)">اجتنابی</text>
+        <text class="a" style="--k:up;--d:5.4" x="110" y="158" text-anchor="middle" font-size="19" font-weight="700" fill="var(--e3)">قوی و مستقل</text>
+        <text class="a" style="--k:up;--d:6" x="460" y="400" text-anchor="middle" font-size="19" font-weight="700" fill="var(--e2)">نیازمند و «کمتر»</text>
+        <text class="a" style="--k:up;--d:6.4" x="460" y="428" text-anchor="middle" font-size="16" fill="var(--e2)">اضطرابی</text>
+        <text class="a" style="--k:fade;--d:10" x="280" y="40" text-anchor="middle" font-size="16" fill="var(--muted)">بالا رفتنِ یکی به پایین بودنِ دیگری بند است</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · Signs 3–4 -->
+<section class="scene" data-t="25" data-sec="5" data-title="۳ و ۴. ثبات بی‌ثبات، دعوای ظاهری">
+  <header><div class="eyebrow a">نشانه‌های آشکارِ تله <span class="en">Telltale Signs of the Anxious-Avoidant Trap</span></div><h2 class="a" style="--d:.2">۳ و ۴. می‌ماند، اما آرام نمی‌گیرد</h2></header>
+  <div class="duo">
+    <article class="card a" style="--d:1;--c:var(--e1)">
+      <div class="tag">نشانه‌ی ۳</div>
+      <h3>ثباتِ بی‌ثبات <span class="en">Stable instability</span></h3>
+      <svg viewBox="0 0 300 100" aria-hidden="true">
+        <rect x="10" y="6" width="280" height="30" rx="8" fill="rgba(134,211,160,.16)" stroke="var(--good)" stroke-dasharray="5 5"/>
+        <text x="150" y="27" text-anchor="middle" font-size="14" fill="var(--good)">صمیمیتِ راحت برای هر دو</text>
+        <path class="a dr" style="--k:draw;--du:2.4s;--d:2.4" pathLength="1" d="M290 76 Q270 56 250 74 T210 72 T170 78 T130 66 T90 80 T50 70 T10 76" fill="none" stroke="var(--e2)" stroke-width="3.5"/>
+      </svg>
+      <p>رابطه ممکن است سال‌ها دوام بیاورد، اما عدمِ اطمینان همیشه هست: نارضایتیِ مزمن، و هرگز رسیدن به میزانی از صمیمیت که برای هر دو راحت باشد.</p>
+    </article>
+    <article class="card a" style="--d:9;--c:var(--e1)">
+      <div class="tag">نشانه‌ی ۴</div>
+      <h3>واقعاً سرِ این دعواست؟ <span class="en">Are we really fighting about this?</span></h3>
+      <svg viewBox="0 0 300 100" aria-hidden="true">
+        <line x1="10" y1="38" x2="290" y2="38" stroke="var(--muted)" stroke-width="2"/>
+        <path d="M128 38 L146 12 L170 38Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"/>
+        <text x="240" y="28" text-anchor="middle" font-size="14" fill="var(--muted)">چیزهای کوچک</text>
+        <g class="a" style="--k:fade;--d:10.6"><path d="M128 38 L90 66 L120 96 L200 94 L214 60 L170 38Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"/><text x="152" y="76" text-anchor="middle" font-size="15" fill="var(--e1)">میزانِ صمیمیت</text></g>
+      </svg>
+      <p>مدام سرِ چیزهایی دعوا می‌کنید که اصلاً ارزشِ دعوا ندارند؛ چون دعوا در اصل سرِ آن‌ها نیست، سرِ میزانِ صمیمیتِ میان شماست.</p>
+    </article>
+  </div>
+</section>
+
+<!-- 15 · Signs 5–6 -->
+<section class="scene" data-t="25" data-sec="5" data-title="۵ و ۶. حلقه‌ی درونی، گیرافتادن">
+  <header><div class="eyebrow a">نشانه‌های آشکارِ تله <span class="en">Telltale Signs of the Anxious-Avoidant Trap</span></div><h2 class="a" style="--d:.2">۵ و ۶. نزدیک‌تر، اما گرفتارتر</h2></header>
+  <div class="duo">
+    <article class="card a" style="--d:1;--c:var(--e2)">
+      <div class="tag">نشانه‌ی ۵</div>
+      <h3>حلقه‌ی درونی، دشمن <span class="en">Life in the inner circle as the enemy</span></h3>
+      <svg viewBox="0 0 300 100" aria-hidden="true">
+        <circle cx="150" cy="50" r="46" fill="none" stroke="var(--e3)" stroke-opacity=".35" stroke-width="2"/>
+        <circle cx="150" cy="50" r="30" fill="none" stroke="var(--e3)" stroke-opacity=".6" stroke-width="2"/>
+        <circle cx="150" cy="50" r="14" fill="rgba(111,192,214,.25)" stroke="var(--e3)" stroke-width="2"/>
+        <g class="a climb" style="--k:inward8;--du:2.4s;--d:2.4"><circle cx="150" cy="50" r="8" fill="var(--e2)"/></g>
+        <text class="a" style="--k:fade;--d:4.6" x="55" y="56" text-anchor="middle" font-size="14" fill="var(--e2)">بدرفتاریِ بیشتر</text>
+      </svg>
+      <p>اگر اضطرابی باشید، درست وقتی نزدیک‌ترین آدمِ زندگیِ اجتنابی می‌شوید، رفتارِ او با شما بدتر می‌شود، نه بهتر. فصل بعد به این می‌پردازد.</p>
+    </article>
+    <article class="card a" style="--d:9;--c:var(--e1)">
+      <div class="tag">نشانه‌ی ۶</div>
+      <h3>تجربه‌ی تله <span class="en">Experiencing the trap</span></h3>
+      <svg viewBox="0 0 300 100" aria-hidden="true">
+        <line class="a" style="--k:fade;--d:10.4" x1="150" y1="56" x2="236" y2="56" stroke="var(--muted)" stroke-width="3"/>
+        <circle cx="244" cy="56" r="12" fill="var(--e3)"/>
+        <circle cx="150" cy="56" r="12" fill="var(--e2)"/>
+        <path class="a dr" style="--k:draw;--du:1s;--d:11" pathLength="1" d="M132 56 H58" stroke="var(--e2)" stroke-width="3" stroke-dasharray="1 1" fill="none"/>
+        <path class="a" style="--k:fade;--d:11.8" d="M70 46 L56 56 L70 66" fill="none" stroke="var(--e2)" stroke-width="3" stroke-linecap="round"/>
+        <text class="a" style="--k:fade;--d:12" x="90" y="34" text-anchor="middle" font-size="15" fill="var(--e2)">رفتن؟</text>
+      </svg>
+      <p>حسی عجیب دارید که این رابطه برایتان درست نیست، اما آن‌قدر از نظر عاطفی به او وابسته‌اید که نمی‌توانید بروید.</p>
+    </article>
+  </div>
+</section>
+
+<!-- 16 · Why so difficult -->
+<section class="scene" data-t="30" data-sec="6" data-title="عشق کافی نیست؟">
+  <header><div class="eyebrow a">چرا تفاوت در صمیمیت به این سختی حل می‌شود؟ <span class="en">Why Are Intimacy Differences So Difficult to Reconcile?</span></div><h2 class="a" style="--d:.2">عشق کافی نیست؟</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">نویسندگان بارها دیده‌اند که راه‌حلی که هم اضطرابی و هم اجتنابی را راضی کند پیدا نمی‌شود، هرقدر هم عاشقِ هم باشند.</p>
+      <p class="a" style="--d:7">معمولاً اضطرابی است که کوتاه می‌آید و قواعدِ اجتنابی را می‌پذیرد. رابطه‌ی به‌حال‌خود‌رها‌شده بهتر نمی‌شود و شاید بدتر هم بشود. سه دلیل:</p>
+      <p class="a" style="--d:22;font-size:18px">(فصل بعد نشان می‌دهد این سرنوشتِ محتوم نیست.)</p>
+    </div>
+    <div class="vis">
+      <div class="steps">
+        <div class="step a" style="--d:13;--c:var(--e1)"><div><b>تفاوت به همه‌ی زندگی سرریز می‌کند</b><small>از شیوه‌ی خوابیدن تا تربیتِ فرزند</small></div></div>
+        <div class="step a" style="--d:16;--c:var(--e3)"><div><b>حلِ دعوا صمیمیتِ زیادی می‌سازد</b><small>پس اجتنابی ناخودآگاه از حل‌شدنش طفره می‌رود</small></div></div>
+        <div class="step a" style="--d:19;--c:var(--e2)"><div><b>اضطرابی با هر دعوا عقب‌تر می‌نشیند</b><small>و باید برای همان وضعِ قبلی التماس کند</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 17 · Spillover -->
+<section class="scene" data-t="25" data-sec="6" data-title="۱. سرریز به همه‌جا">
+  <header><div class="eyebrow a">چرا تفاوت در صمیمیت به این سختی حل می‌شود؟ <span class="en">Why Are Intimacy Differences So Difficult to Reconcile?</span></div><h2 class="a" style="--d:.2">۱. تفاوت به همه‌جا سرریز می‌کند</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">تفاوتِ شدید در نیاز به صمیمیت فقط به چیزهای کوچک، مثل دستِ هم را گرفتن، محدود نمی‌ماند؛ پشتِ آن خواسته‌ها و نگرش‌هایی کاملاً متضاد است.</p>
+      <p class="a" style="--d:8">با هر رویدادِ تازه، مثل ازدواج، بچه‌دار شدن، خانه‌ی تازه، درآمد یا بیماری، این تفاوت دوباره خودش را نشان می‌دهد.</p>
+      <p class="key a" style="--d:15"><mark>هرچه چالش‌ها بزرگ‌تر، شکافِ میانِ دو نفر عمیق‌تر.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <line x1="20" y1="380" x2="545" y2="380" stroke="var(--line)" stroke-width="2"/>
+        <g stroke="var(--line)" stroke-dasharray="3 5" stroke-width="1.5">
+          <line x1="440" y1="70" x2="440" y2="380"/><line x1="350" y1="70" x2="350" y2="380"/><line x1="260" y1="70" x2="260" y2="380"/><line x1="170" y1="70" x2="170" y2="380"/><line x1="80" y1="70" x2="80" y2="380"/>
+        </g>
+        <g font-size="15" text-anchor="middle">
+          <text class="a" style="--k:up;--d:8.4" x="440" y="404">ازدواج</text>
+          <text class="a" style="--k:up;--d:9" x="350" y="404">فرزند</text>
+          <text class="a" style="--k:up;--d:9.6" x="260" y="404">خانه‌ی تازه</text>
+          <text class="a" style="--k:up;--d:10.2" x="170" y="404">درآمد</text>
+          <text class="a" style="--k:up;--d:10.8" x="80" y="404">بیماری</text>
+        </g>
+        <path class="a dr" style="--k:draw;--du:3s;--d:2" pathLength="1" d="M530 220 L40 90" fill="none" stroke="var(--e2)" stroke-width="4" stroke-linecap="round"/>
+        <path class="a dr" style="--k:draw;--du:3s;--d:2" pathLength="1" d="M530 220 L40 350" fill="none" stroke="var(--e3)" stroke-width="4" stroke-linecap="round"/>
+        <text class="a" style="--k:fade;--d:3" x="440" y="160" text-anchor="middle" font-size="15" fill="var(--e2)">اضطرابی: نزدیکیِ بیشتر</text>
+        <text class="a" style="--k:fade;--d:3.4" x="440" y="296" text-anchor="middle" font-size="15" fill="var(--e3)">اجتنابی: فاصله‌ی بیشتر</text>
+        <line class="a gy" style="--k:growY;--d:12" x1="170" y1="190" x2="170" y2="252" stroke="var(--e1)" stroke-width="3"/>
+        <line class="a gy" style="--k:growY;--d:13" x1="80" y1="166" x2="80" y2="276" stroke="var(--e1)" stroke-width="3"/>
+        <text class="a" style="--k:up;--d:13.6" x="125" y="226" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e1)">شکاف</text>
+        <text x="280" y="434" text-anchor="middle" font-size="14" fill="var(--muted)">نمودار مفهومی است، نه داده‌ی واقعی</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 18 · Resolution creates intimacy -->
+<section class="scene" data-t="29" data-sec="6" data-title="۲. فرار از آشتی">
+  <header><div class="eyebrow a">چرا تفاوت در صمیمیت به این سختی حل می‌شود؟ <span class="en">Why Are Intimacy Differences So Difficult to Reconcile?</span></div><h2 class="a" style="--d:.2">۲. آشتی خودش صمیمیت می‌آورد</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">اضطرابی یا ایمن واقعاً می‌خواهد مشکل حل شود. اما حل‌شدنِ دعوا زوج را نزدیک‌تر می‌کند؛ همان چیزی که اجتنابی، حتی ناآگاهانه، از آن می‌گریزد.</p>
+      <p class="a" style="--d:9">برای همین اجتنابی هرچه بحث جلوتر می‌رود، خصمانه‌تر و دورتر می‌شود.</p>
+      <p class="key a" style="--d:17"><mark>تا این فرایند دیده نشود، همین الگو تکرار می‌شود و اوضاع بدتر.</mark></p>
+    </div>
+    <div class="vis">
+      <div class="chain">
+        <div class="node a" style="--d:2.4"><span class="dot">۱</span><div><b>دعوا شروع می‌شود</b><small>بر سرِ هر موضوعی</small></div></div>
+        <div class="node a" style="--d:4.4;--c:var(--e2)"><span class="dot">۲</span><div><b>اضطرابی دنبالِ راه‌حل است</b><small>حل‌شدن یعنی نزدیکیِ بیشتر</small></div></div>
+        <div class="node a" style="--d:6.4;--c:var(--e3)"><span class="dot">۳</span><div><b>اجتنابی احساسِ خطر می‌کند</b><small>نزدیکی برایش ناخوشایند است</small></div></div>
+        <div class="node a" style="--d:10;--c:var(--e3)"><span class="dot">۴</span><div><b>خصومت و فاصله بیشتر می‌شود</b><small>هرچه بحث جلوتر می‌رود</small></div></div>
+        <div class="node res a" style="--d:12;--c:var(--e2)"><span class="dot" style="--c:var(--e2)">✕</span><div><b>دعوا حل‌نشده می‌ماند</b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 19 · Protest behaviour -->
+<section class="scene" data-t="28" data-sec="6" data-title="۳. رفتار اعتراضی و پشیمانی">
+  <header><div class="eyebrow a">چرا تفاوت در صمیمیت به این سختی حل می‌شود؟ <span class="en">Why Are Intimacy Differences So Difficult to Reconcile?</span></div><h2 class="a" style="--d:.2">۳. اضطرابی با هر دعوا عقب‌تر می‌رود</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">در دعواهای تلخ، اضطرابی غرقِ هیجانِ منفی می‌شود، تند حرف می‌زند و حتی تهدید به رفتن می‌کند: <b>رفتار اعتراضی</b> <span class="en">(protest behavior)</span>.</p>
+      <p class="a" style="--d:9">وقتی آرام شد، خاطره‌های خوب و پشیمانی هجوم می‌آورند و برای آشتی پیش‌قدم می‌شود؛ اما اغلب با پاسخی خصمانه روبه‌رو می‌شود.</p>
+    </div>
+    <div class="vis">
+      <div class="chain">
+        <div class="node a" style="--d:3;--c:var(--e2)"><span class="dot">۱</span><div><b>غرقِ هیجانِ منفی</b><small>فکر، حرف و رفتارِ افراطی</small></div></div>
+        <div class="node a" style="--d:5.4;--c:var(--e2)"><span class="dot">۲</span><div><b>تهدید به رفتن</b><small>رفتار اعتراضی</small></div></div>
+        <div class="node a" style="--d:11;--c:var(--e2)"><span class="dot">۳</span><div><b>آرام می‌شود و پشیمان</b><small>سیلِ خاطره‌های خوب</small></div></div>
+        <div class="node a" style="--d:13;--c:var(--e2)"><span class="dot">۴</span><div><b>برای آشتی دست دراز می‌کند</b></div></div>
+        <div class="node res a" style="--d:15.5;--c:var(--e3)"><span class="dot" style="--c:var(--e3)">!</span><div><b>پاسخِ سرد و خصمانه‌ی اجتنابی</b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 20 · Losing ground -->
+<section class="scene" data-t="27" data-sec="6" data-title="۳. زمینِ ازدست‌رفته">
+  <header><div class="eyebrow a">چرا تفاوت در صمیمیت به این سختی حل می‌شود؟ <span class="en">Why Are Intimacy Differences So Difficult to Reconcile?</span></div><h2 class="a" style="--d:.2">پله‌پله پایین‌تر</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">اجتنابی بعد از دعوا خاطره‌های مربوط به دلبستگی را خاموش می‌کند و فقط بدترین‌های شریکش را به یاد می‌آورد.</p>
+      <p class="a" style="--d:7">پس اضطرابی نه‌تنها دعوای اصلی را حل نکرده، بلکه حالا جایش از اول هم بدتر است.</p>
+      <p class="key a" style="--d:12.5"><mark>باید التماس کند تا فقط به همان وضعِ ناراضیِ قبلی برگردد، و اغلب به کمتر هم رضایت می‌دهد.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <path class="a" style="--k:fade;--d:1.4" d="M540 120 H430 V200 H310 V280 H190 V360 H30 V410 H540Z" fill="var(--panel)"/>
+        <path class="a dr" style="--k:draw;--du:2s;--d:1.4" pathLength="1" d="M540 120 H430 V200 H310 V280 H190 V360 H30" fill="none" stroke="var(--muted)" stroke-width="3"/>
+        <line class="a" style="--k:fade;--d:3" x1="30" y1="120" x2="430" y2="120" stroke="var(--muted)" stroke-width="2" stroke-dasharray="6 6"/>
+        <text class="a" style="--k:fade;--d:3.2" x="230" y="104" text-anchor="middle" font-size="15" fill="var(--muted)">وضعِ قبلی (که آن هم راضی‌کننده نبود)</text>
+        <g font-size="15" text-anchor="middle" fill="var(--muted)">
+          <text class="a" style="--k:fade;--d:2" x="485" y="150">وضعِ اولیه</text>
+          <text class="a" style="--k:fade;--d:4.4" x="370" y="232">دعوای ۱</text>
+          <text class="a" style="--k:fade;--d:5.6" x="250" y="312">دعوای ۲</text>
+          <text class="a" style="--k:fade;--d:6.8" x="110" y="392">دعوای ۳</text>
+        </g>
+        <g class="a climb" style="--k:sink8;--du:5s;--d:3.6"><circle cx="110" cy="349" r="11" fill="var(--e2)"/></g>
+        <path class="a dr" style="--k:draw;--du:1s;--d:10" pathLength="1" d="M60 130 V340" stroke="var(--e2)" stroke-width="3" fill="none"/>
+        <path class="a" style="--k:fade;--d:10.8" d="M50 328 L60 342 L70 328" fill="none" stroke="var(--e2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="a" style="--k:up;--d:11" x="140" y="236" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e2)">زمینِ ازدست‌رفته</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 21 · Recap -->
+<section class="scene" data-t="30" data-sec="7" data-title="جمع‌بندی برای مرور">
+  <header><div class="eyebrow a">جمع‌بندی برای مرور <span class="en">Chapter 8 recap</span></div><h2 class="a" style="--d:.2">هشت مفهومی که باید بدانید</h2></header>
+  <div class="grid">
+    <div class="term a" style="--d:.8;--c:var(--e1)"><b>تله‌ی اضطرابی–اجتنابی</b><span>نیازهای ناهمخوان به صمیمیت؛ بی‌خبر در آن می‌افتی و خروج سخت است.</span></div>
+    <div class="term a" style="--d:1.4;--c:var(--e1)"><b>دعوای ظاهری</b><span>لباس‌شویی، تختِ هتل، فیس‌بوک؛ مسئله‌ی واقعی میزانِ نزدیکی است.</span></div>
+    <div class="term a" style="--d:2;--c:var(--e2)"><b>فعال‌سازی</b><span>اضطرابی در برابرِ تهدید به شریک نزدیک‌تر می‌شود.</span></div>
+    <div class="term a" style="--d:2.6;--c:var(--e3)"><b>غیرفعال‌سازی</b><span>اجتنابی سیستم دلبستگی را خاموش می‌کند و فاصله می‌گیرد؛ هر کدام دیگری را تشدید می‌کند.</span></div>
+    <div class="term a" style="--d:3.2;--c:var(--good)"><b>منطقه‌ی خطر و امن</b><span>برای رسیدن به امنیت، هر دو باید کمتر احساسِ تهدید کنند.</span></div>
+    <div class="term a" style="--d:3.8;--c:var(--e2)"><b>ترن هوایی و الاکلنگ</b><span>اوجِ نزدیکی و بعد عقب‌نشینی؛ قدرتِ اجتنابی در برابرِ «کمتری»ِ اضطرابی.</span></div>
+    <div class="term a" style="--d:4.4;--c:var(--e1)"><b>ثباتِ بی‌ثبات</b><span>رابطه می‌ماند، اما با نارضایتیِ مزمن؛ نزدیک‌تر شدن، بدرفتاریِ بیشتر می‌آورد.</span></div>
+    <div class="term a" style="--d:5;--c:var(--e2)"><b>سه دلیلِ بدترشدن</b><span>سرریز به همه‌ی زندگی، گریز از آشتی، و عقب‌نشینیِ اضطرابی پس از هر دعوا.</span></div>
+  </div>
+  <div class="endbar a" style="--d:6">
+    <span class="note">منبع: Amir Levine &amp; Rachel Heller, <span class="en">Attached</span>، فصل ۸. خلاصه و برگردانِ آزاد برای مطالعه.</span>
+  </div>
+</section>
+
+</div>
+<script src="../../assets/player.js"></script>
+</body>
+</html>

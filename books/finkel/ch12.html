@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ازدواج همه یا هیچ، فصل ۱۲</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="../../assets/player.css">
+<style>
+@keyframes summit12{0%{transform:translate(160px,350px)}35%{transform:translate(205px,170px)}45%{transform:translate(205px,170px)}60%{transform:translate(150px,362px)}75%{transform:translate(150px,362px)}100%{transform:translate(280px,70px)}}
+@keyframes drift{0%,100%{transform:translateX(0)}50%{transform:translateX(-24px)}}
+@keyframes tick{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.partline{font-size:17px;color:var(--e3);font-weight:700}
+</style>
+</head>
+<body>
+<script type="application/json" id="meta">
+{"book":"ازدواج همه یا هیچ","author":"الی جی. فینکل","chapter":"فصل ۱۲","home":"../../index.html#finkel","prev":"ch11.html","next":null,
+ "sections":[["آغاز فصل","Chapter opening"],["عنصرها، نه الگوها","Elements, Not Models"],["رویکردِ ترکیبی","The Hybrid Approach"],["یک عشق‌هک را شروع کنید","Implement a Lovehack"],["فهرست‌برداری","Take Inventory"],["سنجشِ منابع و مهارت‌ها","Assess Resources and Skills"],["طرحی تازه بریزید","Generate a New Plan"],["بالا رفتن از کوه","Climbing the Mountain"],["جمع‌بندی","Recap"]]}
+</script>
+<div class="stage" id="stage">
+
+<!-- 0 · Title -->
+<section class="scene s-title" data-t="9" data-sec="0" data-title="عنوان فصل">
+  <svg class="bgmtn" viewBox="0 0 1280 320" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <path class="a" style="--k:fade;--d:.1" d="M0 320 L0 280 L200 260 L420 190 L520 220 L690 60 L880 180 L1040 150 L1280 240 L1280 320Z" fill="var(--panel)"/>
+    <path class="a dr" style="--k:draw;--du:2.4s;--d:.1" pathLength="1" d="M0 280 L200 260 L420 190 L520 220 L690 60 L880 180 L1040 150 L1280 240" fill="none" stroke="var(--muted)" stroke-width="2"/>
+    <g class="a" style="--k:pop;--d:2.4"><path d="M690 60 V20 L724 30 L690 40" fill="var(--e2)"/></g>
+  </svg>
+  <div class="ttl">
+    <div class="partline a" style="--d:.2">بخش چهارم · به سوی ازدواج‌های قوی‌تر</div>
+    <div class="chapno a" style="--d:.4">فصل ۱۲</div>
+    <h1 class="a" style="--d:.6">بوفه‌ی ازدواج</h1>
+    <p class="lede a" style="--d:1.3">خودمان انتخاب کنیم از ازدواج چه می‌خواهیم، و چه نمی‌خواهیم</p>
+    <div class="by a en" style="--d:1.8">The Marital Buffet · The All-or-Nothing Marriage</div>
+  </div>
+</section>
+
+<!-- 1 · Build your own -->
+<section class="scene" data-t="25" data-sec="0" data-title="ازدواجِ خودساخته">
+  <header><div class="eyebrow a">آغاز فصل <span class="en">Chapter opening</span></div><h2 class="a" style="--d:.2">ازدواجِ «خودت بساز»</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">استفانی کونتز، تاریخ‌نگارِ خانواده: قرن‌ها مردم ناچار بودند همه‌چیز را یک‌جا، مثلِ یک بسته، بپذیرند. امروز می‌شود انتخاب کرد: بچه یا بی‌بچه، این یا آن.</p>
+      <p class="a" style="--d:7.5">آمریکایی‌ها هرگز این‌قدر درباره‌ی چیستیِ ازدواج اختلاف نداشته‌اند. بی‌الگوی پیش‌فرض، هر زوج باید راهِ خودش را بیابد؛ باری سنگین.</p>
+      <p class="key a" style="--d:14"><mark>اما همین بار فرصت هم هست: ازدواج کمتر ضروری، ولی بسیار انعطاف‌پذیرتر شده است.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <g class="a x" style="--k:pop;--d:1.6;--x:7.5;--xk:dim"><rect x="190" y="40" width="180" height="130" rx="10" fill="var(--panel)" stroke="var(--muted)" stroke-width="3"/><path d="M190 80 H370 M280 40 V170" stroke="var(--muted)" stroke-width="3"/><text x="280" y="200" text-anchor="middle" font-size="15" fill="var(--muted)">بسته‌ی یک‌جا</text></g>
+        <line class="a" style="--k:fade;--d:8" x1="40" y1="330" x2="520" y2="330" stroke="var(--stone)" stroke-width="6" stroke-linecap="round"/>
+        <g class="a" style="--k:pop;--d:8.6"><ellipse cx="90" cy="318" rx="40" ry="10" fill="var(--e1)"/><circle cx="90" cy="300" r="14" fill="var(--e1)"/></g>
+        <g class="a" style="--k:pop;--d:9"><ellipse cx="190" cy="318" rx="40" ry="10" fill="var(--e2)"/><rect x="176" y="288" width="28" height="22" rx="4" fill="var(--e2)"/></g>
+        <g class="a" style="--k:pop;--d:9.4"><ellipse cx="290" cy="318" rx="40" ry="10" fill="var(--e3)"/><path d="M290 306 C 276 296, 278 284, 284 284 C 287 284, 289 286, 290 289 C 291 286, 293 284, 296 284 C 302 284, 304 296, 290 306Z" fill="var(--e3)"/></g>
+        <g class="a" style="--k:pop;--d:9.8"><ellipse cx="390" cy="318" rx="40" ry="10" fill="var(--good)"/><path d="M378 308 L390 284 L402 308Z" fill="var(--good)"/></g>
+        <g class="a" style="--k:pop;--d:10.2"><ellipse cx="480" cy="318" rx="34" ry="10" fill="var(--muted)"/><circle cx="480" cy="302" r="10" fill="var(--muted)"/></g>
+        <text class="a" style="--k:up;--d:10.8" x="280" y="372" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e1)">هر کس بشقابِ خودش را می‌چیند</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · Strauss quote -->
+<section class="scene" data-t="16" data-sec="0" data-title="آدمِ کامل">
+  <header><div class="eyebrow a">آغاز فصل <span class="en">Chapter opening</span></div><h2 class="a" style="--d:.2">روحِ تازه‌ی ازدواج</h2></header>
+  <div class="quote a" style="--k:pop;--d:1">«هر سبکِ رابطه درست است، اگر تصمیمِ آدمِ کامل باشد، نه حفره‌ی درونش.»<small>نیل استراوس (برگردانِ آزاد)</small></div>
+  <p class="cap a" style="--d:6">آزادیِ تعیینِ اینکه از ازدواج چه می‌خواهیم و چه نمی‌خواهیم، به ما امکان می‌دهد رابطه‌ای بسازیم که بر نقاطِ قوتمان تکیه کند و از ضعف‌هایمان دور بزند.</p>
+</section>
+
+<!-- 3 · Spice rack: elements -->
+<section class="scene" data-t="24" data-sec="1" data-title="قفسه‌ی ادویه">
+  <header><div class="eyebrow a">عنصرها، نه الگوها <span class="en">Elements, Not Models</span></div><h2 class="a" style="--d:.2">الگوها را کنار بگذارید، عنصرها را ببینید</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">در هر دوره، فرهنگ یک نوع ازدواج را ترجیح داده، اما حتی آن موقع هم همه یک چیز نمی‌خواستند. به تعبیرِ مردم‌شناس، سوزان گرینهال، فرهنگ مثلِ <b>قفسه‌ی ادویه</b> است که هر کس بسته به شرایطش از آن برمی‌دارد.</p>
+      <p class="key a" style="--d:9"><mark>الگوهای عمل‌گرا، عشق‌محور و خودابرازگر را کنار بگذارید و هر عنصر را جداگانه بسنجید: با توجه به مهارت‌ها و منابعِ ما و همسرمان، کدام را از ازدواج بخواهیم؟</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <g class="a x" style="--k:fade;--d:1.2;--x:8.4;--xk:dim" font-size="15" font-weight="700" text-anchor="middle">
+          <rect x="30" y="20" width="150" height="44" rx="22" fill="var(--panel)" stroke="var(--e1)" stroke-width="2"/><text x="105" y="48" fill="var(--e1)">عمل‌گرا</text>
+          <rect x="205" y="20" width="150" height="44" rx="22" fill="var(--panel)" stroke="var(--e2)" stroke-width="2"/><text x="280" y="48" fill="var(--e2)">عشق‌محور</text>
+          <rect x="380" y="20" width="150" height="44" rx="22" fill="var(--panel)" stroke="var(--e3)" stroke-width="2"/><text x="455" y="48" fill="var(--e3)">خودابرازگر</text>
+        </g>
+        <g class="a" style="--k:fade;--d:9.6" stroke="var(--stone)" stroke-width="5" stroke-linecap="round"><line x1="40" y1="170" x2="520" y2="170"/><line x1="40" y1="270" x2="520" y2="270"/><line x1="40" y1="370" x2="520" y2="370"/></g>
+        <g font-size="13" text-anchor="middle">
+          <g class="a" style="--k:pop;--d:10"><rect x="420" y="110" width="90" height="56" rx="10" fill="var(--panel)" stroke="var(--e1)"/><text x="465" y="143">امنیتِ مالی</text></g>
+          <g class="a" style="--k:pop;--d:10.3"><rect x="320" y="110" width="90" height="56" rx="10" fill="var(--panel)" stroke="var(--e2)"/><text x="365" y="143">گرمای عاطفی</text></g>
+          <g class="a" style="--k:pop;--d:10.6"><rect x="220" y="110" width="90" height="56" rx="10" fill="var(--panel)" stroke="var(--e2)"/><text x="265" y="143">رابطه‌ی پرشور</text></g>
+          <g class="a" style="--k:pop;--d:10.9"><rect x="120" y="110" width="90" height="56" rx="10" fill="var(--panel)" stroke="var(--e3)"/><text x="165" y="143">ماجراجویی</text></g>
+          <g class="a" style="--k:pop;--d:11.2"><rect x="420" y="210" width="90" height="56" rx="10" fill="var(--panel)" stroke="var(--e3)"/><text x="465" y="243">الهامِ فکری</text></g>
+          <g class="a" style="--k:pop;--d:11.5"><rect x="320" y="210" width="90" height="56" rx="10" fill="var(--panel)" stroke="var(--e3)"/><text x="365" y="243">نزدیکی به خدا</text></g>
+          <g class="a" style="--k:pop;--d:11.8"><rect x="220" y="210" width="90" height="56" rx="10" fill="var(--panel)" stroke="var(--e1)"/><text x="265" y="243">هم‌والدی</text></g>
+          <g class="a" style="--k:pop;--d:12.1"><rect x="120" y="210" width="90" height="56" rx="10" fill="var(--panel)" stroke="var(--e1)"/><text x="165" y="243">اعتبارِ اجتماعی</text></g>
+          <g class="a" style="--k:pop;--d:12.4"><rect x="420" y="310" width="90" height="56" rx="10" fill="var(--panel)" stroke="var(--e1)"/><text x="465" y="343">هم‌فرهنگی</text></g>
+          <g class="a" style="--k:pop;--d:12.7"><rect x="320" y="310" width="90" height="56" rx="10" fill="var(--panel)" stroke="var(--e2)"/><text x="365" y="343">تک‌همسری</text></g>
+        </g>
+        <text class="a" style="--k:up;--d:13.4" x="165" y="343" text-anchor="middle" font-size="22" fill="var(--muted)">…</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · What we're NOT choosing; blend -->
+<section class="scene" data-t="22" data-sec="1" data-title="آمیزه‌ی سه راهبرد">
+  <header><div class="eyebrow a">عنصرها، نه الگوها <span class="en">Elements, Not Models</span></div><h2 class="a" style="--d:.2">نه این یا آن؛ آمیزه‌ای از هر سه</h2></header>
+  <p class="cap a" style="--d:.8">بیشترِ ما جدی فکر نکرده‌ایم از ازدواج چه می‌خواهیم؛ و تقریباً هرگز به عنصرهایی فکر نمی‌کنیم که از بوفه <b>برنمی‌داریم</b>. اما برای ماندنِ منابع برای مهم‌ترین‌ها، همین انتخاب لازم است.</p>
+  <div class="eq">
+    <div class="chip a" style="--d:6;--c:var(--e3)"><b>عشق‌هک</b><small>فصل ۹: کم‌هزینه، بی‌هماهنگی</small></div>
+    <div class="op a" style="--d:7">+</div>
+    <div class="chip a" style="--d:7.6;--c:var(--e1)"><b>همه‌چیز را گذاشتن</b><small>فصل ۱۰: وقت و انرژیِ بیشتر</small></div>
+    <div class="op a" style="--d:8.6">+</div>
+    <div class="chip a" style="--d:9.2;--c:var(--e2)"><b>تنظیم دوباره</b><small>فصل ۱۱: کمتر خواستن</small></div>
+    <div class="op a" style="--d:10.2">=</div>
+    <div class="result a" style="--k:pop;--d:11"><b>رویکردِ ترکیبی</b><span>انتخابی آگاهانه برای هر نیاز</span></div>
+  </div>
+</section>
+
+<!-- 5 · Hybrid approach: four steps -->
+<section class="scene" data-t="22" data-sec="2" data-title="چهار گامِ رویکرد ترکیبی">
+  <header><div class="eyebrow a">رویکردِ ترکیبی <span class="en">The Hybrid Approach</span></div><h2 class="a" style="--d:.2">زندگیِ آگاهانه در چهار گام</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">آگاهانه زیستن در ازدواج سودِ بزرگی دارد، اما فکرِ زیاد و گفتگو و هماهنگیِ فراوان با همسر می‌خواهد. کارِ زیادی است.</p>
+      <p class="key a" style="--d:12"><mark>خوشبختانه گامِ اول آسان است.</mark></p>
+    </div>
+    <div class="vis">
+      <div class="steps">
+        <div class="step a" style="--d:3;--c:var(--good)"><div><b>یک عشق‌هک را شروع کنید</b><small>همین امروز، بی‌هماهنگی</small></div></div>
+        <div class="step a" style="--d:5;--c:var(--e3)"><div><b>فهرست‌برداری</b><small>از ازدواج چه می‌خواهیم؟</small></div></div>
+        <div class="step a" style="--d:7;--c:var(--e1)"><div><b>سنجشِ منابع و مهارت‌ها</b><small>کجا بازده کم است؟</small></div></div>
+        <div class="step a" style="--d:9;--c:var(--e2)"><div><b>طرحی تازه بریزید</b><small>برای هر نیاز، بهترین منبع</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Implement a lovehack -->
+<section class="scene" data-t="24" data-sec="3" data-title="یک عشق‌هک، همین امروز">
+  <header><div class="eyebrow a">یک عشق‌هک را شروع کنید <span class="en">Implement a Lovehack</span></div><h2 class="a" style="--d:.2">انتخاب با شهود، شروع همین امروز</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">فصلِ ۹ هشت عشق‌هک معرفی کرد: چهار برای مقابله با ضعف‌ها و چهار برای لذت بردن از نقاطِ قوت. وقتِ کمی می‌خواهند و به هماهنگی با همسر نیاز ندارند.</p>
+      <p class="a" style="--d:7">برخلافِ دو راهبردِ دیگر، لازم نیست بسنجیم چه عنصری را از ازدواج بخواهیم. یکی را که آسان‌تر به نظر می‌رسد برداریم و در انتخاب گیر نکنیم.</p>
+      <p class="key a" style="--d:14"><mark>هدف بگذاریم و پایش کنیم؛ مثلاً هر شب یک دقیقه مرور کنیم امروز چطور بودیم.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <g font-size="13" text-anchor="middle">
+          <text class="a" style="--k:fade;--d:2" x="420" y="40" font-size="15" font-weight="700" fill="var(--e2)">مقابله با ضعف‌ها</text>
+          <text class="a" style="--k:fade;--d:2" x="140" y="40" font-size="15" font-weight="700" fill="var(--good)">لذت از قوت‌ها</text>
+          <g class="a" style="--k:pop;--d:2.4"><rect x="345" y="60" width="150" height="40" rx="20" fill="var(--panel)" stroke="var(--e2)"/><text x="420" y="85">اسنادِ رفتارِ منفی</text></g>
+          <g class="a" style="--k:pop;--d:2.7"><rect x="345" y="110" width="150" height="40" rx="20" fill="var(--panel)" stroke="var(--e2)"/><text x="420" y="135">ترفندِ ازدواج</text></g>
+          <g class="a" style="--k:pop;--d:3"><rect x="345" y="160" width="150" height="40" rx="20" fill="var(--panel)" stroke="var(--e2)"/><text x="420" y="185">کاهشِ ناامنی</text></g>
+          <g class="a" style="--k:pop;--d:3.3"><rect x="345" y="210" width="150" height="40" rx="20" fill="var(--panel)" stroke="var(--e2)"/><text x="420" y="235">سرنوشت یا رشد</text></g>
+          <g class="a" style="--k:pop;--d:3.6"><rect x="65" y="60" width="150" height="40" rx="20" fill="var(--panel)" stroke="var(--good)"/><text x="140" y="85">اسنادِ رفتارِ مثبت</text></g>
+          <g class="a" style="--k:pop;--d:3.9"><rect x="65" y="110" width="150" height="40" rx="20" fill="var(--panel)" stroke="var(--good)"/><text x="140" y="135">قدردانی</text></g>
+          <g class="a" style="--k:pop;--d:4.2"><rect x="65" y="160" width="150" height="40" rx="20" fill="var(--panel)" stroke="var(--good)"/><text x="140" y="185">جشن گرفتن با هم</text></g>
+          <g class="a" style="--k:pop;--d:4.5"><rect x="65" y="210" width="150" height="40" rx="20" fill="var(--panel)" stroke="var(--good)"/><text x="140" y="235">لمسِ محبت‌آمیز</text></g>
+        </g>
+        <g class="a" style="--k:pop;--d:15"><circle cx="280" cy="330" r="50" fill="var(--panel)" stroke="var(--e1)" stroke-width="4"/><path d="M280 330 V296" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/><g class="a" style="--k:tick;--du:4s;--it:infinite;--d:15.4" ><path d="M280 330 L306 330" stroke="var(--e1)" stroke-width="3" stroke-linecap="round"/></g><circle cx="280" cy="330" r="5" fill="var(--ink)"/></g>
+        <text class="a" style="--k:up;--d:15.8" x="280" y="408" text-anchor="middle" font-size="15" fill="var(--e1)">یک دقیقه، هر شب</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Finkel's own lovehack -->
+<section class="scene" data-t="24" data-sec="3" data-title="عشق‌هکِ پیشنهادیِ فینکل">
+  <header><div class="eyebrow a">یک عشق‌هک را شروع کنید <span class="en">Implement a Lovehack</span></div><h2 class="a" style="--d:.2">عشق‌هکِ خودتان را بسازید</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">عشق‌هک‌های کتاب همه پشتوانه‌ی پژوهشی دارند، اما می‌شود عشق‌هکِ تازه ساخت. پیشنهادِ آزموده‌نشده‌ی فینکل: ماهی یک بار، ده دقیقه نوشتن؛ پنج دقیقه درباره‌ی هدف‌های خودِ اصیلِ خودمان، پنج دقیقه درباره‌ی اینکه چطور به هدف‌های همسر کمک کنیم.</p>
+      <p class="key a" style="--d:11"><mark>اگر عشق‌هکی جواب نداد، سراغِ عشق‌هکِ دیگری برویم؛ فهرستِ ممکن‌ها بی‌پایان است.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <g font-size="12" text-anchor="middle">
+          <g class="a" style="--k:pop;--d:2.4"><rect x="420" y="40" width="80" height="70" rx="8" fill="var(--panel)" stroke="var(--line)"/><rect x="420" y="40" width="80" height="18" rx="6" fill="var(--e2)"/><path d="M432 74 H488 M432 86 H488" stroke="var(--e3)" stroke-width="3"/><path d="M432 98 H470" stroke="var(--e1)" stroke-width="3"/></g>
+          <g class="a" style="--k:pop;--d:2.6"><rect x="320" y="40" width="80" height="70" rx="8" fill="var(--panel)" stroke="var(--line)"/><rect x="320" y="40" width="80" height="18" rx="6" fill="var(--e2)"/><path d="M332 74 H388 M332 86 H388" stroke="var(--e3)" stroke-width="3"/><path d="M332 98 H370" stroke="var(--e1)" stroke-width="3"/></g>
+          <g class="a" style="--k:pop;--d:2.8"><rect x="220" y="40" width="80" height="70" rx="8" fill="var(--panel)" stroke="var(--line)"/><rect x="220" y="40" width="80" height="18" rx="6" fill="var(--e2)"/><path d="M232 74 H288 M232 86 H288" stroke="var(--e3)" stroke-width="3"/><path d="M232 98 H270" stroke="var(--e1)" stroke-width="3"/></g>
+          <g class="a" style="--k:pop;--d:3"><rect x="120" y="40" width="80" height="70" rx="8" fill="var(--panel)" stroke="var(--line)"/><rect x="120" y="40" width="80" height="18" rx="6" fill="var(--e2)"/><path d="M132 74 H188 M132 86 H188" stroke="var(--e3)" stroke-width="3"/><path d="M132 98 H170" stroke="var(--e1)" stroke-width="3"/></g>
+          <text class="a" style="--k:fade;--d:3.4" x="80" y="82" font-size="22" fill="var(--muted)">…</text>
+        </g>
+        <g class="a" style="--k:fade;--d:4.4">
+          <rect x="120" y="170" width="160" height="40" rx="6" fill="var(--e1)"/><rect x="280" y="170" width="160" height="40" rx="6" fill="var(--e3)"/>
+          <text x="360" y="196" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ground)">۵ دقیقه: من</text>
+          <text x="200" y="196" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ground)">۵ دقیقه: همسرم</text>
+        </g>
+        <text class="a" style="--k:up;--d:5" x="280" y="240" text-anchor="middle" font-size="14" fill="var(--muted)">ماهی یک بار، ده دقیقه</text>
+        <g class="a" style="--k:pop;--d:6.6"><rect x="150" y="280" width="260" height="90" rx="18" fill="var(--panel)" stroke="var(--good)" stroke-width="2"/><text x="280" y="322" text-anchor="middle" font-size="18" font-weight="700">۱۲ × ۱۰ دقیقه = ۲ ساعت</text><text x="280" y="352" text-anchor="middle" font-size="14" fill="var(--muted)">در سال؛ به گمانِ فینکل، پربازده</text></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · Take inventory: three categories -->
+<section class="scene" data-t="26" data-sec="4" data-title="سه دسته‌ی نیازها">
+  <header><div class="eyebrow a">فهرست‌برداری <span class="en">Take Inventory</span></div><h2 class="a" style="--d:.2">از ازدواج چه می‌خواهیم؟ سه دسته</h2></header>
+  <div class="eras">
+    <div class="era a" style="--d:2;--c:var(--e2)">
+      <svg viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="12" fill="var(--e2)"/></svg>
+      <b>فقط از همسر</b><span class="yr">دسته‌ی ۱</span>
+      <p>نیازهایی که به نظرِ خودمان فقط همسر می‌تواند برآورد.</p>
+    </div>
+    <div class="era a" style="--d:4.5;--c:var(--e1)">
+      <svg viewBox="0 0 46 46" aria-hidden="true"><circle cx="16" cy="23" r="10" fill="var(--e2)"/><circle cx="32" cy="23" r="10" fill="var(--e1)"/></svg>
+      <b>همسر یا «دیگرِ مهم»</b><span class="yr">دسته‌ی ۲</span>
+      <p>همسر یا دوست یا خویشاوندی نزدیک <span class="en">(OSO)</span> می‌تواند برآورد.</p>
+    </div>
+    <div class="era a" style="--d:7;--c:var(--e3)">
+      <svg viewBox="0 0 46 46" aria-hidden="true"><circle cx="12" cy="23" r="8" fill="var(--e2)"/><circle cx="23" cy="23" r="8" fill="var(--e1)"/><circle cx="34" cy="23" r="8" fill="var(--e3)"/></svg>
+      <b>همسر، دیگری یا خودم</b><span class="yr">دسته‌ی ۳</span>
+      <p>این نیاز را حتی به‌تنهایی هم می‌توان برآورد.</p>
+    </div>
+  </div>
+  <p class="cap a" style="--d:11">کارِ اصلی از اینجا شروع می‌شود: فهرستی از نیازها و هدف‌هایی که از ازدواج می‌خواهیم. فهرست کامل نمی‌شود (همه‌چیز را آگاهانه نمی‌دانیم، یا انکار می‌کنیم) و لازم هم نیست کامل باشد. هدف این است که ببینیم آیا خواسته‌هایمان با سرمایه‌گذاری‌مان می‌خواند.</p>
+</section>
+
+<!-- 9 · Jasmine's list -->
+<section class="scene" data-t="28" data-sec="4" data-title="فهرستِ جاسمین">
+  <header><div class="eyebrow a">فهرست‌برداری <span class="en">Take Inventory</span></div><h2 class="a" style="--d:.2">فهرستِ جاسمین</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">جاسمین (از فصلِ ۲)، چهل‌ساله، با جیمز ازدواج کرده و دو دختر دارند. هر دو تمام‌وقت کار می‌کنند، پدر و مادرهایی بسیار درگیرند و دوستانشان را کم می‌بینند.</p>
+      <p class="a" style="--d:12">برای یافتنِ خواسته‌ها، حوزه‌های زندگی را مرور کنیم: روابط، کار، سلامت، پول، تفریح، معنویت، مدیریتِ هیجان، فرزندپروری…</p>
+      <p class="key a" style="--d:18"><mark>بسیاری از ما مثلِ جاسمین، از دیدنِ اینکه چقدر از ازدواج می‌خواهیم، شوکه می‌شویم.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <g font-size="13" text-anchor="middle">
+          <text x="465" y="30" font-size="15" font-weight="700" fill="var(--e2)">فقط از همسر</text>
+          <text x="280" y="30" font-size="15" font-weight="700" fill="var(--e1)">همسر یا دیگری</text>
+          <text x="95" y="30" font-size="15" font-weight="700" fill="var(--e3)">… یا خودش</text>
+          <g class="a" style="--k:up;--d:3" fill="var(--ink)">
+            <rect x="385" y="48" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e2)"/><text x="465" y="73">گرمای عاطفیِ خانه</text>
+            <rect x="385" y="98" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e2)"/><text x="465" y="123">کانونِ خانواده‌ی گسترده</text>
+            <rect x="385" y="148" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e2)"/><text x="465" y="173">همراهِ خوش‌برخورد در جمع</text>
+            <rect x="385" y="198" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e2)"/><text x="465" y="223">هم‌والدِ شایسته</text>
+            <rect x="385" y="248" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e2)"/><text x="465" y="273">رابطه‌ی جنسیِ پرشور</text>
+          </g>
+          <g class="a" style="--k:up;--d:6" fill="var(--ink)">
+            <rect x="200" y="48" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e1)"/><text x="280" y="73">حمایت پس از روزِ بد</text>
+            <rect x="200" y="98" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e1)"/><text x="280" y="123">جشنِ موفقیتِ کاری</text>
+            <rect x="200" y="148" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e1)"/><text x="280" y="173">بحثِ سیاسی</text>
+            <rect x="200" y="198" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e1)"/><text x="280" y="223">رویدادهای فرهنگی</text>
+            <rect x="200" y="248" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e1)"/><text x="280" y="273">قدرِ شوخ‌طبعی‌اش</text>
+          </g>
+          <g class="a" style="--k:up;--d:9" fill="var(--ink)">
+            <rect x="15" y="48" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e3)"/><text x="95" y="73">یادگیریِ مراقبه</text>
+            <rect x="15" y="98" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e3)"/><text x="95" y="123">نقشه‌ی شغلیِ بلندمدت</text>
+            <rect x="15" y="148" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e3)"/><text x="95" y="173">مهربان‌تر شدن</text>
+            <rect x="15" y="198" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e3)"/><text x="95" y="223">رابطه‌ی عمیق‌تر با خدا</text>
+            <rect x="15" y="248" width="160" height="40" rx="8" fill="var(--panel)" stroke="var(--e3)"/><text x="95" y="273">استدلالِ منطقیِ تیزتر</text>
+          </g>
+        </g>
+        <g class="a" style="--k:pop;--d:18.6"><rect x="150" y="320" width="260" height="56" rx="16" fill="var(--panel)" stroke="var(--e2)" stroke-width="2"/><text x="280" y="355" text-anchor="middle" font-size="18" font-weight="700" fill="var(--e2)">۱۵ خواسته، فقط نمونه</text></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · Assess resources: low return -->
+<section class="scene" data-t="25" data-sec="5" data-title="بازده پایین">
+  <header><div class="eyebrow a">سنجشِ منابع و مهارت‌ها <span class="en">Assess Resources and Skills</span></div><h2 class="a" style="--d:.2">کجا بازدهِ روانی پایین است؟</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">دنبالِ جاهایی بگردیم که ازدواج نیازِ بالای کوه را خوب برآورده نمی‌کند، یا یکی باید تلاشی گزاف بکند. آیا کسی دیگر یا کاری تک‌نفره بهتر از پسِ آن برمی‌آید؟</p>
+      <p class="a" style="--d:8">اگر همسر از غرغرِ ما درباره‌ی سیاست‌بازیِ اداره کلافه می‌شود، روی رابطه با همکاری همدل سرمایه بگذاریم.</p>
+      <p class="key a" style="--d:14"><mark>اگر حسِ مراقبت‌گریِ ما با استقلالِ همسر خفه می‌شود، به دوستانِ گرفتار سر بزنیم؛ یا توله‌سگی بگیریم.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <line x1="60" y1="330" x2="530" y2="330" stroke="var(--line)" stroke-width="2"/>
+        <line x1="60" y1="40" x2="60" y2="330" stroke="var(--line)" stroke-width="2"/>
+        <text x="40" y="185" text-anchor="middle" font-size="15" fill="var(--muted)" transform="rotate(-90 40 185)">نیازِ برآورده‌شده</text>
+        <text x="300" y="358" text-anchor="middle" font-size="15" fill="var(--muted)">تلاشِ لازم →</text>
+        <g class="a" style="--k:pop;--d:2"><circle cx="140" cy="90" r="16" fill="var(--good)"/></g>
+        <g class="a" style="--k:pop;--d:2.4"><circle cx="210" cy="130" r="16" fill="var(--good)"/></g>
+        <g class="a" style="--k:pop;--d:2.8"><circle cx="260" cy="110" r="16" fill="var(--good)"/></g>
+        <g class="a" style="--k:pop;--d:3.6"><circle cx="460" cy="280" r="18" fill="var(--e2)"/></g>
+        <g class="a" style="--k:pop;--d:4"><circle cx="400" cy="250" r="18" fill="var(--e2)"/></g>
+        <text class="a" style="--k:up;--d:3.2" x="200" y="72" text-anchor="middle" font-size="14" font-weight="700" fill="var(--good)">بازدهِ خوب</text>
+        <text class="a" style="--k:up;--d:4.4" x="430" y="220" text-anchor="middle" font-size="14" font-weight="700" fill="var(--e2)">بازدهِ پایین</text>
+        <path class="a dr" style="--k:draw;--d:9" pathLength="1" d="M440 270 C 380 330, 220 200, 160 220" fill="none" stroke="var(--e3)" stroke-width="3" stroke-dasharray="1 1"/>
+        <g class="a" style="--k:pop;--d:10"><rect x="80" y="200" width="100" height="40" rx="20" fill="var(--panel)" stroke="var(--e3)"/><text x="130" y="225" text-anchor="middle" font-size="13">همکارِ همدل</text></g>
+        <text x="300" y="400" text-anchor="middle" font-size="13" fill="var(--muted)">نمودار مفهومی است، نه داده‌ی واقعی</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · Three advantages of spreading -->
+<section class="scene" data-t="26" data-sec="5" data-title="سه مزیت پخش کردن">
+  <header><div class="eyebrow a">سنجشِ منابع و مهارت‌ها <span class="en">Assess Resources and Skills</span></div><h2 class="a" style="--d:.2">چرا بار را پخش کنیم؟</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">پخش کردنِ نیازها میانِ شبکه‌ی اجتماعی معمولاً کم‌بازده‌تر است، چون همسر از همه به ما نزدیک‌تر است. اما سه مزیتِ مهم دارد.</p>
+      <p class="key a" style="--d:16"><mark>غمِ مشترک می‌تواند نزدیکمان کند، اما خطرناک است که وقتی منابعِ ما ته کشیده، منابعِ تکیه‌گاهِ اصلی‌مان هم ته کشیده باشد.</mark></p>
+    </div>
+    <div class="vis">
+      <div class="chain">
+        <div class="node a" style="--d:3;--c:var(--e3)"><span class="dot">۱</span><div><b>مهارت‌ها</b><small>بعید است یک نفر برای همه‌ی نیازها بهترین مهارت را داشته باشد</small></div></div>
+        <div class="node a" style="--d:6.5;--c:var(--e1)"><span class="dot">۲</span><div><b>در دسترس بودن</b><small>سفرِ کاری، دوره‌ی افسردگی، یا آمادگی برای آزمونِ وکالت</small></div></div>
+        <div class="node a" style="--d:10;--c:var(--e2)"><span class="dot">۳</span><div><b>استرسِ مشترک</b><small>توفان که خانه را خراب کند، خانه‌ی همسر هم خراب شده است</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · New plan: category 1 -->
+<section class="scene" data-t="27" data-sec="6" data-title="طرح تازه: دسته‌ی اول">
+  <header><div class="eyebrow a">طرحی تازه بریزید <span class="en">Generate a New Plan</span></div><h2 class="a" style="--d:.2">نیازهایی که فقط همسر برمی‌آورد</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">برای دسته‌ی اول (مثلِ گرمای عاطفیِ خانه)، برون‌سپاری ممکن نیست. شاید گفتگویی درباره‌ی حال‌وهوای خانه، یا زوج‌درمانی برای یادگیریِ حلِ تعارض.</p>
+      <p class="a" style="--d:13">اگر تلاش زیادی گران است و آن نیاز حیاتی، شاید ازدواج نجات‌پذیر نباشد. در ازدواجی که در بقیه‌ی جنبه‌ها سالم است، معمولاً گزینه‌ی بهتر تنظیمِ دوباره است.</p>
+      <p class="key a" style="--d:20"><mark>اگر سردیِ خانه از سبکِ دعوا (او داد می‌زند، ما کنار می‌کشیم) است، نه از کمبودِ عشق، شاید بتوانیم آن خواسته را رها کنیم.</mark></p>
+    </div>
+    <div class="vis">
+      <div class="steps">
+        <div class="step a" style="--d:4;--c:var(--e2)"><div><b>آیا هیچ مقدار تلاشی جواب می‌دهد؟</b><small>از ما، همسر، یا هر دو</small></div></div>
+        <div class="step a" style="--d:6.5;--c:var(--e2)"><div><b>اگر آری، چقدر تلاش؟</b></div></div>
+        <div class="step a" style="--d:9;--c:var(--e2)"><div><b>آیا به آن می‌ارزد؟</b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · New plan: categories 2-3 -->
+<section class="scene" data-t="25" data-sec="6" data-title="طرح تازه: مراقبه">
+  <header><div class="eyebrow a">طرحی تازه بریزید <span class="en">Generate a New Plan</span></div><h2 class="a" style="--d:.2">همسر اهلِ مراقبه نیست؟ اشکالی ندارد</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">برای دسته‌های دوم و سوم گزینه‌ها بیشترند. دوست داشتیم سفرِ مراقبه را با همسر شروع کنیم، اما او علاقه‌ای ندارد. با دوستی اهلِ مراقبه یا تنها پیش می‌رویم.</p>
+      <p class="a" style="--d:8">این وقت و تلاشی جدا از همسر می‌خواهد، اما نکته همین است: استقلالی که با مصرفِ بهترِ منابع، نیازهای هر دو را بهتر برآورده می‌کند.</p>
+      <p class="key a" style="--d:15"><mark>وقتی از قوتِ همسر، دیگرانِ مهم و خودمان بهره ببریم، ازدواج از دو آدمِ سازگارتر ساخته می‌شود.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <g class="a" style="--k:pop;--d:2"><circle cx="420" cy="140" r="22" fill="var(--e3)"/><path d="M380 230 Q420 180 460 230 Z" fill="var(--e3)"/><path d="M370 232 H470" stroke="var(--e3)" stroke-width="8" stroke-linecap="round"/></g>
+        <g class="a" style="--k:pop;--d:3.4"><circle cx="140" cy="140" r="22" fill="var(--e1)"/><path d="M100 230 Q140 180 180 230 Z" fill="var(--e1)"/><path d="M90 232 H190" stroke="var(--e1)" stroke-width="8" stroke-linecap="round"/></g>
+        <g class="a" style="--k:fade;--d:2.6"><circle class="a" style="--k:pulse;--du:3s;--it:infinite;--d:3" cx="420" cy="170" r="70" fill="none" stroke="var(--e3)" stroke-width="2" opacity=".5"/></g>
+        <text class="a" style="--k:up;--d:2.8" x="420" y="270" text-anchor="middle" font-size="15">ما</text>
+        <text class="a" style="--k:up;--d:4" x="140" y="270" text-anchor="middle" font-size="15">دوستِ اهلِ مراقبه</text>
+        <g class="a" style="--k:pop;--d:5"><circle cx="280" cy="340" r="18" fill="var(--e2)"/><rect x="258" y="360" width="44" height="40" rx="10" fill="var(--e2)"/><text x="350" y="360" text-anchor="middle" font-size="14" fill="var(--muted)">همسر</text></g>
+        <path class="a dr" style="--k:draw;--d:4.4" pathLength="1" d="M390 200 C 330 160, 230 160, 170 200" fill="none" stroke="var(--line)" stroke-width="3" stroke-dasharray="1 1"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · Climbing the mountain -->
+<section class="scene" data-t="28" data-sec="7" data-title="بالا رفتن از کوه">
+  <header><div class="eyebrow a">بالا رفتن از کوه <span class="en">Climbing the Mountain</span></div><h2 class="a" style="--d:.2">توفان که آمد، پایین بیا؛ هوا که خوب شد، بالا برو</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">دوره‌ی خودابرازگر بیش از نیم قرن پیش ازدواجِ نان‌آور–خانه‌دارِ دهه‌ی ۱۹۵۰ را شکست و آشفتگی آورد. اما در دهه‌های اخیر تعادلی تازه شکل گرفته است.</p>
+      <p class="a" style="--d:8">کوهنوردی تجهیزات، تمرین و هماهنگی می‌خواهد؛ و بخت. اگر در راهِ قله توفان رسید، عاقلانه این است که پایین بیاییم، از اردوگاه بهره ببریم و روزی دیگر به قله برسیم.</p>
+      <p class="key a" style="--d:17"><mark>علمِ رابطه، بخشِ پژوهش و توسعه‌ی ازدواج، تجهیزاتِ خوبی ساخته: گفتگو، پاسخ‌گویی و بازی. منظره‌ی بالا زیباست.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <path class="a" style="--k:fade;--d:.6" d="M20 400 L280 70 L540 400Z" fill="rgba(219,166,94,.12)"/>
+        <path class="a dr" style="--k:draw;--du:1.6s;--d:.6" pathLength="1" d="M20 400 L280 70 L540 400" fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"/>
+        <g class="a" style="--k:pop;--d:2"><path d="M280 70 V30 L312 40 L280 50" fill="var(--e2)"/></g>
+        <g class="a" style="--k:fade;--d:9"><g class="a x" style="--k:drift;--du:3s;--it:infinite;--d:9;--x:16;--xk:gone"><path d="M300 110 Q300 80 330 84 Q344 60 370 74 Q396 70 396 96 Q414 104 400 120 H310 Q290 120 300 110Z" fill="var(--muted)"/><path d="M330 126 L320 150 M352 126 L342 150 M374 126 L364 150" stroke="var(--e3)" stroke-width="3" stroke-linecap="round"/></g></g>
+        <g class="a" style="--k:fade;--d:10"><path d="M110 370 L150 340 L190 370Z" fill="var(--e1)"/><text x="150" y="394" text-anchor="middle" font-size="13" fill="var(--muted)">اردوگاه</text></g>
+        <g class="a climb" style="--k:summit12;--du:9s;--d:9"><circle cx="-8" cy="-10" r="8" fill="var(--e2)"/><circle cx="9" cy="-10" r="8" fill="var(--e3)"/></g>
+        <g class="a" style="--k:pop;--d:18"><g fill="var(--e1)"><path class="a" style="--k:twinkle;--du:1.8s;--it:infinite;--d:18.4" d="M210 50 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4Z"/><path class="a" style="--k:twinkle;--du:2.2s;--it:infinite;--d:18.8" d="M360 30 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3Z"/></g></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 15 · Recap -->
+<section class="scene" data-t="30" data-sec="8" data-title="جمع‌بندی برای مرور">
+  <header><div class="eyebrow a">جمع‌بندی برای مرور <span class="en">Chapter 12 recap</span></div><h2 class="a" style="--d:.2">هشت مفهومی که باید بدانید</h2></header>
+  <div class="grid">
+    <div class="term a" style="--d:.8;--c:var(--e2)"><b>بوفه‌ی ازدواج</b><span>بی‌الگوی پیش‌فرض، هر زوج خودش انتخاب می‌کند از ازدواج چه بخواهد.</span></div>
+    <div class="term a" style="--d:1.4;--c:var(--e2)"><b>عنصرها، نه الگوها</b><span>هر عنصر (امنیتِ مالی، شور، هم‌والدی…) جداگانه سنجیده می‌شود.</span></div>
+    <div class="term a" style="--d:2;--c:var(--e1)"><b>آنچه برنمی‌داریم</b><span>نخواستنِ برخی عنصرها، منابع را برای مهم‌ترین‌ها نگه می‌دارد.</span></div>
+    <div class="term a" style="--d:2.6;--c:var(--e1)"><b>رویکردِ ترکیبی</b><span>آمیزه‌ای از عشق‌هک، همه‌چیز را گذاشتن و تنظیمِ دوباره.</span></div>
+    <div class="term a" style="--d:3.2;--c:var(--e3)"><b>گامِ اول: عشق‌هک</b><span>با شهود انتخاب کن، همین امروز شروع کن، پایش کن.</span></div>
+    <div class="term a" style="--d:3.8;--c:var(--e3)"><b>سه دسته‌ی نیاز</b><span>فقط همسر؛ همسر یا «دیگرِ مهم»؛ یا حتی خودمان.</span></div>
+    <div class="term a" style="--d:4.4;--c:var(--good)"><b>بازدهِ روانی</b><span>جایی که تلاش زیاد و نتیجه کم است، منبعِ دیگری بجو.</span></div>
+    <div class="term a" style="--d:5;--c:var(--good)"><b>بالا رفتن از کوه</b><span>در توفان پایین بیا؛ در هوای خوب دوباره به قله برو.</span></div>
+  </div>
+  <div class="endbar a" style="--d:6">
+    <span class="note">منبع: Eli J. Finkel, <span class="en">The All-or-Nothing Marriage</span> (2017)، فصل ۱۲. خلاصه و برگردانِ آزاد برای مطالعه.</span>
+  </div>
+</section>
+
+</div>
+<script src="../../assets/player.js"></script>
+</body>
+</html>

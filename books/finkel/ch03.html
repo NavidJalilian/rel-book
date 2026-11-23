@@ -1,0 +1,1014 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ازدواج همه یا هیچ، فصل ۳</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="../../assets/player.css">
+<style>
+@keyframes walk3{0%{transform:translate(1080px,288px)}25%{transform:translate(860px,292px)}50%{transform:translate(640px,290px)}75%{transform:translate(420px,296px)}100%{transform:translate(214px,290px)}}
+@keyframes coinR{0%{opacity:0;transform:translateX(0)}15%{opacity:1}85%{opacity:1}100%{opacity:0;transform:translateX(220px)}}
+@keyframes coinL{0%{opacity:0;transform:translateX(0)}15%{opacity:1}85%{opacity:1}100%{opacity:0;transform:translateX(-220px)}}
+@keyframes tilt{from{transform:none}to{transform:rotate(-10deg)}}
+@keyframes panDown{from{transform:none}to{transform:translateY(31px)}}
+@keyframes panUp{from{transform:none}to{transform:translateY(-31px)}}
+@keyframes sepL{from{transform:none}to{transform:translateX(-70px)}}
+@keyframes sepR{from{transform:none}to{transform:translateX(70px)}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes shrinkY{to{transform:scaleY(.22)}}
+</style>
+</head>
+<body>
+<script type="application/json" id="meta">
+{
+ "book": "ازدواج همه یا هیچ",
+ "author": "الی جی. فینکل",
+ "chapter": "فصل ۳",
+ "home": "../../index.html#finkel",
+ "prev": "ch02.html",
+ "next": "ch04.html",
+ "sections": [
+  ["آغاز فصل", "Chapter opening"],
+  ["صنعتی‌شدن", "Industrialization"],
+  ["ازدواج عشق‌محور", "The Love-Based Marriage"],
+  ["پناهگاهی در دنیای بی‌رحم", "A Haven in a Heartless World"],
+  ["شور عاشقانه و رابطه‌ی جنسی", "Passion and Sex"],
+  ["حوزه‌های جدا: از ایده تا واقعیت", "Separate Spheres: From Ideology to Reality"],
+  ["نیو دیل", "The New Deal"],
+  ["زنِ کارگرِ صنعتی", "The Female Industrial Laborer"],
+  ["اوجِ ازدواج عشق‌محور", "The Apotheosis of the Love-Based Marriage"],
+  ["پنج چالش ازدواج عشق‌محور", "Five Challenges of the Love-Based Marriage"],
+  ["وابستگی اقتصادی زنان", "Women’s Economic Dependence"],
+  ["انزوای خانواده‌ی هسته‌ای", "The Social Isolation of the Nuclear Family"],
+  ["شناختِ ناکافی از همسر", "Lack of True Insight into One’s Spouse"],
+  ["رشدِ روانیِ متوقف", "Stunted Psychological Development"],
+  ["میل جنسیِ سرکش", "The Often-Insubordinate Sex Drive"],
+  ["اوزی، هریت و گسل‌های پنهان", "Ozzie, Harriet, and the Hidden Fault Lines"],
+  ["جمع‌بندی", "Recap"]
+ ]
+}
+</script>
+<div class="stage" id="stage">
+
+<!-- 0 · Title -->
+<section class="scene s-title" data-t="9" data-sec="0" data-title="عنوان فصل">
+  <svg class="bgmtn" viewBox="0 0 1280 320" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <path class="a" style="--k:fade;--d:.1" d="M0 320 L0 262 Q 320 236 640 258 T 1280 250 L1280 320Z" fill="var(--panel)"/>
+    <g class="a" style="--k:pop;--d:.5"><path d="M1030 262 V205 L1080 170 L1130 205 V262Z" fill="none" stroke="var(--e1)" stroke-width="3" stroke-linejoin="round"/><path d="M1064 262 V226 H1096 V262" fill="none" stroke="var(--e1)" stroke-width="3"/></g>
+    <g class="a" style="--k:pop;--d:1"><path d="M560 262 V215 L600 235 V215 L640 235 V215 L680 235 V200 H720 V262Z" fill="none" stroke="var(--muted)" stroke-width="3" stroke-linejoin="round"/><rect x="688" y="150" width="18" height="50" fill="none" stroke="var(--muted)" stroke-width="3"/></g>
+    <circle class="a" style="--k:twinkle;--du:2.2s;--it:infinite;--d:1.4" cx="697" cy="134" r="8" fill="rgba(169,157,178,.4)"/>
+    <circle class="a" style="--k:twinkle;--du:2.6s;--it:infinite;--d:1.8" cx="706" cy="112" r="11" fill="rgba(169,157,178,.3)"/>
+    <g class="a" style="--k:pop;--d:1.6"><path d="M160 262 V222 L200 192 L240 222 V262Z" fill="rgba(227,104,140,.18)" stroke="var(--e2)" stroke-width="3" stroke-linejoin="round"/></g>
+    <circle class="a" style="--k:pulse;--du:2.2s;--it:infinite;--d:3" cx="200" cy="150" r="24" fill="none" stroke="var(--e2)" stroke-width="2"/>
+    <g class="a" style="--k:pop;--d:2.6"><g transform="translate(200 154) scale(1.2)"><path d="M0 14 C -22 0, -20 -18, -9 -18 C -3 -18, 0 -13, 0 -10 C 0 -13, 3 -18, 9 -18 C 20 -18, 22 0, 0 14Z" fill="var(--e2)"/></g></g>
+    <path class="a dr" style="--k:draw;--du:2.6s;--d:.6" pathLength="1" d="M1080 290 C 900 300, 800 284, 640 292 S 380 300, 214 290" fill="none" stroke="var(--e1)" stroke-width="2"/>
+    <g class="a climb" style="--k:walk3;--du:6s;--d:1"><circle cx="-8" cy="-10" r="8" fill="var(--e2)"/><circle cx="9" cy="-10" r="8" fill="var(--e3)"/></g>
+  </svg>
+  <div class="ttl">
+    <div class="chapno a" style="--d:.3">فصل ۳</div>
+    <h1 class="a" style="--d:.6">از عمل‌گرایی تا عشق</h1>
+    <p class="lede a" style="--d:1.3">صنعتی‌شدن چطور عشق را به قلبِ ازدواج آورد، و چرا همان ازدواج ترک برداشت؟</p>
+    <div class="by a en" style="--d:1.8">From Pragmatism to Love · The All-or-Nothing Marriage</div>
+  </div>
+</section>
+
+<!-- 1 · Shaw -->
+<section class="scene" data-t="22" data-sec="0" data-title="شوخیِ برنارد شاو">
+  <header><div class="eyebrow a">آغاز فصل <span class="en">Chapter opening</span></div><h2 class="a" style="--d:.2">شوخیِ برنارد شاو</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">جورج برنارد شاو در ۱۹۰۸ طعنه زد: دو نفر در اوجِ دیوانه‌وارترین و گذراترین هیجان‌ها قسم می‌خورند تا آخرِ عمر در همان حال بمانند.</p>
+      <p class="a" style="--d:7">به گفته‌ی استفانی کونتز، این شوخی هزاران سال کسی را نمی‌خنداند؛ چون کسی برای عشق ازدواج نمی‌کرد.</p>
+      <p class="key a" style="--d:12"><mark>ما هنوز می‌خندیم: عشق دیر بر ازدواج چیره شد، اما محکم ماند.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 400" aria-hidden="true">
+        <text class="a" style="--k:fade;--d:.8" x="280" y="30" text-anchor="middle" font-size="17" fill="var(--muted)">آیا این شوخی خنده‌دار است؟</text>
+        <path class="a dr" style="--k:draw;--du:1.4s;--d:1" pathLength="1" d="M520 230 H40" fill="none" stroke="var(--line)" stroke-width="3"/>
+        <g fill="var(--muted)"><circle cx="490" cy="230" r="6"/><circle cx="340" cy="230" r="6"/><circle cx="190" cy="230" r="6"/><circle cx="80" cy="230" r="6"/></g>
+        <g class="a" style="--k:pop;--d:2.5"><g transform="translate(190 150)"><circle r="34" fill="var(--panel)" stroke="var(--e1)" stroke-width="2.5"/><circle cx="-11" cy="-8" r="4" fill="var(--ink)"/><circle cx="11" cy="-8" r="4" fill="var(--ink)"/><path d="M-15 8 Q0 24 15 8" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/></g></g>
+        <g class="a" style="--k:pop;--d:7.6"><g transform="translate(490 150)"><circle r="34" fill="var(--panel)" stroke="var(--line)" stroke-width="2.5"/><circle cx="-11" cy="-8" r="4" fill="var(--muted)"/><circle cx="11" cy="-8" r="4" fill="var(--muted)"/><path d="M-14 13 H14" fill="none" stroke="var(--muted)" stroke-width="3" stroke-linecap="round"/></g></g>
+        <g class="a" style="--k:pop;--d:8.2"><g transform="translate(340 150)"><circle r="34" fill="var(--panel)" stroke="var(--line)" stroke-width="2.5"/><circle cx="-11" cy="-8" r="4" fill="var(--muted)"/><circle cx="11" cy="-8" r="4" fill="var(--muted)"/><path d="M-14 13 H14" fill="none" stroke="var(--muted)" stroke-width="3" stroke-linecap="round"/></g></g>
+        <g class="a" style="--k:pop;--d:12.6"><g transform="translate(80 150)"><circle r="34" fill="var(--panel)" stroke="var(--e2)" stroke-width="2.5"/><circle cx="-11" cy="-8" r="4" fill="var(--ink)"/><circle cx="11" cy="-8" r="4" fill="var(--ink)"/><path d="M-15 8 Q0 24 15 8" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/></g></g>
+        <g font-size="15" text-anchor="middle" fill="var(--muted)">
+          <text class="a" style="--k:fade;--d:7.6" x="490" y="268">هزاران سال پیش</text>
+          <text class="a" style="--k:fade;--d:8.2" x="340" y="268">لینکلن‌ها (حدود ۱۸۰۰)</text>
+          <text class="a" style="--k:fade;--d:2.5" x="190" y="268">شاو، ۱۹۰۸</text>
+          <text class="a" style="--k:fade;--d:12.6" x="80" y="268">امروز</text>
+        </g>
+        <rect class="a" style="--k:fade;--d:8.6" x="262" y="300" width="258" height="24" rx="12" fill="rgba(219,166,94,.3)"/>
+        <text class="a" style="--k:fade;--d:8.8" x="390" y="352" text-anchor="middle" font-size="15" fill="var(--e1)">ازدواج برای بقا و خانواده</text>
+        <rect class="a gxr" style="--k:growX;--du:1.6s;--d:13" x="40" y="300" width="218" height="24" rx="12" fill="var(--e2)"/>
+        <text class="a" style="--k:up;--d:13.6" x="150" y="352" text-anchor="middle" font-size="15" font-weight="700" fill="var(--e2)">ازدواج برای عشق</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · Industrialization: life changed -->
+<section class="scene" data-t="25" data-sec="1" data-title="زندگیِ دگرگون‌شده">
+  <header><div class="eyebrow a">صنعتی‌شدن <span class="en">Industrialization</span></div><h2 class="a" style="--d:.2">زندگی‌ای که دیگر شناخته نمی‌شد</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">به گفته‌ی اقتصاددان رابرت گوردن، جز در جنوبِ روستایی، زندگیِ روزمره‌ی هر آمریکایی بین ۱۸۷۰ تا ۱۹۴۰ از این رو به آن رو شد.</p>
+      <p class="a" style="--d:6.5">راه‌آهن، فولاد، موتور احتراق، نفت، ارتباطات و برق اقتصاد را دگرگون کردند. راه‌آهن بازاری سراسری ساخت و کالاها فراوان و ارزان شد.</p>
+      <p class="key a" style="--d:13"><mark>بهره‌وری خیلی تندتر از جمعیت رشد کرد و خطرِ قحطی کم شد.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <text class="a" style="--k:fade;--d:1.2" x="440" y="28" text-anchor="middle" font-size="17" font-weight="700" fill="var(--muted)">پیش از ۱۸۷۰</text>
+        <text class="a" style="--k:fade;--d:4" x="120" y="28" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e3)">تا ۱۹۴۰</text>
+        <g class="a" style="--k:pop;--d:1.5">
+          <ellipse cx="444" cy="92" rx="32" ry="14" fill="var(--e1)"/>
+          <path d="M418 88 L402 62 L388 64 L394 74 L408 96Z" fill="var(--e1)"/>
+          <path d="M424 102 V124 M436 104 V124 M454 104 V124 M466 102 V124 M476 88 q12 8 6 24" fill="none" stroke="var(--e1)" stroke-width="4" stroke-linecap="round"/>
+          <text x="440" y="152" text-anchor="middle" font-size="16">اسب</text>
+        </g>
+        <g class="a" style="--k:pop;--d:1.8">
+          <rect x="420" y="205" width="40" height="50" rx="3" fill="var(--panel)" stroke="var(--e1)" stroke-width="3"/>
+          <path d="M412 208 L440 186 L468 208" fill="none" stroke="var(--e1)" stroke-width="3" stroke-linejoin="round"/>
+          <circle cx="440" cy="222" r="5" fill="var(--e1)"/>
+          <text x="440" y="284" text-anchor="middle" font-size="16">مستراح بیرونی</text>
+        </g>
+        <g class="a" style="--k:pop;--d:2.1">
+          <rect x="432" y="346" width="16" height="42" rx="2" fill="var(--panel)" stroke="var(--e1)" stroke-width="2.5"/>
+          <path d="M440 342 C 430 332, 436 322, 440 312 C 444 322, 450 332, 440 342Z" fill="var(--e1)"/>
+          <text x="440" y="414" text-anchor="middle" font-size="16">شمع</text>
+        </g>
+        <g stroke="var(--muted)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path class="a dr" style="--k:draw;--d:3" pathLength="1" d="M380 95 H190 M202 86 L188 95 L202 104"/>
+          <path class="a dr" style="--k:draw;--d:3.3" pathLength="1" d="M380 228 H190 M202 219 L188 228 L202 237"/>
+          <path class="a dr" style="--k:draw;--d:3.6" pathLength="1" d="M380 360 H190 M202 351 L188 360 L202 369"/>
+        </g>
+        <g class="a" style="--k:pop;--d:4.2">
+          <path d="M78 106 V88 H98 L110 72 H140 L154 88 H164 V106Z" fill="var(--e3)"/>
+          <circle cx="96" cy="108" r="8" fill="var(--ink)"/><circle cx="146" cy="108" r="8" fill="var(--ink)"/>
+          <text x="120" y="152" text-anchor="middle" font-size="16">خودرو و قطار</text>
+        </g>
+        <g class="a" style="--k:pop;--d:4.6">
+          <path d="M84 226 H156 V234 Q156 254 136 254 H104 Q84 254 84 234Z" fill="var(--e3)"/>
+          <path d="M92 226 V206 H106" fill="none" stroke="var(--e3)" stroke-width="3"/>
+          <text x="120" y="284" text-anchor="middle" font-size="16">حمام در خانه</text>
+        </g>
+        <g class="a" style="--k:pop;--d:5">
+          <circle cx="120" cy="350" r="20" fill="var(--e3)"/>
+          <rect x="111" y="370" width="18" height="12" rx="2" fill="var(--muted)"/>
+          <text x="120" y="414" text-anchor="middle" font-size="16">چراغ برق</text>
+        </g>
+        <circle class="a" style="--k:pulse;--du:2s;--it:infinite;--d:5.6" cx="120" cy="350" r="26" fill="none" stroke="var(--e3)" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · Values -->
+<section class="scene" data-t="26" data-sec="1" data-title="ارزش‌های سکولار–عقلانی">
+  <header><div class="eyebrow a">صنعتی‌شدن <span class="en">Industrialization</span></div><h2 class="a" style="--d:.2">از ارزش‌های سنتی به ارزش‌های عقلانی</h2></header>
+  <div class="duo">
+    <article class="card a" style="--d:1;--c:var(--e1)">
+      <div class="tag">جامعه‌ی پیشاصنعتی</div>
+      <h3>ارزش‌های سنتی <span class="en">Traditional values</span></h3>
+      <svg viewBox="0 0 300 70" aria-hidden="true"><circle cx="232" cy="28" r="14" fill="var(--e1)"/><g fill="var(--muted)"><circle cx="132" cy="30" r="14"/><circle cx="152" cy="22" r="17"/><circle cx="172" cy="30" r="14"/><rect x="132" y="28" width="40" height="16"/></g><path class="a" style="--k:twinkle;--du:1.2s;--it:infinite;--d:2" d="M138 52 v10 M152 52 v10 M166 52 v10" stroke="var(--e3)" stroke-width="3" stroke-linecap="round"/><text class="a" style="--k:pop;--d:2.6" x="70" y="48" text-anchor="middle" font-size="34" fill="var(--e1)">؟</text></svg>
+      <p>بقا به نیروهای پیش‌بینی‌ناپذیرِ طبیعت بسته است: باران، خشک‌سالی، سیل و طاعون. مردم آن‌ها را کارِ خدایان می‌دانند و برای باران دعا می‌کنند. ایمان و اطاعت از مرجعیت محور است.</p>
+    </article>
+    <article class="card a" style="--d:7;--c:var(--e3)">
+      <div class="tag">جامعه‌ی صنعتی</div>
+      <h3>ارزش‌های سکولار–عقلانی <span class="en">Secular-rational values</span></h3>
+      <svg viewBox="0 0 300 70" aria-hidden="true"><rect x="60" y="16" width="26" height="40" rx="5" fill="none" stroke="var(--ink)" stroke-width="3"/><circle class="a" style="--k:pop;--d:8" cx="73" cy="28" r="7" fill="var(--e3)"/><circle cx="160" cy="30" r="16" fill="var(--e1)"/><rect x="152" y="46" width="16" height="12" rx="2" fill="var(--muted)"/><path class="a dr" style="--k:draw;--d:8.4" pathLength="1" d="M160 6 V0 M182 14 L188 9 M138 14 L132 9 M186 32 H194 M134 32 H126" stroke="var(--e1)" stroke-width="3" fill="none" stroke-linecap="round"/><circle class="a" style="--k:pulse;--du:2s;--it:infinite;--d:9" cx="235" cy="34" r="16" fill="none" stroke="var(--e3)" stroke-width="3"/><circle cx="235" cy="34" r="6" fill="var(--e3)"/></svg>
+      <p>تولید در محیط‌های ساختِ بشر، مثل کارخانه، رخ می‌دهد. تاریکی را با کلید برق، سرما را با گرمایش و بیماری را با آنتی‌بیوتیک جواب می‌دهند. علم و پیشرفتِ فنی محور است.</p>
+    </article>
+  </div>
+  <p class="cap a" style="--d:14">به گفته‌ی رونالد اینگلهارت و کریستین ولزل، صنعتی‌شدن این جابه‌جاییِ ارزش‌ها را پدید آورد. کشاورزان هم با کود، آبیاری و ماشین کمتر در برابر طبیعت آسیب‌پذیر شدند.</p>
+</section>
+
+<!-- 4 · Urbanization -->
+<section class="scene" data-t="24" data-sec="1" data-title="شهرنشینی">
+  <header><div class="eyebrow a">صنعتی‌شدن <span class="en">Industrialization</span></div><h2 class="a" style="--d:.2">شهرنشینی و خانه‌های خلوت‌تر</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">کارِ مزدی در شهرها روستاییان و مهاجرانِ اروپایی را جذب کرد. سهمِ شهرنشینانِ آمریکا از ٪۵ در ۱۸۳۰ به ٪۸۰ در ۲۰۰۰ رسید.</p>
+      <p class="a" style="--d:7">هم‌زمان باروری کم شد: شمارِ فرزندانِ زنانِ متأهل از دهه‌ی ۱۸۵۰ تا جنگ جهانی دوم ٪۶۰ افت کرد.</p>
+      <p class="key a" style="--d:12"><mark>خانه‌ی خلوت‌تر یعنی وقتِ آرامِ بیشتر برای زن و شوهر.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 400" aria-hidden="true">
+        <text x="280" y="22" text-anchor="middle" font-size="15" fill="var(--muted)">سهمِ آمریکاییانِ شهرنشین</text>
+        <line x1="40" y1="330" x2="520" y2="330" stroke="var(--line)" stroke-width="2"/>
+        <line x1="40" y1="190" x2="520" y2="190" stroke="var(--line)" stroke-dasharray="3 5"/>
+        <rect class="a gy" style="--k:growY;--du:1.2s;--d:2" x="80" y="316" width="70" height="14" rx="5" fill="var(--muted)"/>
+        <rect class="a gy" style="--k:growY;--du:1.2s;--d:2.6" x="190" y="218" width="70" height="112" rx="5" fill="var(--muted)"/>
+        <rect class="a gy" style="--k:growY;--du:1.2s;--d:3.2" x="300" y="162" width="70" height="168" rx="5" fill="var(--e3)"/>
+        <rect class="a gy" style="--k:growY;--du:1.2s;--d:3.8" x="410" y="106" width="70" height="224" rx="5" fill="var(--e3)"/>
+        <g font-size="19" font-weight="700" text-anchor="middle">
+          <text class="a" style="--k:up;--d:2.8" x="115" y="304">٪۵</text>
+          <text class="a" style="--k:up;--d:3.4" x="225" y="206">٪۴۰</text>
+          <text class="a" style="--k:up;--d:4" x="335" y="150">٪۶۰</text>
+          <text class="a" style="--k:up;--d:4.6" x="445" y="94">٪۸۰</text>
+        </g>
+        <g font-size="16" text-anchor="middle" fill="var(--muted)"><text x="115" y="356">۱۸۳۰</text><text x="225" y="356">۱۹۰۰</text><text x="335" y="356">۱۹۵۰</text><text x="445" y="356">۲۰۰۰</text></g>
+        <g class="a" style="--k:pop;--d:8"><rect x="50" y="42" width="220" height="36" rx="18" fill="var(--e2)"/><text x="160" y="66" text-anchor="middle" font-size="16" font-weight="700" fill="var(--ground)">باروریِ زنانِ متأهل: ٪۶۰−</text></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · Wealth flow -->
+<section class="scene" data-t="24" data-sec="1" data-title="جریانِ وارونه‌ی ثروت">
+  <header><div class="eyebrow a">صنعتی‌شدن <span class="en">Industrialization</span></div><h2 class="a" style="--d:.2">جریانِ ثروت وارونه شد</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">در مزرعه‌ی دورانِ عمل‌گرا، بچه‌ها کار می‌کردند: پیغام‌رسانی، جمع‌کردنِ تخم‌مرغ، کره‌گیری، شخم و درو. در آغازِ صنعتی‌شدن هم بسیاری در کارخانه و معدن کار می‌کردند.</p>
+      <p class="a" style="--d:8">کم‌کم هزینه‌ی بزرگ‌کردنِ بچه از درآمدی که می‌آورد بیشتر شد.</p>
+      <p class="key a" style="--d:12"><mark>بچه از «سود» به «هزینه» تبدیل شد؛ پس خانواده‌ها کوچک‌تر شدند.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <text class="a" style="--k:fade;--d:1" x="280" y="34" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e1)">دورانِ عمل‌گرا: بچه = نیروی کار</text>
+        <g class="a" style="--k:pop;--d:1.4"><circle cx="425" cy="110" r="22" fill="var(--e2)"/><circle cx="465" cy="110" r="22" fill="var(--e3)"/><text x="445" y="160" text-anchor="middle" font-size="15">پدر و مادر</text></g>
+        <g class="a" style="--k:pop;--d:1.8"><circle cx="120" cy="116" r="16" fill="var(--e1)"/><text x="120" y="160" text-anchor="middle" font-size="15">فرزند</text></g>
+        <path class="a dr" style="--k:draw;--du:1.2s;--d:2.4" pathLength="1" d="M146 112 H388 M376 103 L390 112 L376 121" fill="none" stroke="var(--e1)" stroke-width="3" stroke-linecap="round"/>
+        <circle class="a" style="--k:coinR;--du:2.4s;--it:infinite;--d:3.2" cx="160" cy="96" r="7" fill="var(--e1)"/>
+        <circle class="a" style="--k:coinR;--du:2.4s;--it:infinite;--d:4" cx="160" cy="96" r="7" fill="var(--e1)"/>
+        <text class="a" style="--k:fade;--d:3" x="280" y="200" text-anchor="middle" font-size="15" fill="var(--muted)">پیغام‌رسانی، تخم‌مرغ، کره، شخم، درو</text>
+        <line class="a" style="--k:fade;--d:8" x1="40" y1="230" x2="520" y2="230" stroke="var(--line)" stroke-dasharray="4 6"/>
+        <text class="a" style="--k:fade;--d:8.2" x="280" y="270" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e2)">بعدها: بچه = هزینه</text>
+        <g class="a" style="--k:pop;--d:8.6"><circle cx="425" cy="336" r="22" fill="var(--e2)"/><circle cx="465" cy="336" r="22" fill="var(--e3)"/><text x="445" y="386" text-anchor="middle" font-size="15">پدر و مادر</text></g>
+        <g class="a" style="--k:pop;--d:8.8"><circle cx="120" cy="342" r="16" fill="var(--e1)"/><text x="120" y="386" text-anchor="middle" font-size="15">فرزند</text></g>
+        <path class="a dr" style="--k:draw;--du:1.2s;--d:9.2" pathLength="1" d="M390 338 H148 M160 329 L146 338 L160 347" fill="none" stroke="var(--e2)" stroke-width="3" stroke-linecap="round"/>
+        <circle class="a" style="--k:coinL;--du:2.4s;--it:infinite;--d:10" cx="380" cy="322" r="7" fill="var(--e1)"/>
+        <circle class="a" style="--k:coinL;--du:2.4s;--it:infinite;--d:10.8" cx="380" cy="322" r="7" fill="var(--e1)"/>
+        <g class="a" style="--k:pop;--d:12.6"><rect x="170" y="402" width="220" height="34" rx="17" fill="var(--panel)" stroke="var(--e2)"/><text x="280" y="425" text-anchor="middle" font-size="16" font-weight="700">نتیجه: بچه‌ی کمتر</text></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Working-class family -->
+<section class="scene" data-t="27" data-sec="1" data-title="خانواده‌ی طبقه‌ی کارگر">
+  <header><div class="eyebrow a">صنعتی‌شدن <span class="en">Industrialization</span></div><h2 class="a" style="--d:.2">خانواده‌ی طبقه‌ی کارگر</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">جامعه‌شناس اندرو چرلین آن را چنین تعریف می‌کند: مردِ کارگرِ ۲۰ تا ۴۹ ساله با همسر و دست‌کم یک فرزندِ زیر ۱۸ سال. در اوج، نزدیک به نیمی از خانواده‌ها چنین بودند.</p>
+      <p class="a" style="--d:9">شوهر شش روز در هفته، روزی ۱۰ تا ۱۲ ساعت کار می‌کرد. زن خانه، بچه‌ها و بودجه را می‌گرداند و با اجاره‌دادنِ اتاق یا کارِ قطعه‌ای کمک‌خرج بود.</p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <g class="a" style="--k:up;--d:10"><rect x="385" y="20" width="170" height="100" rx="14" fill="var(--panel)" stroke="var(--line)"/><text x="470" y="62" text-anchor="middle" font-size="17" font-weight="700">تولید</text><text x="470" y="92" text-anchor="middle" font-size="14" fill="var(--muted)">خودرو، گوشت، پوشاک</text></g>
+        <g class="a" style="--k:up;--d:10.6"><rect x="195" y="20" width="170" height="100" rx="14" fill="var(--panel)" stroke="var(--line)"/><text x="280" y="62" text-anchor="middle" font-size="17" font-weight="700">حمل‌ونقل و تأسیسات</text><text x="280" y="92" text-anchor="middle" font-size="14" fill="var(--muted)">کامیون، راه‌آهن، برق</text></g>
+        <g class="a" style="--k:up;--d:11.2"><rect x="5" y="20" width="170" height="100" rx="14" fill="var(--panel)" stroke="var(--line)"/><text x="90" y="62" text-anchor="middle" font-size="17" font-weight="700">ساخت‌وساز</text><text x="90" y="92" text-anchor="middle" font-size="14" fill="var(--muted)">نجاری، بنایی، لوله‌کشی</text></g>
+        <g fill="none" stroke="var(--e1)" stroke-width="2.5">
+          <path class="a dr" style="--k:draw;--d:12" pathLength="1" d="M470 122 L300 200"/>
+          <path class="a dr" style="--k:draw;--d:12.2" pathLength="1" d="M280 122 L280 200"/>
+          <path class="a dr" style="--k:draw;--d:12.4" pathLength="1" d="M90 122 L260 200"/>
+        </g>
+        <line x1="40" y1="210" x2="520" y2="210" stroke="var(--line)" stroke-width="4" stroke-linecap="round"/>
+        <rect class="a" style="--k:growX;--d:13" x="200" y="204" width="160" height="12" rx="6" fill="var(--e1)"/>
+        <g font-size="15" text-anchor="middle">
+          <text x="450" y="242" fill="var(--muted)">خدماتِ کم‌مهارت</text>
+          <text class="a" style="--k:fade;--d:13.2" x="280" y="242" font-weight="700" fill="var(--e1)">مهارتِ متوسط</text>
+          <text x="110" y="242" fill="var(--muted)">حرفه‌ای و مدیریتی</text>
+        </g>
+        <circle cx="130" cy="350" r="50" fill="none" stroke="var(--line)" stroke-width="16"/>
+        <path class="a dr" style="--k:draw;--du:1.6s;--d:5" pathLength="1" d="M130 300 A50 50 0 0 1 130 400" fill="none" stroke="var(--e2)" stroke-width="16"/>
+        <text class="a" style="--k:pop;--d:5.6" x="130" y="362" text-anchor="middle" font-size="30" style="font-family:var(--display)">٪۵۰</text>
+        <text class="a" style="--k:up;--d:6" x="380" y="340" text-anchor="middle" font-size="16" font-weight="700">سهمِ خانواده‌های طبقه‌ی کارگر</text>
+        <text class="a" style="--k:up;--d:6.3" x="380" y="368" text-anchor="middle" font-size="15" fill="var(--muted)">در اوج، به تعریفِ چرلین (تقریبی)</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Three new features -->
+<section class="scene" data-t="30" data-sec="1" data-title="سه ویژگیِ تازه">
+  <header><div class="eyebrow a">صنعتی‌شدن <span class="en">Industrialization</span></div><h2 class="a" style="--d:.2">سه ویژگیِ تازه‌ی خانواده‌ی کارگر</h2></header>
+  <div class="eras">
+    <div class="era a" style="--d:.9;--c:var(--e1)">
+      <svg viewBox="0 0 46 46" aria-hidden="true"><path d="M4 40 V22 L14 28 V22 L24 28 V22 L34 28 V8 H40 V40Z" fill="none" stroke="var(--e1)" stroke-width="3" stroke-linejoin="round"/></svg>
+      <b>دو دنیای جدا</b><span class="yr">کار، بیرون از خانه</span>
+      <p>در مزرعه هم کارها جنسیتی بود، اما کارخانه مرد را از خانه بیرون برد و دنیای کارِ زن و شوهر را از هم جدا کرد.</p>
+    </div>
+    <div class="era a" style="--d:5.5;--c:var(--e3)">
+      <svg viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="18" fill="none" stroke="var(--e3)" stroke-width="3"/><path d="M23 11 V23 L31 28" fill="none" stroke="var(--e3)" stroke-width="3" stroke-linecap="round"/></svg>
+      <b>زمانِ ساعتی</b><span class="yr">به جای زمانِ «کاری»</span>
+      <p>کشاورز با طلوع و غروب کار می‌کرد. کارخانه ساعتِ ثابتِ ورود، ناهار و خروج داشت و گاه شیفتِ شب؛ خانه باید با آن کنار می‌آمد.</p>
+    </div>
+    <div class="era a" style="--d:10.5;--c:var(--e2)">
+      <svg viewBox="0 0 46 46" aria-hidden="true"><path d="M6 36 L9 14 L17 24 L23 10 L29 24 L37 14 L40 36Z" fill="none" stroke="var(--e2)" stroke-width="3" stroke-linejoin="round"/><path d="M23 16 L20 24 L26 29 L22 36" fill="none" stroke="var(--e2)" stroke-width="2.5"/></svg>
+      <b>اقتدارِ لرزان</b><span class="yr">از زمین به مزد</span>
+      <p>اقتدارِ مرد قبلاً از مالکیتِ زمین می‌آمد که پایدار و مطلق بود. مزد ناپایدار بود و حسِ مردانگی را تهدید می‌کرد.</p>
+    </div>
+  </div>
+  <p class="cap a" style="--d:16">خانواده‌ی طبقه‌ی متوسط هم هم‌زمان پدید آمد: شوهرانِ کارمند، تاجر، پزشک یا وکیل کارِ رضایت‌بخش‌تر و درآمدِ کافی داشتند و زنانشان نیازی به کمک‌خرجی نداشتند.</p>
+</section>
+
+<!-- 8 · Love-based: Alison -->
+<section class="scene" data-t="26" data-sec="2" data-title="قابله‌ی ازدواج عاشقانه">
+  <header><div class="eyebrow a">ازدواج عشق‌محور <span class="en">The Love-Based Marriage</span></div><h2 class="a" style="--d:.2">وقتی بقا دیگر نگرانی نیست</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">صنعتی‌شدن قابله‌ی ازدواجِ عشق‌محور بود: با ثروتِ بیشتر، نگرانیِ بقا کم شد و نیازِ عشق و تعلق جلو آمد.</p>
+      <p class="a" style="--d:7.5">مثالِ فینکل: همسرش آلیسون در ۲۰۰۹ به ویارِ شدیدِ بارداری <span class="en">(hyperemesis gravidarum)</span> دچار شد؛ همان بیماری که در ۱۸۵۵ شارلوت برونته را کشت. پزشکیِ مدرن او را نجات داد.</p>
+      <p class="key a" style="--d:15"><mark>به گفته‌ی مازلو، نیازی که همیشه برآورده است دیگر رفتار را هدایت نمی‌کند.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <g class="a" style="--k:fade;--d:1.4">
+          <path d="M40 420 H360 L314 320 H86Z" fill="rgba(219,166,94,.45)" stroke="var(--ground2)" stroke-width="2"/>
+          <path d="M86 320 H314 L264 210 H136Z" fill="rgba(227,104,140,.45)" stroke="var(--ground2)" stroke-width="2"/>
+          <path d="M136 210 H264 L200 70Z" fill="rgba(111,192,214,.35)" stroke="var(--ground2)" stroke-width="2"/>
+          <text x="200" y="392" text-anchor="middle" font-size="15">نیازهای جسمی و امنیت</text>
+          <text x="200" y="274" text-anchor="middle" font-size="16" font-weight="700">عشق و تعلق</text>
+          <text x="200" y="172" text-anchor="middle" font-size="15">رشد</text>
+        </g>
+        <path class="a dr" style="--k:draw;--du:.8s;--d:2.6" pathLength="1" d="M186 350 L196 360 L216 338" fill="none" stroke="var(--good)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="a dr" style="--k:draw;--du:1.4s;--d:3.4" pathLength="1" d="M330 396 C 372 350, 352 300, 300 270" fill="none" stroke="var(--e2)" stroke-width="3"/>
+        <circle class="a" style="--k:pulse;--du:2s;--it:infinite;--d:4.6" cx="200" cy="268" r="44" fill="none" stroke="var(--e2)" stroke-width="2"/>
+        <text class="a" style="--k:fade;--d:8" x="470" y="56" text-anchor="middle" font-size="15" fill="var(--muted)">ویارِ شدیدِ بارداری</text>
+        <g class="a" style="--k:up;--d:8.6"><rect x="385" y="76" width="170" height="112" rx="14" fill="var(--panel)" stroke="var(--line)"/><text x="470" y="114" text-anchor="middle" font-size="24" font-weight="700" fill="var(--e2)">۱۸۵۵</text><text x="470" y="146" text-anchor="middle" font-size="16">شارلوت برونته</text><text x="470" y="172" text-anchor="middle" font-size="14" fill="var(--muted)">درگذشت</text></g>
+        <g class="a" style="--k:up;--d:11"><rect x="385" y="208" width="170" height="122" rx="14" fill="var(--panel)" stroke="var(--e3)"/><text x="470" y="246" text-anchor="middle" font-size="24" font-weight="700" fill="var(--e3)">۲۰۰۹</text><text x="470" y="278" text-anchor="middle" font-size="15">آلیسون، همسرِ فینکل</text><text x="470" y="306" text-anchor="middle" font-size="14" fill="var(--muted)">۲۱ بار اورژانس و سزارین</text></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · Love-based: romance over logistics -->
+<section class="scene" data-t="25" data-sec="2" data-title="کفه‌ی عشق سنگین‌تر شد">
+  <header><div class="eyebrow a">ازدواج عشق‌محور <span class="en">The Love-Based Marriage</span></div><h2 class="a" style="--d:.2">سازگاریِ عاشقانه به جای عملی</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">شهرنشینی به جوانان اختیارِ انتخابِ همسر داد. دین، قانون و سنت، که پایه‌ی ازدواج بودند، نفوذشان را از دست دادند.</p>
+      <p class="a" style="--d:6.5">وقتی هماهنگیِ کارهای روزانه دیگر کلیدِ موفقیت نبود، سازگاریِ عاشقانه جای سازگاریِ عملی را گرفت.</p>
+      <p class="key a" style="--d:12"><mark>تا میانه‌ی قرن ۱۹، طبقه‌ی متوسط و بالا این ازدواج را نسخه‌ی بهشت روی زمین می‌دانستند.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <g class="a" style="--k:fade;--d:1">
+          <path d="M280 140 V380 M210 380 H350" fill="none" stroke="var(--muted)" stroke-width="5" stroke-linecap="round"/>
+        </g>
+        <g class="a" style="--k:fade;--d:1.6">
+          <g class="a" style="--k:tilt;--du:2s;--d:7.5"><rect x="96" y="136" width="368" height="8" rx="4" fill="var(--ink)"/></g>
+          <circle cx="280" cy="140" r="9" fill="var(--e1)"/>
+          <g class="a" style="--k:panDown;--du:2s;--d:7.5">
+            <path d="M100 142 L62 220 M100 142 L138 220" stroke="var(--muted)" stroke-width="2"/>
+            <path d="M52 220 H148 Q142 250 100 250 Q58 250 52 220Z" fill="rgba(227,104,140,.35)" stroke="var(--e2)" stroke-width="2.5"/>
+            <g transform="translate(100 214) scale(1.1)"><path d="M0 14 C -22 0, -20 -18, -9 -18 C -3 -18, 0 -13, 0 -10 C 0 -13, 3 -18, 9 -18 C 20 -18, 22 0, 0 14Z" fill="var(--e2)"/></g>
+            <text x="100" y="282" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e2)">سازگاریِ عاشقانه</text>
+          </g>
+          <g class="a" style="--k:panUp;--du:2s;--d:7.5">
+            <path d="M460 142 L422 220 M460 142 L498 220" stroke="var(--muted)" stroke-width="2"/>
+            <path d="M412 220 H508 Q502 250 460 250 Q418 250 412 220Z" fill="rgba(219,166,94,.3)" stroke="var(--e1)" stroke-width="2.5"/>
+            <rect x="444" y="200" width="32" height="20" rx="3" fill="var(--e1)"/>
+            <text x="460" y="282" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e1)">سازگاریِ عملی</text>
+            <text x="460" y="306" text-anchor="middle" font-size="14" fill="var(--muted)">دین، قانون، سنت</text>
+          </g>
+        </g>
+        <text class="a" style="--k:pop;--d:10" x="280" y="424" text-anchor="middle" font-size="18" font-weight="700" fill="var(--e2)">کفه‌ی عشق سنگین‌تر شد</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · Haven -->
+<section class="scene" data-t="27" data-sec="3" data-title="پناهگاه در دنیای بی‌رحم">
+  <header><div class="eyebrow a">پناهگاهی در دنیای بی‌رحم <span class="en">A Haven in a Heartless World</span></div><h2 class="a" style="--d:.2">بیرون بی‌رحم، درون پناهگاه</h2></header>
+  <div class="duo">
+    <article class="card a" style="--d:1;--c:var(--e2)">
+      <div class="tag">بیرون: دنیای بی‌رحم</div>
+      <h3>کارخانه</h3>
+      <svg viewBox="0 0 300 70" aria-hidden="true"><rect x="20" y="48" width="260" height="10" rx="5" fill="var(--muted)"/><g fill="var(--stone)" stroke="var(--ink)" stroke-width="1.5"><circle cx="60" cy="38" r="8"/><circle cx="120" cy="38" r="8"/><circle cx="180" cy="38" r="8"/><circle cx="240" cy="38" r="8"/></g><g transform="translate(196 8)"><g class="a" style="--k:tap;--du:.5s;--it:infinite;--d:2"><rect x="-4" y="-4" width="40" height="9" rx="3" fill="var(--e1)" transform="rotate(-30)"/></g></g></svg>
+      <p>شرایطِ کار خشن بود و قطعِ عضو شایع. کار تکه‌تکه و یکنواخت شد؛ مثلِ چارلی چاپلین در «عصر جدید»، کارگر تمامِ روز فقط پیچ سفت می‌کرد. ارزش‌های بازار: استقلال، اتکا به خود، جاه‌طلبی.</p>
+    </article>
+    <article class="card a" style="--d:7.5;--c:var(--e3)">
+      <div class="tag">درون: پناهگاه</div>
+      <h3>خانه</h3>
+      <svg viewBox="0 0 300 70" aria-hidden="true"><circle class="a" style="--k:pulse;--du:2.2s;--it:infinite;--d:8.5" cx="150" cy="40" r="28" fill="none" stroke="var(--e3)" stroke-width="2"/><path d="M122 66 V36 L150 12 L178 36 V66Z" fill="rgba(111,192,214,.2)" stroke="var(--e3)" stroke-width="3" stroke-linejoin="round"/><g transform="translate(150 46) scale(.7)"><path d="M0 14 C -22 0, -20 -18, -9 -18 C -3 -18, 0 -13, 0 -10 C 0 -13, 3 -18, 9 -18 C 20 -18, 22 0, 0 14Z" fill="var(--e2)"/></g></svg>
+      <p>به تعبیرِ تاریخ‌نگار کریستوفر لَش، خانه «پناهگاهی در دنیای بی‌رحم» شد. به گفته‌ی مینتز و کلاگ، خانواده وزنه‌ی مقابلِ بازار بود: جای عشق، همدلی، همراهی و ازخودگذشتگی.</p>
+    </article>
+  </div>
+  <p class="cap a" style="--d:15">فضیلتِ مردانه هم عوض شد: کمتر افتخار، شجاعت و خدمت؛ بیشتر عشق‌ورزیدن به همسر و فرزندان و محافظت از آن‌ها.</p>
+</section>
+
+<!-- 11 · Passion and sex -->
+<section class="scene" data-t="24" data-sec="4" data-title="شور و رابطه‌ی جنسی">
+  <header><div class="eyebrow a">شور عاشقانه و رابطه‌ی جنسی <span class="en">Passion and Sex</span></div><h2 class="a" style="--d:.2">عشق، نیرویی مهارنشدنی</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">وقتی عشق پیش‌شرطِ ازدواج شد، آن را نیرویی مهارنشدنی دیدند. پیش‌تر قرار بود زن و شوهر محبتی گرم را در طولِ ازدواج بپرورانند.</p>
+      <p class="a" style="--d:7.5">از آغازِ قرن ۲۰، قیدهای اخلاقِ ویکتوریایی شُل شد و زنان هم میلِ جنسیِ خود را به رسمیت شناختند.</p>
+      <p class="key a" style="--d:13.5"><mark>ازدواجِ کم‌رابطه همان‌قدر ناپذیرفتنی شد که پیش‌تر ازدواجِ بی‌عشق.</mark></p>
+    </div>
+    <div class="vis">
+      <div class="chain">
+        <div class="node a" style="--d:2.4"><span class="dot">۱</span><div><b>پیش‌تر</b><small>محبت در طولِ ازدواج پرورده می‌شد</small></div></div>
+        <div class="node a" style="--d:4.6;--c:var(--e2)"><span class="dot">۲</span><div><b>نیمه‌ی دومِ قرن ۱۹</b><small>جوانان پیش از ازدواج شورِ عاشقانه‌ی قوی می‌خواستند</small></div></div>
+        <div class="node a" style="--d:9;--c:var(--e2)"><span class="dot">۳</span><div><b>دهه‌های آغازینِ قرن ۲۰</b><small>کنار رفتنِ کُرست‌ها؛ کیفیتِ رابطه‌ی جنسی مهم شد</small></div></div>
+        <div class="node res a" style="--d:11;--c:var(--e2)"><span class="dot" style="--c:var(--e2)">♥</span><div><b>همسران باید هم عزیز بدارند، هم لذت ببخشند</b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · Separate spheres -->
+<section class="scene" data-t="27" data-sec="5" data-title="حوزه‌های جدا">
+  <header><div class="eyebrow a">حوزه‌های جدا: از ایده تا واقعیت <span class="en">Separate Spheres: From Ideology to Reality</span></div><h2 class="a" style="--d:.2">حوزه‌های جدا واقعی شد</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">مزدها بالا رفت و زنانِ بیشتری فقط به خانه و بچه پرداختند. زنِ خانه‌نشین نشانه‌ی منزلت شد، حتی در خانواده‌های کارگری.</p>
+      <p class="a" style="--d:8">ترفندی ادراکی هم آن را محکم کرد: آشپزی و دوخت‌ودوز دیگر «تولیدِ اقتصادی» دیده نمی‌شد، بلکه نشانه‌ی عشق و مراقبت.</p>
+      <p class="key a" style="--d:14"><mark>به گفته‌ی جان گیلیس، زن از «خانه‌دار» <span class="en">(housekeeper)</span> به «کدبانو» <span class="en">(homemaker)</span>، یعنی قلبِ عاطفیِ خانه، تبدیل شد.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <g class="a" style="--k:pop;--d:1.8"><circle cx="410" cy="150" r="95" fill="rgba(227,104,140,.16)" stroke="var(--e2)" stroke-width="2.5"/><text x="410" y="112" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e2)">حوزه‌ی زن: خانه</text></g>
+        <g class="a" style="--k:pop;--d:2.4"><circle cx="150" cy="150" r="95" fill="rgba(111,192,214,.14)" stroke="var(--e3)" stroke-width="2.5"/><text x="150" y="112" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e3)">حوزه‌ی مرد: بازار</text></g>
+        <path class="a dr" style="--k:draw;--d:3" pathLength="1" d="M280 50 V260" fill="none" stroke="var(--muted)" stroke-width="2.5" stroke-dasharray="1 1"/>
+        <g font-size="16" text-anchor="middle">
+          <text class="a" style="--k:fade;--d:3.6" x="410" y="160">وابسته · رام</text>
+          <text class="a" style="--k:fade;--d:4" x="410" y="196">همکار · احساسی</text>
+          <text class="a" style="--k:fade;--d:4.4" x="150" y="160">مستقل · قاطع</text>
+          <text class="a" style="--k:fade;--d:4.8" x="150" y="196">رقابتی · بی‌احساس</text>
+        </g>
+        <text class="a" style="--k:fade;--d:8.4" x="280" y="296" text-anchor="middle" font-size="15" fill="var(--muted)">کارِ خانه</text>
+        <g class="a" style="--k:up;--d:8.8"><rect x="360" y="310" width="160" height="42" rx="21" fill="var(--panel)" stroke="var(--line)"/><text x="440" y="337" text-anchor="middle" font-size="16">تولیدِ اقتصادی</text></g>
+        <path class="a dr" style="--k:draw;--du:.6s;--d:9.6" pathLength="1" d="M372 331 H508" fill="none" stroke="var(--e2)" stroke-width="3"/>
+        <path class="a dr" style="--k:draw;--d:10.2" pathLength="1" d="M350 331 H214 M226 322 L212 331 L226 340" fill="none" stroke="var(--muted)" stroke-width="3" stroke-linecap="round"/>
+        <g class="a" style="--k:pop;--d:11"><rect x="40" y="310" width="164" height="42" rx="21" fill="rgba(227,104,140,.2)" stroke="var(--e2)"/><text x="122" y="337" text-anchor="middle" font-size="16" font-weight="700">عشق و مراقبت</text></g>
+        <text class="a" style="--k:up;--d:15" x="280" y="404" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e1)">خانه‌دار ← کدبانو</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · New Deal -->
+<section class="scene" data-t="26" data-sec="6" data-title="رکود بزرگ و نیو دیل">
+  <header><div class="eyebrow a">نیو دیل <span class="en">The New Deal</span></div><h2 class="a" style="--d:.2">رکودِ بزرگ و «نیو دیل»</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">۲۹ اکتبر ۱۹۲۹، «سه‌شنبه‌ی سیاه»، بازارِ سهام فروریخت و رکودِ بزرگ آغاز شد.</p>
+      <p class="a" style="--d:6">خانواده‌ی شهری دیگر باغچه و بزی نداشت و پیوندهای خویشاوندی هم سست شده بود. بقا دوباره اولویت شد و تأکید بر عشق و رابطه‌ی جنسی کم‌رنگ شد.</p>
+      <p class="key a" style="--d:13"><mark>روزولت از ۱۹۳۳ «نیو دیل» را آغاز کرد؛ با قانونِ تأمینِ اجتماعیِ ۱۹۳۵، دولتِ فدرال مسئولِ رفاهِ خانواده‌ها شد.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 400" aria-hidden="true">
+        <text x="280" y="20" text-anchor="middle" font-size="15" fill="var(--muted)">۱۹۲۹ تا ۱۹۳۲</text>
+        <line x1="240" y1="60" x2="520" y2="60" stroke="var(--line)" stroke-width="2"/>
+        <text x="300" y="48" text-anchor="middle" font-size="16">تولیدِ صنعتی</text>
+        <text x="440" y="48" text-anchor="middle" font-size="16">تجارتِ خارجی</text>
+        <rect class="a" style="--k:growY;--du:1.3s;--d:2;transform-origin:50% 0" x="260" y="60" width="80" height="166" rx="5" fill="var(--e2)"/>
+        <rect class="a" style="--k:growY;--du:1.3s;--d:2.8;transform-origin:50% 0" x="400" y="60" width="80" height="252" rx="5" fill="var(--e2)"/>
+        <text class="a" style="--k:up;--d:3.2" x="300" y="254" text-anchor="middle" font-size="22" font-weight="700" fill="var(--e2)">٪۴۶−</text>
+        <text class="a" style="--k:up;--d:4" x="440" y="340" text-anchor="middle" font-size="22" font-weight="700" fill="var(--e2)">٪۷۰−</text>
+        <g fill="var(--stone)">
+          <g class="a" style="--k:pop;--d:4.6"><circle cx="70" cy="108" r="12"/><path d="M52 150 Q52 124 70 124 Q88 124 88 150Z"/></g>
+          <g class="a" style="--k:pop;--d:4.8"><circle cx="150" cy="108" r="12"/><path d="M132 150 Q132 124 150 124 Q168 124 168 150Z"/></g>
+          <g class="a" style="--k:pop;--d:5"><circle cx="150" cy="198" r="12"/><path d="M132 240 Q132 214 150 214 Q168 214 168 240Z"/></g>
+        </g>
+        <g class="a" style="--k:pop;--d:5.4" fill="var(--e2)"><circle cx="70" cy="198" r="12"/><path d="M52 240 Q52 214 70 214 Q88 214 88 240Z"/></g>
+        <text class="a" style="--k:up;--d:5.8" x="110" y="292" text-anchor="middle" font-size="22" font-weight="700">٪۲۵ بیکار</text>
+        <text class="a" style="--k:up;--d:6.2" x="110" y="320" text-anchor="middle" font-size="15" fill="var(--muted)">یک نفر از هر چهار</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · Rosie -->
+<section class="scene" data-t="25" data-sec="7" data-title="رُزیِ پرچ‌کار">
+  <header><div class="eyebrow a">زنِ کارگرِ صنعتی <span class="en">The Female Industrial Laborer</span></div><h2 class="a" style="--d:.2">رُزیِ پرچ‌کار</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">جنگ اقتصاد را بیدار کرد: تا میانه‌ی ۱۹۴۳ اشتغالِ کامل برقرار شد، مزدها بالا رفت و نابرابریِ درآمد به‌شدت کم شد.</p>
+      <p class="a" style="--d:6">حدود ۱۶ میلیون مرد به جبهه رفتند و بدونِ زنان نیروی کار کافی نبود. «رُزیِ پرچ‌کار» <span class="en">(Rosie the Riveter)</span>، کارگرِ زنِ خیالی، نمادِ میهن‌دوستی شد.</p>
+      <p class="key a" style="--d:12"><mark>شمارِ زنانِ شاغل از ۱۹۴۰ تا ۱۹۴۵، ٪۶۰ بیشتر شد.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 400" aria-hidden="true">
+        <text x="280" y="22" text-anchor="middle" font-size="15" fill="var(--muted)">زنانِ شاغل (شاخص: ۱۹۴۰ = ۱۰۰)</text>
+        <g class="a" style="--k:pop;--d:6.6"><rect x="160" y="42" width="240" height="34" rx="17" fill="var(--panel)" stroke="var(--line)"/><text x="280" y="65" text-anchor="middle" font-size="16">۱۶ میلیون مرد در جبهه</text></g>
+        <line x1="60" y1="360" x2="500" y2="360" stroke="var(--line)" stroke-width="2"/>
+        <rect class="a gy" style="--k:growY;--du:1.3s;--d:7.6" x="110" y="210" width="100" height="150" rx="6" fill="var(--muted)"/>
+        <rect class="a gy" style="--k:growY;--du:1.3s;--d:8.6" x="330" y="120" width="100" height="240" rx="6" fill="var(--e2)"/>
+        <g class="a" style="--k:fade;--d:9.8" fill="var(--ground2)"><circle cx="350" cy="150" r="4"/><circle cx="350" cy="200" r="4"/><circle cx="350" cy="250" r="4"/><circle cx="350" cy="300" r="4"/><circle cx="410" cy="150" r="4"/><circle cx="410" cy="200" r="4"/><circle cx="410" cy="250" r="4"/><circle cx="410" cy="300" r="4"/></g>
+        <text class="a" style="--k:up;--d:8.4" x="160" y="198" text-anchor="middle" font-size="20" font-weight="700">۱۰۰</text>
+        <text class="a" style="--k:up;--d:9.4" x="380" y="108" text-anchor="middle" font-size="20" font-weight="700" fill="var(--e2)">۱۶۰</text>
+        <path class="a dr" style="--k:draw;--du:1.2s;--d:12.4" pathLength="1" d="M170 184 Q 260 100 340 112" fill="none" stroke="var(--e1)" stroke-width="3"/>
+        <g class="a" style="--k:pop;--d:13"><rect x="225" y="182" width="80" height="36" rx="18" fill="var(--e1)"/><text x="265" y="207" text-anchor="middle" font-size="18" font-weight="700" fill="var(--ground)">٪۶۰+</text></g>
+        <text x="160" y="388" text-anchor="middle" font-size="17">۱۹۴۰</text>
+        <text x="380" y="388" text-anchor="middle" font-size="17">۱۹۴۵</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 15 · War hardships -->
+<section class="scene" data-t="26" data-sec="7" data-title="جهشِ طلاق پس از جنگ">
+  <header><div class="eyebrow a">زنِ کارگرِ صنعتی <span class="en">The Female Industrial Laborer</span></div><h2 class="a" style="--d:.2">سختی‌های جنگ، جهشِ طلاق</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">ده سال پیش‌تر، در رکود، زنِ شاغل را متهم می‌کردند که کارِ مردان را می‌گیرد؛ حالا او میهن‌دوست بود و مزدِ معقول می‌گرفت.</p>
+      <p class="a" style="--d:7">اما جنگ سختی هم داشت: ۱۱۵ هزار ساکنِ ژاپنی‌تبار، بیشترشان شهروندِ آمریکا، به اردوگاه فرستاده شدند؛ کالاها جیره‌بندی شد و مسکن کم بود.</p>
+    </div>
+    <div class="vis">
+      <div class="chain">
+        <div class="node a" style="--d:3"><span class="dot">۱</span><div><b>جداییِ طولانی</b><small>میلیون‌ها خانواده بی پسر، شوهر و پدر ماندند</small></div></div>
+        <div class="node a" style="--d:5"><span class="dot">۲</span><div><b>استقلالِ تازه‌ی زنان</b><small>حسادتِ سربازان بیشتر شد</small></div></div>
+        <div class="node a" style="--d:10"><span class="dot">۳</span><div><b>نگرانی از آن سوی دریا</b><small>زنان نگرانِ رفتارِ جنسیِ شوهران در خارج بودند</small></div></div>
+        <div class="node a" style="--d:12"><span class="dot">۴</span><div><b>ازدواج‌های شتاب‌زده</b><small>پیش از اعزام؛ پس از بازگشت دیگر جور نبودند</small></div></div>
+        <div class="node res a" style="--d:14;--c:var(--e2)"><span class="dot" style="--c:var(--e2)">!</span><div><b>جهشِ طلاق در ۱۹۴۵ و ۱۹۴۶</b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 16 · Long decade -->
+<section class="scene" data-t="28" data-sec="8" data-title="دهه‌ی طولانیِ ۱۹۵۰">
+  <header><div class="eyebrow a">اوجِ ازدواج عشق‌محور <span class="en">The Apotheosis of the Love-Based Marriage</span></div><h2 class="a" style="--d:.2">دهه‌ی ۱۹۵۰: همه‌چیز سرِ جایش</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">«دهه‌ی طولانیِ» ۱۹۴۷ تا اوایلِ دهه‌ی ۶۰ روندهای چندصدساله را به نتیجه رساند: ازدواج برای عشق، با الگوی نان‌آور–خانه‌دار.</p>
+      <p class="a" style="--d:8.5">پس از ۱۶ سال آشوبِ رکود و جنگ، مردم ثبات می‌خواستند و این الگو را، به تعبیرِ فرانسیس فوکویاما، «پایانِ تاریخ» می‌دیدند.</p>
+      <p class="key a" style="--d:15"><mark>تالکوت پارسونز: تقسیمِ کار در خانه کارآمد است؛ درآمد از مرد، رسیدگی از زن.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 400" aria-hidden="true">
+        <g class="a" style="--k:up;--d:2.4"><rect x="290" y="10" width="260" height="180" rx="16" fill="var(--panel)"/>
+          <circle cx="420" cy="86" r="44" fill="none" stroke="var(--line)" stroke-width="12"/></g>
+        <path class="a dr" style="--k:draw;--du:1.6s;--d:2.8" pathLength="1" d="M420 42 A44 44 0 1 1 406.2 44.2" fill="none" stroke="var(--e2)" stroke-width="12"/>
+        <text class="a" style="--k:pop;--d:3" x="420" y="96" text-anchor="middle" font-size="24" style="font-family:var(--display)">٪۹۵</text>
+        <text class="a" style="--k:fade;--d:3.4" x="420" y="166" text-anchor="middle" font-size="15">ازدواج کردند</text>
+        <g class="a" style="--k:up;--d:3.8"><rect x="10" y="10" width="260" height="180" rx="16" fill="var(--panel)"/>
+          <text x="140" y="90" text-anchor="middle" font-size="40" fill="var(--e1)" style="font-family:var(--display)">نیمی</text>
+          <text x="140" y="132" text-anchor="middle" font-size="15">از زنان تا ۲۰ سالگی</text>
+          <text x="140" y="158" text-anchor="middle" font-size="15">ازدواج کردند</text></g>
+        <g class="a" style="--k:up;--d:5"><rect x="290" y="210" width="260" height="180" rx="16" fill="var(--panel)"/>
+          <line x1="320" y1="330" x2="520" y2="330" stroke="var(--line)"/>
+          <text x="420" y="366" text-anchor="middle" font-size="14">تنها دوره‌ی افزایشِ پایدارِ باروری</text></g>
+        <path class="a dr" style="--k:draw;--du:1.4s;--d:5.6" pathLength="1" d="M320 318 C 380 314, 440 280, 510 240" fill="none" stroke="var(--e3)" stroke-width="4"/>
+        <g class="a" style="--k:up;--d:6.4"><rect x="10" y="210" width="260" height="180" rx="16" fill="var(--panel)"/>
+          <line x1="40" y1="330" x2="240" y2="330" stroke="var(--line)"/>
+          <text x="140" y="366" text-anchor="middle" font-size="14">نرخ طلاق دیگر بالا نرفت</text></g>
+        <path class="a dr" style="--k:draw;--du:1.4s;--d:7" pathLength="1" d="M40 310 L120 274 L240 274" fill="none" stroke="var(--e2)" stroke-width="4"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 17 · Economy and policy -->
+<section class="scene" data-t="28" data-sec="8" data-title="رونق و قانون جی‌آی">
+  <header><div class="eyebrow a">اوجِ ازدواج عشق‌محور <span class="en">The Apotheosis of the Love-Based Marriage</span></div><h2 class="a" style="--d:.2">رونق، و سیاست‌هایی به سودِ خانه‌داری</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">«پیمانِ دیترویت» (۱۹۵۰) برای کارگرانِ خودروسازی بازنشستگی و بیمه آورد. میانه‌ی حقوقِ دیپلمه‌ها، با احتسابِ تورم، از ۱۹۵۰ تا ۱۹۷۳ تقریباً دو برابر شد.</p>
+      <p class="key a" style="--d:8"><mark>یک حقوق برای خانواده کافی بود؛ و زنانِ شاغل دسته‌دسته از بازارِ کار بیرون رانده شدند.</mark></p>
+    </div>
+    <div class="vis">
+      <div class="chain">
+        <div class="node a" style="--d:3;--c:var(--e3)"><span class="dot">۱۹۴۴</span><div><b>قانونِ جی‌آی <span class="en">(G.I. Bill)</span></b><small>وامِ ارزانِ مسکن، هزینه‌ی دانشگاه، وامِ کسب‌وکار، بیمه‌ی بیکاری</small></div></div>
+        <div class="node a" style="--d:5;--c:var(--e3)"><span class="dot">!</span><div><b>تقریباً همه‌ی کهنه‌سربازان مرد بودند</b><small>زن فقط با ازدواج سهم می‌برد</small></div></div>
+        <div class="node a" style="--d:11;--c:var(--e3)"><span class="dot">۱۹۴۸</span><div><b>معافیتِ مالیاتیِ مردانِ متأهل</b><small>فقط اگر زن درآمدی کم یا هیچ داشت</small></div></div>
+        <div class="node res a" style="--d:13.5;--c:var(--e2)"><span class="dot" style="--c:var(--e2)">٪۶۰</span><div><b>زنانِ دانشجو بی‌مدرک رفتند</b><small style="color:var(--ink)">برای ازدواج، یا از ترسِ کم‌شدنِ شانسِ ازدواج</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 18 · Togetherness and suburbs -->
+<section class="scene" data-t="27" data-sec="8" data-title="باهم‌بودن در حومه">
+  <header><div class="eyebrow a">اوجِ ازدواج عشق‌محور <span class="en">The Apotheosis of the Love-Based Marriage</span></div><h2 class="a" style="--d:.2">«باهم‌بودن» در حومه‌ی شهر</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">مجله‌ی مک‌کالز این سبکِ زندگی را «باهم‌بودن» <span class="en">(togetherness)</span> نامید. نمونه‌اش در ۱۹۵۴: اِد و کارول ریچ‌شایت در حومه‌ی نیوجرسی، که زندگی را دورِ بچه‌ها و خانه چیده بودند.</p>
+      <p class="a" style="--d:9">از ۱۹۴۸ تا ۱۹۵۸، ٪۸۵ از ۱۳ میلیون خانه‌ی نو در حومه‌ها ساخته شد. ویلیام لویت خانه‌ی چهاراتاقه را با روشِ خطِ تولیدِ فورد می‌ساخت.</p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 400" aria-hidden="true">
+        <g fill="var(--panel)" stroke="var(--e1)" stroke-width="2.5" stroke-linejoin="round">
+          <g class="a" style="--k:pop;--d:2"><path d="M464 110 V76 L490 52 L516 76 V110Z" fill="rgba(227,104,140,.25)" stroke="var(--e2)"/></g>
+          <g class="a" style="--k:pop;--d:9.8"><path d="M380 110 V76 L406 52 L432 76 V110Z"/></g>
+          <g class="a" style="--k:pop;--d:10.1"><path d="M296 110 V76 L322 52 L348 76 V110Z"/></g>
+          <g class="a" style="--k:pop;--d:10.4"><path d="M212 110 V76 L238 52 L264 76 V110Z"/></g>
+          <g class="a" style="--k:pop;--d:10.7"><path d="M128 110 V76 L154 52 L180 76 V110Z"/></g>
+          <g class="a" style="--k:pop;--d:11"><path d="M44 110 V76 L70 52 L96 76 V110Z"/></g>
+        </g>
+        <g class="a" style="--k:pop;--d:2.6"><g transform="translate(490 30) scale(.7)"><path d="M0 14 C -22 0, -20 -18, -9 -18 C -3 -18, 0 -13, 0 -10 C 0 -13, 3 -18, 9 -18 C 20 -18, 22 0, 0 14Z" fill="var(--e2)"/></g></g>
+        <text class="a" style="--k:up;--d:11.6" x="280" y="146" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e1)">٪۸۵ خانه‌های نو، در حومه</text>
+        <text class="a" style="--k:fade;--d:13" x="280" y="190" text-anchor="middle" font-size="14" fill="var(--muted)">پایانِ دهه‌ی ۱۹۵۰: سهمِ بزرگسالانِ آمریکایی</text>
+        <rect class="a gxr" style="--k:growX;--du:1.2s;--d:13.6" x="173" y="206" width="227" height="36" rx="8" fill="var(--e3)"/>
+        <rect class="a gxr" style="--k:growX;--du:1.2s;--d:14.2" x="145" y="262" width="255" height="36" rx="8" fill="var(--e3)"/>
+        <rect class="a gxr" style="--k:growX;--du:1.2s;--d:14.8" x="94" y="318" width="306" height="36" rx="8" fill="var(--e2)"/>
+        <g font-size="16" text-anchor="middle">
+          <text x="480" y="230">خانه‌ی شخصی</text><text x="480" y="286">خودرو</text><text x="480" y="342">تلویزیون</text>
+          <text class="a" style="--k:fade;--d:14.6" x="286" y="230" font-weight="700" fill="var(--ground)">دوسوم</text>
+          <text class="a" style="--k:fade;--d:15.2" x="272" y="286" font-weight="700" fill="var(--ground)">سه‌چهارم</text>
+          <text class="a" style="--k:fade;--d:15.8" x="247" y="342" font-weight="700" fill="var(--ground)">نزدیک ٪۹۰</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 19 · TV and the great exception -->
+<section class="scene" data-t="24" data-sec="8" data-title="استثنای بزرگ">
+  <header><div class="eyebrow a">اوجِ ازدواج عشق‌محور <span class="en">The Apotheosis of the Love-Based Marriage</span></div><h2 class="a" style="--d:.2">ازدواجِ «سنتی» در تلویزیون</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">تلویزیون، که در ۱۹۴۰ تقریباً کسی ندیده بود، در دهه‌ی ۵۰ سرگرمیِ اصلی شد. سریال‌هایی مثل <span class="en">Leave It to Beaver</span> و <span class="en">Ozzie &amp; Harriet</span> خانواده‌ی نان‌آور–خانه‌دار را نشان دادند و تصویرِ ما از «ازدواجِ سنتی» را ساختند.</p>
+      <p class="key a" style="--d:10"><mark>اما این الگو ضدِ سنتی بود: به تعبیرِ مینتز و کلاگ، «استثنای بزرگ».</mark></p>
+      <p class="a" style="--d:15">کونتز یادآوری می‌کند که آن سریال‌ها مستند نبودند.</p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <g class="a" style="--k:pop;--d:1.5">
+          <path d="M260 60 L225 22 M300 60 L335 22 M200 240 L186 264 M360 240 L374 264" stroke="var(--muted)" stroke-width="3" stroke-linecap="round"/>
+          <rect x="150" y="60" width="260" height="180" rx="22" fill="var(--panel)" stroke="var(--line)" stroke-width="2"/>
+          <rect x="170" y="78" width="220" height="144" rx="14" fill="rgba(111,192,214,.12)"/>
+        </g>
+        <g class="a" style="--k:up;--d:3"><circle cx="222" cy="128" r="14" fill="var(--e3)"/><rect x="204" y="146" width="36" height="58" rx="12" fill="var(--e3)"/></g>
+        <g class="a" style="--k:up;--d:3.3"><circle cx="266" cy="132" r="13" fill="var(--e2)"/><rect x="249" y="148" width="34" height="56" rx="12" fill="var(--e2)"/></g>
+        <g class="a" style="--k:up;--d:3.6"><circle cx="308" cy="152" r="10" fill="var(--e1)"/><rect x="295" y="166" width="26" height="38" rx="10" fill="var(--e1)"/></g>
+        <g class="a" style="--k:up;--d:3.9"><circle cx="344" cy="156" r="9" fill="var(--e1)"/><rect x="333" y="168" width="22" height="36" rx="9" fill="var(--e1)"/></g>
+        <rect class="a gxr" style="--k:growX;--du:1.6s;--d:9.5" x="40" y="340" width="480" height="18" rx="9" fill="var(--line)"/>
+        <text class="a" style="--k:fade;--d:10" x="280" y="388" text-anchor="middle" font-size="15" fill="var(--muted)">هزاران سال تاریخِ ازدواج</text>
+        <rect class="a" style="--k:pop;--d:10.8" x="502" y="332" width="12" height="34" rx="3" fill="var(--e2)"/>
+        <circle class="a" style="--k:pulse;--du:2s;--it:infinite;--d:11.4" cx="508" cy="349" r="20" fill="none" stroke="var(--e2)" stroke-width="2"/>
+        <text class="a" style="--k:up;--d:11" x="490" y="316" text-anchor="middle" font-size="15" font-weight="700" fill="var(--e2)">دهه‌ی ۵۰</text>
+        <text class="a" style="--k:up;--d:11.6" x="470" y="424" text-anchor="middle" font-size="18" font-weight="700" fill="var(--e2)">استثنای بزرگ</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 20 · Five challenges -->
+<section class="scene" data-t="27" data-sec="9" data-title="پنج چالش">
+  <header><div class="eyebrow a">پنج چالش ازدواج عشق‌محور <span class="en">Five Challenges of the Love-Based Marriage</span></div><h2 class="a" style="--d:.2">پنج ترک در ازدواجِ عشق‌محور</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">موفقیتِ دهه‌ی ۵۰ در رسیدن به این آرمان‌ها نشان داد که خودِ آرمان‌ها از اول معیوب بودند و بسیاری را ناکام گذاشتند.</p>
+      <p class="a" style="--d:11">البته این ازدواج بدترین بخش‌های ازدواجِ عمل‌گرا، مثل پدرسالاریِ سخت و بی‌احترامی به استقلالِ فرد، را شکست.</p>
+      <p class="key a" style="--d:16"><mark>اما پنج مشکلِ ذاتی، راهِ رسیدن به بالاترین رضایت را می‌بست.</mark></p>
+    </div>
+    <div class="vis">
+      <div class="steps">
+        <div class="step a" style="--d:4"><div><b>وابستگیِ اقتصادیِ زنان</b><small>ازدواجِ برابر ممکن نبود</small></div></div>
+        <div class="step a" style="--d:5.4"><div><b>انزوای خانواده‌ی هسته‌ای</b><small>حومه‌نشینی و جابه‌جاییِ مدام</small></div></div>
+        <div class="step a" style="--d:6.8"><div><b>شناختِ ناکافی از همسر</b><small>دو دنیای جدا، اما انتظارِ صمیمیت</small></div></div>
+        <div class="step a" style="--d:8.2"><div><b>رشدِ روانیِ متوقف</b><small>همرنگی، پوچی و روانِ نیمه‌کاره</small></div></div>
+        <div class="step a" style="--d:9.6"><div><b>میلِ جنسیِ سرکش</b><small>امنیت و هیجان همیشه با هم جور نمی‌شوند</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 21 · Economic dependence -->
+<section class="scene" data-t="26" data-sec="10" data-title="وابستگی اقتصادی زنان">
+  <header><div class="eyebrow a">۱ · وابستگی اقتصادی زنان <span class="en">Women’s Economic Dependence</span></div><h2 class="a" style="--d:.2">برابری روی کاغذ، وابستگی در عمل</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">زنان قانوناً نمی‌توانستند به نامِ خود وام یا کارتِ اعتباری بگیرند و برای کارِ یکسان، قانوناً مزدِ کمتری می‌گرفتند.</p>
+      <p class="a" style="--d:6.5">وابستگی تازه نبود؛ تازه این بود که در رابطه‌ای «میانِ دو برابر» رخ می‌داد و کارِ روزانه‌ی زن «تولید» حساب نمی‌شد.</p>
+      <p class="key a" style="--d:13"><mark>پس زنان، با وجودِ ارزش‌دادن به عشق، در ازدواج محتاط‌تر از مردان بودند.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <g class="a" style="--k:up;--d:1.6"><rect x="360" y="30" width="170" height="104" rx="12" fill="var(--panel)" stroke="var(--line)" stroke-width="2"/><rect x="360" y="52" width="170" height="16" fill="var(--muted)"/><rect x="378" y="92" width="44" height="26" rx="4" fill="var(--e1)"/></g>
+        <path class="a dr" style="--k:draw;--du:.6s;--d:2.8" pathLength="1" d="M372 40 L518 124 M518 40 L372 124" fill="none" stroke="var(--e2)" stroke-width="5" stroke-linecap="round"/>
+        <text class="a" style="--k:up;--d:3.4" x="180" y="72" text-anchor="middle" font-size="17">وام یا کارتِ اعتباری</text>
+        <text class="a" style="--k:up;--d:3.6" x="180" y="102" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e2)">به نامِ خود: ممنوع</text>
+        <text class="a" style="--k:fade;--d:6.6" x="280" y="182" text-anchor="middle" font-size="15" fill="var(--muted)">مزد برای کارِ یکسان</text>
+        <rect class="a gxr" style="--k:growX;--du:1.2s;--d:7" x="90" y="198" width="360" height="34" rx="8" fill="var(--e3)"/>
+        <rect class="a gxr" style="--k:growX;--du:1.2s;--d:7.6" x="210" y="246" width="240" height="34" rx="8" fill="var(--e2)"/>
+        <text x="500" y="221" text-anchor="middle" font-size="16">مرد</text>
+        <text x="500" y="269" text-anchor="middle" font-size="16">زن</text>
+        <text class="a" style="--k:fade;--d:8.4" x="280" y="306" text-anchor="middle" font-size="13" fill="var(--muted)">نمودار مفهومی است، نه داده‌ی واقعی</text>
+        <text class="a" style="--k:up;--d:14" x="280" y="358" text-anchor="middle" font-size="15" fill="var(--muted)">جین آستن، یک قرن پیش‌تر:</text>
+        <text class="a" style="--k:up;--d:14.4" x="280" y="390" text-anchor="middle" font-size="16">ازدواجِ بی‌محبت بد است؛ اما زنِ مجرد اغلب فقیر می‌ماند.</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 22 · Social isolation -->
+<section class="scene" data-t="26" data-sec="11" data-title="انزوای خانواده‌ی هسته‌ای">
+  <header><div class="eyebrow a">۲ · انزوای خانواده‌ی هسته‌ای <span class="en">The Social Isolation of the Nuclear Family</span></div><h2 class="a" style="--d:.2">تنها در حومه</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">در شهر، همسایه‌ها غریبه بودند، نه خویشاوند. حومه‌نشینی بدترش کرد: همیشه خانه‌ای بزرگ‌تر بود، پس جابه‌جایی عادتِ همیشگی شد و ریشه‌ای نماند.</p>
+      <p class="a" style="--d:8">مادران بیشترین آسیب را دیدند: همکاری نداشتند، تنها خودروی خانه دستِ شوهر بود، و بچه‌داریِ جمعی با مادربزرگ‌ها و همسایه‌ها از میان رفت.</p>
+      <p class="key a" style="--d:15"><mark>تنها رابطه‌ی ثابتِ بزرگسالی، ازدواج بود.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <g stroke="var(--line)" stroke-width="2.5">
+          <line class="a x" style="--k:fade;--d:1.4;--x:4" x1="280" y1="190" x2="280" y2="50"/>
+          <line class="a x" style="--k:fade;--d:1.6;--x:4.6" x1="280" y1="190" x2="460" y2="150"/>
+          <line class="a x" style="--k:fade;--d:1.8;--x:5.2" x1="280" y1="190" x2="440" y2="320"/>
+          <line class="a x" style="--k:fade;--d:2;--x:5.8" x1="280" y1="190" x2="120" y2="320"/>
+          <line class="a x" style="--k:fade;--d:2.2;--x:6.4" x1="280" y1="190" x2="100" y2="150"/>
+        </g>
+        <g font-size="15" text-anchor="middle">
+          <g class="a x" style="--k:pop;--d:1.4;--x:4"><rect x="218" y="30" width="124" height="40" rx="20" fill="var(--panel)" stroke="var(--e3)"/><text x="280" y="56">خویشاوندان</text></g>
+          <g class="a x" style="--k:pop;--d:1.6;--x:4.6"><rect x="398" y="130" width="124" height="40" rx="20" fill="var(--panel)" stroke="var(--e3)"/><text x="460" y="156">همسایه‌ها</text></g>
+          <g class="a x" style="--k:pop;--d:1.8;--x:5.2"><rect x="378" y="300" width="124" height="40" rx="20" fill="var(--panel)" stroke="var(--e3)"/><text x="440" y="326">مادربزرگ‌ها</text></g>
+          <g class="a x" style="--k:pop;--d:2;--x:5.8"><rect x="58" y="300" width="124" height="40" rx="20" fill="var(--panel)" stroke="var(--e3)"/><text x="120" y="326">همکاران</text></g>
+          <g class="a x" style="--k:pop;--d:2.2;--x:6.4"><rect x="38" y="130" width="124" height="40" rx="20" fill="var(--panel)" stroke="var(--e3)"/><text x="100" y="156">جامعه‌ی محلی</text></g>
+        </g>
+        <g class="a" style="--k:pop;--d:1"><circle cx="280" cy="190" r="56" fill="var(--panel)" stroke="var(--e2)" stroke-width="2.5"/><circle cx="262" cy="182" r="14" fill="var(--e2)"/><circle cx="298" cy="182" r="14" fill="var(--e3)"/><text x="280" y="226" text-anchor="middle" font-size="14">زن و شوهر</text></g>
+        <g class="a" style="--k:train;--du:3s;--d:9.5"><path d="M300 404 V390 H314 L322 378 H344 L352 390 H362 V404Z" fill="var(--e3)"/><circle cx="314" cy="406" r="6" fill="var(--ink)"/><circle cx="348" cy="406" r="6" fill="var(--ink)"/></g>
+        <text class="a" style="--k:fade;--d:9.5" x="460" y="402" text-anchor="middle" font-size="15" fill="var(--muted)">تنها خودرو، با شوهر</text>
+        <text class="a" style="--k:pop;--d:15.6" x="280" y="304" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e2)">تنها پیوندِ ثابت: ازدواج</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 23 · Insight: contradiction -->
+<section class="scene" data-t="23" data-sec="12" data-title="جدا، اما صمیمی؟">
+  <header><div class="eyebrow a">۳ · شناختِ ناکافی از همسر <span class="en">Lack of True Insight into One’s Spouse</span></div><h2 class="a" style="--d:.2">دو دنیای جدا، اما انتظارِ صمیمیت</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">ازدواجِ عشق‌محور دو ویژگیِ تقریباً ناسازگار داشت: «حوزه‌های جدا» و «باهم‌بودن».</p>
+      <p class="a" style="--d:5.5">نهادی که زن و شوهر را بیش از هر زمان جدا می‌کرد، از آن‌ها می‌خواست منبعِ اصلیِ صمیمیت و حمایتِ هم باشند.</p>
+      <p class="key a" style="--d:12"><mark>هیچ‌کدام از پیروزی‌ها و رنج‌های روزانه‌ی دیگری خبر نداشت.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <g class="a" style="--k:fade;--d:1.4"><g class="a" style="--k:sepR;--du:2.5s;--d:6"><circle cx="330" cy="230" r="105" fill="rgba(227,104,140,.18)" stroke="var(--e2)" stroke-width="2.5"/><text x="378" y="222" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e2)">دنیای زن</text><text x="378" y="250" text-anchor="middle" font-size="14" fill="var(--muted)">خانه و بچه‌ها</text></g></g>
+        <g class="a" style="--k:fade;--d:1.8"><g class="a" style="--k:sepL;--du:2.5s;--d:6"><circle cx="230" cy="230" r="105" fill="rgba(111,192,214,.16)" stroke="var(--e3)" stroke-width="2.5"/><text x="182" y="222" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e3)">دنیای شوهر</text><text x="182" y="250" text-anchor="middle" font-size="14" fill="var(--muted)">کار و بازار</text></g></g>
+        <text class="a x" style="--k:fade;--d:2.4;--x:5.6;--xk:gone" x="280" y="236" text-anchor="middle" font-size="14" font-weight="700">مشترک</text>
+        <g class="a" style="--k:pop;--d:8.6"><g transform="translate(280 56) scale(1.5)"><path d="M0 14 C -22 0, -20 -18, -9 -18 C -3 -18, 0 -13, 0 -10 C 0 -13, 3 -18, 9 -18 C 20 -18, 22 0, 0 14Z" fill="none" stroke="var(--e2)" stroke-width="2" stroke-dasharray="4 3"/></g></g>
+        <text class="a" style="--k:up;--d:9" x="280" y="108" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e2)">صمیمیتِ عمیق؟</text>
+        <text class="a" style="--k:up;--d:9.6" x="280" y="400" text-anchor="middle" font-size="16" fill="var(--muted)">هم‌پوشانیِ کم = شناختِ کم</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 24 · Insight: barriers -->
+<section class="scene" data-t="26" data-sec="12" data-title="سه مانعِ شناخت">
+  <header><div class="eyebrow a">۳ · شناختِ ناکافی از همسر <span class="en">Lack of True Insight into One’s Spouse</span></div><h2 class="a" style="--d:.2">چرا شناختنِ همسر سخت است؟</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">شناختِ همسر مشکلی «نسلِ دوم» است: پایین‌دستِ شناختِ خود. از پیشگوی دلفی تا فیلمِ «ماتریکس»، آدم‌ها برای خودشناسی دنبالِ کمکِ ماورایی بوده‌اند.</p>
+      <p class="a" style="--d:7">روان‌شناسان کاترین هنسن و امیلی پرونین می‌گویند عدسیِ درون‌نگری هم بی‌طرف نیست. شناختِ دیگری از این هم سخت‌تر است.</p>
+    </div>
+    <div class="vis">
+      <div class="steps">
+        <div class="step a" style="--d:9;--c:var(--e2)"><div><b>پنهان‌کاری</b><small>همسر ممکن است ویژگی‌های شرم‌آور را عمداً پنهان کند</small></div></div>
+        <div class="step a" style="--d:11;--c:var(--e2)"><div><b>حالتِ تدافعی</b><small>حتی با گفتنِ صادقانه، ممکن است احساسِ تهدید کنیم</small></div></div>
+        <div class="step a" style="--d:13;--c:var(--e2)"><div><b>ندانستنِ برداشتِ دیگری</b><small>سخت است بدانیم همسر ما را چطور می‌بیند، و برعکس</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 25 · Stunted: conformity -->
+<section class="scene" data-t="28" data-sec="13" data-title="همرنگی و بیگانگی">
+  <header><div class="eyebrow a">۴ · رشدِ روانیِ متوقف <span class="en">Stunted Psychological Development</span></div><h2 class="a" style="--d:.2">همرنگی و رکودِ وجودی</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">نخستین مشکلِ پنهان «رکودِ وجودی» <span class="en">(existential stultification)</span> بود: توافقِ همگانی بر یک الگوی خانواده، فردیت و اصالت را خفه می‌کرد؛ مثلِ خانه‌های یک‌شکلِ حومه.</p>
+      <p class="a" style="--d:8">دیوید ریزمن در «جمعیتِ تنها» گفت آمریکایی‌ها قطب‌نمای درونی را گم کرده‌اند: دنبالِ محبوبیت‌اند نه احترام، و برای تأثیرگذاشتن مصرف می‌کنند.</p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <g class="a" style="--k:pop;--d:2"><circle cx="280" cy="100" r="66" fill="var(--panel)" stroke="var(--line)" stroke-width="3"/><path d="M280 40 V52 M280 148 V160 M220 100 H232 M328 100 H340" stroke="var(--muted)" stroke-width="3"/></g>
+        <g class="a" style="--k:fade;--d:2.2"><g class="a" style="--k:spin;--du:2.6s;--it:infinite;--d:8.6"><path d="M280 50 L290 100 L270 100Z" fill="var(--e2)"/><path d="M270 100 L290 100 L280 150Z" fill="var(--muted)"/></g></g>
+        <text class="a" style="--k:up;--d:9" x="280" y="200" text-anchor="middle" font-size="16" fill="var(--muted)">قطب‌نمای درونیِ گم‌شده</text>
+        <g font-size="14" text-anchor="middle">
+          <g class="a" style="--k:up;--d:14"><rect x="380" y="236" width="175" height="180" rx="14" fill="var(--panel)" stroke="var(--line)"/><text x="467" y="272" font-size="16" font-weight="700">انسانِ سازمانی</text><text x="467" y="298" fill="var(--muted)">ویلیام وایت</text><text x="467" y="340">فشارِ خردکننده‌ی</text><text x="467" y="364">همرنگی در شرکت</text></g>
+          <g class="a" style="--k:up;--d:15"><rect x="193" y="236" width="175" height="180" rx="14" fill="var(--panel)" stroke="var(--line)"/><text x="280" y="272" font-size="16" font-weight="700">جاده‌ی انقلابی</text><text x="280" y="298" fill="var(--muted)">ریچارد ییتس</text><text x="280" y="340">فرانک ویلر کنار می‌کشد:</text><text x="280" y="364">نتیجه فاجعه است</text></g>
+          <g class="a" style="--k:up;--d:16"><rect x="6" y="236" width="175" height="180" rx="14" fill="var(--panel)" stroke="var(--line)"/><text x="93" y="272" font-size="16" font-weight="700">کت‌وشلوارِ خاکستری</text><text x="93" y="298" fill="var(--muted)">اسلون ویلسون</text><text x="93" y="340">تام رات می‌جنگد،</text><text x="93" y="364">کمی موفق‌تر</text></g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 26 · Stunted: women -->
+<section class="scene" data-t="25" data-sec="13" data-title="آیا همه‌اش همین است؟">
+  <header><div class="eyebrow a">۴ · رشدِ روانیِ متوقف <span class="en">Stunted Psychological Development</span></div><h2 class="a" style="--d:.2">زنِ خانه‌دارِ به‌دام‌افتاده</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">برای زنان چالش سخت‌تر بود. خانه‌ها بزرگ‌تر و معیارِ نظافت بالاتر شد؛ پس با وجودِ ماشینِ لباس‌شویی و جاروبرقی، کارِ خانه کم نشد.</p>
+      <p class="a" style="--d:8">تا ۱۹۶۰ سی‌بی‌اس مستندِ «زنِ خانه‌دارِ به‌دام‌افتاده» را ساخته بود. اما کتابِ «رازِ زنانگی» از بتی فریدان (۱۹۶۳) این حسِ ناگفته را به ذهنِ همه آورد.</p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <g class="a" style="--k:fade;--d:1.4"><path d="M130 172 L280 62 L430 172" fill="none" stroke="var(--e1)" stroke-width="3" stroke-linejoin="round"/><rect x="150" y="160" width="260" height="210" rx="6" fill="rgba(219,166,94,.08)" stroke="var(--e1)" stroke-width="3"/></g>
+        <g class="a" style="--k:pop;--d:2"><circle cx="280" cy="248" r="16" fill="var(--e2)"/><path d="M256 310 Q256 270 280 270 Q304 270 304 310Z" fill="var(--e2)"/></g>
+        <g font-size="14" text-anchor="middle">
+          <g class="a x" style="--k:pop;--d:3;--x:12"><rect x="158" y="184" width="108" height="30" rx="15" fill="var(--panel)"/><text x="212" y="204">مرتب‌کردنِ تخت</text></g>
+          <g class="a x" style="--k:pop;--d:3.6;--x:12.3"><rect x="294" y="184" width="108" height="30" rx="15" fill="var(--panel)"/><text x="348" y="204">خرید</text></g>
+          <g class="a x" style="--k:pop;--d:4.2;--x:12.6"><rect x="158" y="326" width="108" height="30" rx="15" fill="var(--panel)"/><text x="212" y="346">ناهار با بچه‌ها</text></g>
+          <g class="a x" style="--k:pop;--d:4.8;--x:12.9"><rect x="294" y="326" width="108" height="30" rx="15" fill="var(--panel)"/><text x="348" y="346">رساندنِ بچه‌ها</text></g>
+        </g>
+        <g class="a" style="--k:pop;--d:13.5"><rect x="110" y="390" width="340" height="44" rx="22" fill="var(--panel)" stroke="var(--e2)" stroke-width="2"/><text x="330" y="418" text-anchor="middle" font-size="18" font-weight="700">«آیا همه‌اش همین است؟»</text><text x="178" y="418" text-anchor="middle" font-size="14" fill="var(--muted)">فریدان، ۱۹۶۳</text></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 27 · Stunted: atrophy -->
+<section class="scene" data-t="27" data-sec="13" data-title="روانِ دو نیم‌شده">
+  <header><div class="eyebrow a">۴ · رشدِ روانیِ متوقف <span class="en">Stunted Psychological Development</span></div><h2 class="a" style="--d:.2">روانِ دو نیم‌شده</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">مشکلِ دوم «تحلیلِ روانی» <span class="en">(psychological atrophy)</span> بود: آموزه‌ی حوزه‌های جدا روان را دو نیم کرد و قاطعیتِ زنان و مهرورزیِ مردان از بی‌استفادگی پژمرد.</p>
+      <p class="a" style="--d:7">پسرها قاطع اما بی‌مهر بار آمدند، مثلِ «مردِ مارلبرو»؛ دخترها گرم و مطیع. مجله‌ی لایف در ۱۹۵۶ نوشت زنان ذهن دارند، به شرطِ آنکه علاقه‌ی اصلی‌شان خانه بماند.</p>
+      <p class="key a" style="--d:14"><mark>اما از نظرِ روانی، زن و مرد هر دو «از زمین»اند، نه از مریخ و زهره.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <line x1="280" y1="30" x2="280" y2="370" stroke="var(--line)" stroke-dasharray="4 6"/>
+        <text class="a" style="--k:fade;--d:1.6" x="400" y="54" text-anchor="middle" font-size="18" font-weight="700" fill="var(--e2)">کدبانوی آرمانی</text>
+        <text class="a" style="--k:fade;--d:1.6" x="160" y="54" text-anchor="middle" font-size="18" font-weight="700" fill="var(--e3)">مردِ مارلبرو</text>
+        <line x1="60" y1="320" x2="500" y2="320" stroke="var(--line)" stroke-width="2"/>
+        <rect class="a gy x" style="--k:growY;--d:2.4;--x:9;--xk:shrinkY;--xdu:1.6s" x="420" y="100" width="50" height="220" rx="6" fill="var(--e1)"/>
+        <rect class="a gy" style="--k:growY;--d:2.8" x="330" y="100" width="50" height="220" rx="6" fill="var(--e2)"/>
+        <rect class="a gy" style="--k:growY;--d:3.2" x="180" y="100" width="50" height="220" rx="6" fill="var(--e1)"/>
+        <rect class="a gy x" style="--k:growY;--d:3.6;--x:9.6;--xk:shrinkY;--xdu:1.6s" x="90" y="100" width="50" height="220" rx="6" fill="var(--e2)"/>
+        <g font-size="15" text-anchor="middle">
+          <text x="445" y="346">قاطعیت</text><text x="355" y="346">مهرورزی</text>
+          <text x="205" y="346">قاطعیت</text><text x="115" y="346">مهرورزی</text>
+        </g>
+        <text class="a" style="--k:pop;--d:14.6" x="280" y="408" text-anchor="middle" font-size="18" font-weight="700" fill="var(--good)">هر دو نیاز، در هر دو جنس</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 28 · Bem -->
+<section class="scene" data-t="26" data-sec="13" data-title="دوجنسیتیِ روانی">
+  <header><div class="eyebrow a">۴ · رشدِ روانیِ متوقف <span class="en">Stunted Psychological Development</span></div><h2 class="a" style="--d:.2">دو بُعد، نه دو سرِ یک خط</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">روان‌شناس ساندرا بم قاطعیت را «مردانگیِ روانی» (مستقل، مقتدر) و مهرورزی را «زنانگیِ روانی» (مهربان، دلسوز) می‌نامد؛ دو بُعدِ جدا.</p>
+      <p class="a" style="--d:7.5">کسی که در هر دو بالاست «دوجنسیتیِ روانی» <span class="en">(androgynous)</span> است و، زن باشد یا مرد، سازگارتر است.</p>
+      <p class="key a" style="--d:13"><mark>هر کدام به‌تنهایی و بی‌مهار، آسیب‌زاست.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <g class="a x" style="--k:fade;--d:1.4;--x:5;--xk:gone">
+          <line x1="120" y1="200" x2="500" y2="200" stroke="var(--muted)" stroke-width="4" stroke-linecap="round"/>
+          <text x="310" y="180" text-anchor="middle" font-size="15" fill="var(--muted)">دیدگاهِ قدیمی: دو سرِ یک خط</text>
+          <text x="130" y="232" text-anchor="middle" font-size="15">مردانه</text>
+          <text x="490" y="232" text-anchor="middle" font-size="15">زنانه</text>
+        </g>
+        <rect class="a" style="--k:fade;--d:8.2" x="310" y="40" width="220" height="155" fill="rgba(111,192,214,.18)"/>
+        <path class="a dr" style="--k:draw;--du:1.2s;--d:5.6" pathLength="1" d="M90 40 V350 H530" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+        <path class="a" style="--k:fade;--d:6.4" d="M82 52 L90 38 L98 52 M518 342 L532 350 L518 358" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+        <path class="a" style="--k:fade;--d:6.6" d="M310 40 V350 M90 195 H530" stroke="var(--line)" stroke-dasharray="4 6"/>
+        <text class="a" style="--k:fade;--d:6.4" x="310" y="384" text-anchor="middle" font-size="15">مهرورزی (زنانگیِ روانی)</text>
+        <g class="a" style="--k:fade;--d:6.4"><text transform="rotate(-90 52 195)" x="52" y="195" text-anchor="middle" font-size="15">قاطعیت (مردانگیِ روانی)</text></g>
+        <text class="a" style="--k:pop;--d:8.4" x="420" y="110" text-anchor="middle" font-size="17" font-weight="700" fill="var(--e3)">دوجنسیتیِ روانی</text>
+        <text class="a" style="--k:up;--d:8.8" x="420" y="138" text-anchor="middle" font-size="15">سازگارتر</text>
+        <text class="a" style="--k:up;--d:13.6" x="200" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e2)">قاطعیتِ بی‌مهار</text>
+        <text class="a" style="--k:up;--d:13.8" x="200" y="138" text-anchor="middle" font-size="14" fill="var(--muted)">خودشیفتگی، ضداجتماعی</text>
+        <text class="a" style="--k:up;--d:14.4" x="420" y="266" text-anchor="middle" font-size="16" font-weight="700" fill="var(--e2)">مهرورزیِ بی‌مهار</text>
+        <text class="a" style="--k:up;--d:14.6" x="420" y="294" text-anchor="middle" font-size="14" fill="var(--muted)">نادیده‌گرفتنِ خود</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 29 · Sex drive: insubordinate -->
+<section class="scene" data-t="25" data-sec="14" data-title="میلی که فرمان نمی‌برد">
+  <header><div class="eyebrow a">۵ · میل جنسیِ سرکش <span class="en">The Often-Insubordinate Sex Drive</span></div><h2 class="a" style="--d:.2">میلی که فرمان نمی‌برد</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">این ایده که داغ‌ترین رابطه‌ی جنسی هم‌زمان با بیشترین صمیمیتِ عاطفی است، درست اما ساده‌انگارانه است.</p>
+      <p class="a" style="--d:6">درمانگرِ جنسی استر پرل، با کمی اغراقِ بازیگوشانه، می‌گوید ما شب‌ها با همان چیزهایی برانگیخته می‌شویم که روزها علیه‌شان اعتراض می‌کنیم.</p>
+      <p class="key a" style="--d:13"><mark>میل اغلب از ترجیح‌های اخلاقیِ ما برای مهربانی، برابری و احترام فرمان نمی‌برد.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <g class="a" style="--k:fade;--d:1"><rect x="290" y="20" width="260" height="380" rx="18" fill="rgba(219,166,94,.12)"/><circle cx="420" cy="84" r="28" fill="var(--e1)"/><text x="420" y="152" text-anchor="middle" font-size="17" font-weight="700">روز: ارزش‌های ما</text></g>
+        <g font-size="16" text-anchor="middle">
+          <g class="a" style="--k:pop;--d:2"><rect x="350" y="176" width="140" height="38" rx="19" fill="var(--panel)"/><text x="420" y="201">مهربانی</text></g>
+          <g class="a" style="--k:pop;--d:2.4"><rect x="350" y="232" width="140" height="38" rx="19" fill="var(--panel)"/><text x="420" y="257">برابری</text></g>
+          <g class="a" style="--k:pop;--d:2.8"><rect x="350" y="288" width="140" height="38" rx="19" fill="var(--panel)"/><text x="420" y="313">احترام</text></g>
+        </g>
+        <g class="a" style="--k:fade;--d:6.4"><rect x="10" y="20" width="260" height="380" rx="18" fill="rgba(111,192,214,.10)"/><path d="M152 60 A28 28 0 1 0 152 108 A22 22 0 1 1 152 60Z" fill="var(--ink)"/><text x="140" y="152" text-anchor="middle" font-size="17" font-weight="700">شب: میل</text></g>
+        <path class="a" style="--k:twinkle;--du:1.8s;--it:infinite;--d:7" d="M64 74 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3Z" fill="var(--e1)"/>
+        <path class="a" style="--k:twinkle;--du:2.2s;--it:infinite;--d:7.4" d="M214 60 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3Z" fill="var(--e1)"/>
+        <text class="a" style="--k:pop;--d:8" x="140" y="262" text-anchor="middle" font-size="44" fill="var(--e2)" style="font-family:var(--display)">سرکش</text>
+        <text class="a" style="--k:up;--d:8.6" x="140" y="304" text-anchor="middle" font-size="15" fill="var(--muted)">پیرو قاعده‌های روز نیست</text>
+        <g class="a" style="--k:pop;--d:13.6"><circle cx="280" cy="236" r="24" fill="var(--ground2)" stroke="var(--line)" stroke-width="2"/><text x="280" y="246" text-anchor="middle" font-size="28" fill="var(--e2)">≠</text></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 30 · Have vs want -->
+<section class="scene" data-t="25" data-sec="14" data-title="داشتن یا خواستن">
+  <header><div class="eyebrow a">۵ · میل جنسیِ سرکش <span class="en">The Often-Insubordinate Sex Drive</span></div><h2 class="a" style="--d:.2">داشتن یا خواستن؟</h2></header>
+  <div class="duo">
+    <article class="card a" style="--d:1;--c:var(--e3)">
+      <div class="tag">عشق</div>
+      <h3>«داشتن» <span class="en">to have</span></h3>
+      <svg viewBox="0 0 300 70" aria-hidden="true"><circle class="a" style="--k:pop;--d:1.8" cx="136" cy="35" r="26" fill="rgba(111,192,214,.3)" stroke="var(--e3)" stroke-width="2.5"/><circle class="a" style="--k:pop;--d:2.1" cx="164" cy="35" r="26" fill="rgba(111,192,214,.3)" stroke="var(--e3)" stroke-width="2.5"/></svg>
+      <p>نیاز به امنیت، آشنایی و پیش‌بینی‌پذیری؛ تجربه‌ی لنگرگرفتن که آن را «خانه» می‌نامیم. یگانگیِ آرام، و مراقبتِ بی‌دریغ وقتی همسر آسیب‌پذیر است.</p>
+    </article>
+    <article class="card a" style="--d:6;--c:var(--e2)">
+      <div class="tag">میل</div>
+      <h3>«خواستن» <span class="en">to want</span></h3>
+      <svg viewBox="0 0 300 70" aria-hidden="true"><circle class="a" style="--k:pop;--d:6.8" cx="70" cy="35" r="26" fill="rgba(227,104,140,.3)" stroke="var(--e2)" stroke-width="2.5"/><circle class="a" style="--k:pop;--d:7.1" cx="230" cy="35" r="26" fill="rgba(227,104,140,.3)" stroke="var(--e2)" stroke-width="2.5"/><path class="a dr" style="--k:draw;--d:7.6" pathLength="1" d="M100 35 H200" fill="none" stroke="var(--e1)" stroke-width="3"/></svg>
+      <p>نیاز به راز، ماجراجویی، غافل‌گیری و تازگی؛ پُرکردنِ یک فاصله. به گفته‌ی پرل، برای میل باید از نقشِ «شهروندِ خوب و مسئول» بیرون آمد.</p>
+    </article>
+  </div>
+  <p class="cap a" style="--d:12.5">پرل: <b style="color:var(--ink)">«آتش هوا می‌خواهد؛ میل، فاصله.»</b> ماندگاریِ میل در رابطه‌ی طولانی یعنی آشتیِ این دو: نزدیکی برای راحتی و گفتگوی باز، و فاصله برای کشش.</p>
+</section>
+
+<!-- 31 · Fault lines: paradoxes -->
+<section class="scene" data-t="25" data-sec="15" data-title="سه تناقض">
+  <header><div class="eyebrow a">اوزی، هریت و گسل‌های پنهان <span class="en">Ozzie, Harriet, and the Hidden Fault Lines</span></div><h2 class="a" style="--d:.2">گسل‌های پنهان زیرِ رویه‌ی براق</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">از نگاهِ امروز، دهه‌ی ۵۰ داده‌ای پرت بود؛ نه «ازدواجِ سنتی»، بلکه به تعبیرِ کونتز «آن‌طور که هرگز نبودیم». با این حال مردمِ آن زمان حق داشتند فکر کنند به پایانِ تاریخِ خانواده رسیده‌اند.</p>
+      <p class="key a" style="--d:12.5"><mark>اما زیرِ سطح، سه تناقض ترک انداخته بود.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <text class="a" style="--k:fade;--d:2" x="435" y="34" text-anchor="middle" font-size="15" fill="var(--muted)">از یک سو</text>
+        <text class="a" style="--k:fade;--d:2" x="125" y="34" text-anchor="middle" font-size="15" fill="var(--muted)">از سوی دیگر</text>
+        <g font-size="16" text-anchor="middle">
+          <g class="a" style="--k:up;--d:3"><rect x="330" y="62" width="210" height="50" rx="25" fill="var(--panel)" stroke="var(--line)"/><text x="435" y="93">زندگی‌های جدا</text></g>
+          <path class="a dr" style="--k:draw;--du:.6s;--d:3.6" pathLength="1" d="M324 87 L302 75 L288 98 L268 76 L254 97 L236 87" fill="none" stroke="var(--e2)" stroke-width="3"/>
+          <g class="a" style="--k:up;--d:4.2"><rect x="20" y="62" width="210" height="50" rx="25" fill="var(--panel)" stroke="var(--line)"/><text x="125" y="93">باهم‌بودن</text></g>
+          <g class="a" style="--k:up;--d:5.6"><rect x="330" y="182" width="210" height="50" rx="25" fill="var(--panel)" stroke="var(--line)"/><text x="435" y="213">پاکدامنیِ «زنِ راستین»</text></g>
+          <path class="a dr" style="--k:draw;--du:.6s;--d:6.2" pathLength="1" d="M324 207 L302 195 L288 218 L268 196 L254 217 L236 207" fill="none" stroke="var(--e2)" stroke-width="3"/>
+          <g class="a" style="--k:up;--d:6.8"><rect x="20" y="182" width="210" height="50" rx="25" fill="var(--panel)" stroke="var(--line)"/><text x="125" y="213">ماجراجوییِ جنسی</text></g>
+          <g class="a" style="--k:up;--d:8.2"><rect x="330" y="302" width="210" height="50" rx="25" fill="var(--panel)" stroke="var(--line)"/><text x="435" y="333">میلِ جنسیِ سرکش</text></g>
+          <path class="a dr" style="--k:draw;--du:.6s;--d:8.8" pathLength="1" d="M324 327 L302 315 L288 338 L268 316 L254 337 L236 327" fill="none" stroke="var(--e2)" stroke-width="3"/>
+          <g class="a" style="--k:up;--d:9.4"><rect x="20" y="302" width="210" height="50" rx="25" fill="var(--panel)" stroke="var(--line)"/><text x="125" y="333">نزدیکی و آسیب‌پذیری</text></g>
+        </g>
+        <text class="a" style="--k:fade;--d:13.2" x="280" y="398" text-anchor="middle" font-size="15" fill="var(--muted)">آشتیِ این‌ها در فضای محافظه‌کارِ آن زمان آسان نبود</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 32 · Fault lines: shattering -->
+<section class="scene" data-t="26" data-sec="15" data-title="درست در اوج، شکست">
+  <header><div class="eyebrow a">اوزی، هریت و گسل‌های پنهان <span class="en">Ozzie, Harriet, and the Hidden Fault Lines</span></div><h2 class="a" style="--d:.2">درست در اوج، شکست</h2></header>
+  <div class="cols">
+    <div class="txt">
+      <p class="a" style="--d:.8">زنانِ بیشتری وارد بازارِ کار شدند و رونق برایشان مزدی کافی برای زندگی فراهم کرد. غذای آماده، مثلِ «شامِ تلویزیونی»، زندگیِ مجردی را هم آسان‌تر کرد.</p>
+      <p class="a" style="--d:7.5">نسلی که رکود و جنگ را دیده بود کم‌کم کنار رفت؛ عطشِ ثبات کم شد و تحملِ ازدواجِ ناخشنود هم.</p>
+      <p class="key a" style="--d:13.5"><mark>ازدواجِ نان‌آور–خانه‌دار درست در اوجِ قدرت شکست.</mark></p>
+    </div>
+    <div class="vis">
+      <svg viewBox="0 0 560 420" aria-hidden="true">
+        <g class="a" style="--k:up;--d:1.4">
+          <path d="M180 120 L280 80 L380 120Z" fill="var(--panel)" stroke="var(--e1)" stroke-width="2.5" stroke-linejoin="round"/>
+          <rect x="190" y="120" width="180" height="18" fill="var(--panel)" stroke="var(--e1)" stroke-width="2.5"/>
+          <rect x="215" y="138" width="130" height="212" fill="var(--panel)" stroke="var(--e1)" stroke-width="2.5"/>
+          <rect x="190" y="350" width="180" height="20" fill="var(--panel)" stroke="var(--e1)" stroke-width="2.5"/>
+          <text x="280" y="232" text-anchor="middle" font-size="16" font-weight="700">ازدواجِ</text>
+          <text x="280" y="258" text-anchor="middle" font-size="14">نان‌آور–خانه‌دار</text>
+        </g>
+        <g font-size="15" text-anchor="middle">
+          <text class="a" style="--k:fade;--d:2.4" x="462" y="152">زنانِ شاغل، مزدِ کافی</text>
+          <text class="a" style="--k:fade;--d:5" x="462" y="232">شامِ تلویزیونی</text>
+          <text class="a" style="--k:fade;--d:8.2" x="462" y="312">نسلِ بی‌رکود و بی‌جنگ</text>
+        </g>
+        <g fill="none" stroke="var(--e2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path class="a dr" style="--k:draw;--du:.8s;--d:2.8" pathLength="1" d="M545 170 H354 M366 161 L352 170 L366 179"/>
+          <path class="a dr" style="--k:draw;--du:.8s;--d:5.4" pathLength="1" d="M545 250 H354 M366 241 L352 250 L366 259"/>
+          <path class="a dr" style="--k:draw;--du:.8s;--d:8.6" pathLength="1" d="M545 330 H354 M366 321 L352 330 L366 339"/>
+        </g>
+        <path class="a dr" style="--k:draw;--du:1s;--d:10" pathLength="1" d="M310 140 L292 176 L314 204 M300 282 L318 312 L302 348" fill="none" stroke="var(--e2)" stroke-width="3"/>
+        <path class="a dr" style="--k:draw;--du:1s;--d:10.6" pathLength="1" d="M240 140 L256 172 L242 204 M250 282 L236 318 L250 348" fill="none" stroke="var(--e2)" stroke-width="3"/>
+        <text class="a" style="--k:pop;--d:14" x="280" y="54" text-anchor="middle" font-size="28" fill="var(--e2)" style="font-family:var(--display)">شکست!</text>
+        <g class="a" style="--k:up;--d:15">
+          <text x="95" y="216" text-anchor="middle" font-size="15" fill="var(--muted)">دورانِ تازه</text>
+          <text x="95" y="252" text-anchor="middle" font-size="26" fill="var(--e3)" style="font-family:var(--display)">خودابرازگر</text>
+          <text x="95" y="282" text-anchor="middle" font-size="14" fill="var(--muted)">(فصل ۴)</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 33 · Recap -->
+<section class="scene" data-t="30" data-sec="16" data-title="جمع‌بندی برای مرور">
+  <header><div class="eyebrow a">جمع‌بندی برای مرور <span class="en">Chapter 3 recap</span></div><h2 class="a" style="--d:.2">هشت مفهومی که باید بدانید</h2></header>
+  <div class="grid">
+    <div class="term a" style="--d:.8;--c:var(--e1)"><b>صنعتی‌شدن</b><span>بقا آسان‌تر، شهرنشینی، خانواده‌ی کوچک‌تر؛ بچه از سود به هزینه.</span></div>
+    <div class="term a" style="--d:1.4;--c:var(--e1)"><b>خانواده‌ی کارگر</b><span>مرد در کارخانه، زن در خانه؛ زمانِ ساعتی و اقتدارِ لرزانِ مرد.</span></div>
+    <div class="term a" style="--d:2;--c:var(--e3)"><b>پناهگاه</b><span>خانه، جای عشق و همدلی در برابرِ دنیای بی‌رحمِ بازار.</span></div>
+    <div class="term a" style="--d:2.6;--c:var(--e2)"><b>حوزه‌های جدا</b><span>مرد نان‌آور، زن کدبانو؛ کارِ خانه «عشق» دیده شد، نه تولید.</span></div>
+    <div class="term a" style="--d:3.2;--c:var(--e1)"><b>رکود و جنگ</b><span>بقا دوباره اولویت شد؛ رُزیِ پرچ‌کار و جهشِ طلاق در ۱۹۴۵–۱۹۴۶.</span></div>
+    <div class="term a" style="--d:3.8;--c:var(--e2)"><b>اوجِ دهه‌ی ۵۰</b><span>٪۹۵ ازدواج، حومه و «باهم‌بودن»؛ در واقع «استثنای بزرگ».</span></div>
+    <div class="term a" style="--d:4.4;--c:var(--e2)"><b>پنج چالش</b><span>وابستگیِ اقتصادی، انزوا، شناختِ ناکافی، رشدِ متوقف، میلِ سرکش.</span></div>
+    <div class="term a" style="--d:5;--c:var(--e3)"><b>دوجنسیتیِ روانی</b><span>بالا بودن هم در قاطعیت و هم در مهرورزی؛ سازگاریِ بیشتر (بم).</span></div>
+  </div>
+  <div class="endbar a" style="--d:6">
+    <span class="note">منبع: Eli J. Finkel, <span class="en">The All-or-Nothing Marriage</span> (2017)، فصل ۳. خلاصه و برگردانِ آزاد برای مطالعه.</span>
+  </div>
+</section>
+
+</div>
+<script src="../../assets/player.js"></script>
+</body>
+</html>
